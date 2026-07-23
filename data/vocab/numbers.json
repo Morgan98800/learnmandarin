@@ -1,0 +1,368 @@
+[
+  {
+    "hanzi": "来",
+    "pinyin": "lái",
+    "meaning": "used before a verb, indicating an intended action",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "一",
+    "pinyin": "yī",
+    "meaning": "one",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "国",
+    "pinyin": "guó",
+    "meaning": "country, state",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "这个",
+    "pinyin": "zhège",
+    "meaning": "this one",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "德国",
+    "pinyin": "Déguó",
+    "meaning": "Germany",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "帅",
+    "pinyin": "shuài",
+    "meaning": "handsome",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "个子",
+    "pinyin": "gèzi",
+    "meaning": "stature, height, build",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "体重",
+    "pinyin": "tǐzhòng",
+    "meaning": "weight",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "号",
+    "pinyin": "hào",
+    "meaning": "number",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "电话",
+    "pinyin": "diànhuà",
+    "meaning": "telephone",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "第",
+    "pinyin": "dì",
+    "meaning": "used before a numeral to form an ordinal number",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "二",
+    "pinyin": "èr",
+    "meaning": "two",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "四",
+    "pinyin": "sì",
+    "meaning": "four",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "常常",
+    "pinyin": "chángcháng",
+    "meaning": "often",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "meaning": "half",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "有时候",
+    "pinyin": "yǒushíhou",
+    "meaning": "sometime, occasionally",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "打",
+    "pinyin": "dǎ",
+    "meaning": "to make (a phone call)",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "多",
+    "pinyin": "duō",
+    "meaning": "many, much",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "一些",
+    "pinyin": "yìxiē",
+    "meaning": "some",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "空调",
+    "pinyin": "kōngtiáo",
+    "meaning": "air-conditioner",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "先",
+    "pinyin": "xiān",
+    "meaning": "first",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "小卖部",
+    "pinyin": "xiǎomàibù",
+    "meaning": "snack counter",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "meaning": "money",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "六",
+    "pinyin": "liù",
+    "meaning": "six",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "七",
+    "pinyin": "qī",
+    "meaning": "seven",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "八",
+    "pinyin": "bā",
+    "meaning": "eight",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "meaning": "nine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "十",
+    "pinyin": "shí",
+    "meaning": "ten",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "百",
+    "pinyin": "bǎi",
+    "meaning": "hundred",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "千",
+    "pinyin": "qiān",
+    "meaning": "thousand",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "结账",
+    "pinyin": "jié zhàng",
+    "meaning": "to pay the bill, to settle accounts",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "常",
+    "pinyin": "cháng",
+    "meaning": "often",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "meaning": "two",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "麻烦",
+    "pinyin": "máfan",
+    "meaning": "troublesome, to trouble",
+    "partOfSpeech": "adjective, verb"
+  },
+  {
+    "hanzi": "号码",
+    "pinyin": "hàomǎ",
+    "meaning": "number",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "店",
+    "pinyin": "diàn",
+    "meaning": "shop / store",
+    "partOfSpeech": "→ qián (money)"
+  },
+  {
+    "hanzi": "众",
+    "pinyin": "zhòng",
+    "meaning": "crowd / many people",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "meaning": "how many / several",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "手机",
+    "pinyin": "shǒujī",
+    "meaning": "mobile phone",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "五百五十五",
+    "pinyin": "wǔbǎiwǔshíwǔ",
+    "meaning": "five hundred fifty-five (555, crying online)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "二号",
+    "pinyin": "èr hào",
+    "meaning": "number two",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "零",
+    "pinyin": "líng",
+    "meaning": "zero",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我来你的国家",
+    "pinyin": "Wǒ lái nǐ de guójiā",
+    "meaning": "I come to your country",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "三",
+    "pinyin": "sān",
+    "meaning": "three",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "meaning": "five",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "万",
+    "pinyin": "wàn",
+    "meaning": "ten thousand",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "一个人",
+    "pinyin": "Yī gè rén",
+    "meaning": "one person",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "meaning": "to listen",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "一百一",
+    "pinyin": "yībǎi yī",
+    "meaning": "one hundred one (101)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "帅不帅？",
+    "pinyin": "Shuài bù shuài?",
+    "meaning": "Is he handsome?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "519",
+    "pinyin": "wǔ yāo jiǔ",
+    "meaning": "five one nine (519)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "幺",
+    "pinyin": "yāo",
+    "meaning": "one (used in phone numbers)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我的电话号码",
+    "pinyin": "Wǒ de diànhuà hàomǎ",
+    "meaning": "my phone number",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我家里有很多人",
+    "pinyin": "Wǒ jiā lǐ yǒu hěn duō rén",
+    "meaning": "There are many people in my home",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我家有五间房",
+    "pinyin": "Wǒ jiā yǒu wǔ jiān fáng",
+    "meaning": "My home has five rooms",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "一二三四五",
+    "pinyin": "yī èr sān sì wǔ",
+    "meaning": "one two three four five",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "洗脸",
+    "pinyin": "xǐliǎn",
+    "meaning": "to wash one's face",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "第一",
+    "pinyin": "dì yī",
+    "meaning": "first",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "很烦",
+    "pinyin": "hěn fán",
+    "meaning": "very annoying / troublesome",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "矮",
+    "pinyin": "ǎi",
+    "meaning": "short (in height)",
+    "partOfSpeech": "→ gāo (tall)"
+  },
+  {
+    "hanzi": "两位",
+    "pinyin": "liǎng wèi",
+    "meaning": "two people (polite)",
+    "partOfSpeech": "noun"
+  }
+]

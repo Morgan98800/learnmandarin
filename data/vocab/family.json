@@ -1,0 +1,176 @@
+[
+  {
+    "hanzi": "人",
+    "pinyin": "rén",
+    "meaning": "people, person",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "meaning": "father",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "meaning": "mother",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "罗森",
+    "pinyin": "Luósēn",
+    "meaning": "Rawson",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "几岁",
+    "pinyin": "jīnsuì",
+    "meaning": "years old (for children)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "外婆",
+    "pinyin": "wàipó",
+    "meaning": "grandmother",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "外公",
+    "pinyin": "wàigōng",
+    "meaning": "grandfather",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "一会儿",
+    "pinyin": "yīhuìr",
+    "meaning": "a moment",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "家庭",
+    "pinyin": "jiātíng",
+    "meaning": "family",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "妹妹",
+    "pinyin": "mèimei",
+    "meaning": "younger sister",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "兄弟姐妹",
+    "pinyin": "xiōngdì jiěmèi",
+    "meaning": "brothers and sisters",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "兄弟",
+    "pinyin": "xiōngdì",
+    "meaning": "brother",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "姐妹",
+    "pinyin": "jiěmèi",
+    "meaning": "sister",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "孩子",
+    "pinyin": "háizi",
+    "meaning": "child",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "姐姐",
+    "pinyin": "jiějie",
+    "meaning": "elder sister",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "父母",
+    "pinyin": "fùmǔ",
+    "meaning": "parents",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "爷爷",
+    "pinyin": "yéye",
+    "meaning": "grandpa",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "奶奶",
+    "pinyin": "nǎinai",
+    "meaning": "grandma",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "哥哥",
+    "pinyin": "gēge",
+    "meaning": "elder brother",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "嫂子",
+    "pinyin": "sǎozi",
+    "meaning": "sister-in-law",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "时候",
+    "pinyin": "shíhou",
+    "meaning": "time, moment",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "再说",
+    "pinyin": "zàishuō",
+    "meaning": "We won't decide at the moment.",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "女儿",
+    "pinyin": "nǚ'ér",
+    "meaning": "daughter",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "课",
+    "pinyin": "kè",
+    "meaning": "lesson, course, class",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "歌",
+    "pinyin": "gē",
+    "meaning": "song / older brother",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "小朋友",
+    "pinyin": "xiǎopéngyou",
+    "meaning": "child / kid",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我在Dawson学习汉语",
+    "pinyin": "Wǒ zài Dawson xuéxí Hànyǔ",
+    "meaning": "I study Chinese at Dawson",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "那么爸爸对妹妹和我说...",
+    "pinyin": "Nàme bàba duì mèimei hé wǒ shuō...",
+    "meaning": "Then Dad said to my younger sister and me...",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "请等一下",
+    "pinyin": "Qǐng děng yīxià",
+    "meaning": "Please wait a moment",
+    "partOfSpeech": "noun"
+  }
+]

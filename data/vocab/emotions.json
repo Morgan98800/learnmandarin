@@ -1,0 +1,110 @@
+[
+  {
+    "hanzi": "高兴",
+    "pinyin": "gāoxìng",
+    "meaning": "happy",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "喜欢",
+    "pinyin": "xǐhuan",
+    "meaning": "to like",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "累",
+    "pinyin": "lèi",
+    "meaning": "tired",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "觉得",
+    "pinyin": "juéde",
+    "meaning": "to feel",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "担心",
+    "pinyin": "dānxīn",
+    "meaning": "to worry",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "meaning": "to love",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我喜欢",
+    "pinyin": "wǒ xǐhuān",
+    "meaning": "I like",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我不喜欢",
+    "pinyin": "wǒ bù xǐhuān",
+    "meaning": "I don't like",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我累了",
+    "pinyin": "Wǒ lèi le",
+    "meaning": "I'm tired",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我喜欢摄影",
+    "pinyin": "Wǒ xǐhuān shèyǐng",
+    "meaning": "I like photography",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我喜欢看书",
+    "pinyin": "Wǒ xǐhuān kànshū",
+    "meaning": "I like reading",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我都喜欢",
+    "pinyin": "Wǒ dōu xǐhuān",
+    "meaning": "I like both / all of them",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "摸",
+    "pinyin": "mō",
+    "meaning": "to touch / to feel",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "爱吗？",
+    "pinyin": "Ài ma?",
+    "meaning": "Does (he/she) love (him/her)?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "怕",
+    "pinyin": "pà",
+    "meaning": "to fear / to be afraid",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我想",
+    "pinyin": "Wǒ xiǎng",
+    "meaning": "I'd like / I think",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我们都喜欢",
+    "pinyin": "Wǒmen dōu xǐhuān",
+    "meaning": "We all like (it)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "看样",
+    "pinyin": "kànyàng",
+    "meaning": "to seem / to look like",
+    "partOfSpeech": "noun"
+  }
+]

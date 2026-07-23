@@ -1,0 +1,429 @@
+[
+  {
+    "title": "你好!",
+    "explanation": "Hello!",
+    "pinyin": "Nǐ hǎo!",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你好吗？",
+    "explanation": "How are you?",
+    "pinyin": "Nǐ hǎo ma?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你叫什么名字？",
+    "explanation": "What is your name?",
+    "pinyin": "Nǐ jiào shénme míngzi?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "认识你很高兴。",
+    "explanation": "Nice to meet you.",
+    "pinyin": "Rènshi nǐ hěn gāoxìng.",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你是哪国人？",
+    "explanation": "Which country are you from?",
+    "pinyin": "Nǐ shì nǎ guó rén?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Subject + zài + Location + gōngzuò",
+    "explanation": "Expression for working at a place.",
+    "pinyin": "Subject + zài + Location + gōngzuò",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你做什么工作？",
+    "explanation": "What do you do? (asking about occupation)",
+    "pinyin": "Nǐ zuò shénme gōngzuò?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你今年多大？",
+    "explanation": "How old are you?",
+    "pinyin": "Nǐ jīnnián duō dà?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Subject + hěn + Adjective",
+    "explanation": "Expressing 'very' before an adjective.",
+    "pinyin": "Subject + hěn + Adjective",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "他帅不帅？",
+    "explanation": "Is he handsome? (A-not-A question)",
+    "pinyin": "Tā shuài bu shuài?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Subject + zhù zài + Location",
+    "explanation": "Expression for living at a place.",
+    "pinyin": "Subject + zhù zài + Location",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你家有几口人？",
+    "explanation": "How many people are there in your family?",
+    "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "现在几点？",
+    "explanation": "What time is it now?",
+    "pinyin": "Xiànzài jǐ diǎn?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "我来介绍一下。",
+    "explanation": "Let me introduce (briefly).",
+    "pinyin": "Wǒ lái jièshào yīxià.",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "今天是几号？",
+    "explanation": "What's the date today?",
+    "pinyin": "Jīntiān shì jǐ hào?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "星期几？",
+    "explanation": "What day of the week?",
+    "pinyin": "Xīngqī jǐ?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Object + zài + Location",
+    "explanation": "Expression for location of an object.",
+    "pinyin": "Object + zài + Location",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你的包是什么颜色的？",
+    "explanation": "What color is your bag?",
+    "pinyin": "Nǐ de bāo shì shénme yánsè de?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "从这儿怎么走？",
+    "explanation": "How do I get there from here?",
+    "pinyin": "Cóng zhèr zěnme zǒu?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "往前走。",
+    "explanation": "Go straight ahead.",
+    "pinyin": "Wǎng qián zǒu.",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "一共多少钱？",
+    "explanation": "How much is it altogether?",
+    "pinyin": "Yígòng duōshao qián?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你来点菜吧。",
+    "explanation": "You please order the dishes.",
+    "pinyin": "Nǐ lái diǎn cài ba.",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "喂，请问金经理在吗？",
+    "explanation": "Hello, may I ask if [Name] is there?",
+    "pinyin": "Wèi, qǐngwèn [Name] zài ma?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你的房间大不大？",
+    "explanation": "Is your room big or not?",
+    "pinyin": "Nǐ de fángjiān dà bu dà?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "我们还是坐出租车吧。",
+    "explanation": "Let's take a taxi instead.",
+    "pinyin": "Wǒmen háishi zuò chūzūchē ba.",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "没问题，我帮你。",
+    "explanation": "No problem, I'll help you.",
+    "pinyin": "Méi wèntí, wǒ bāng nǐ.",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Shì......de",
+    "explanation": "Structure for emphasis, e.g., 'It is/was... that...'",
+    "pinyin": "Shì......de",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "不太...",
+    "explanation": "Not too... (used to soften a negative statement)",
+    "pinyin": "Bú tài...",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "有一点儿...",
+    "explanation": "A little bit... (used before adjectives)",
+    "pinyin": "Yǒu (yī) diǎnr...",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "你想找什么样的...？",
+    "explanation": "What kind of... are you looking for?",
+    "pinyin": "Nǐ xiǎng zhǎo shénmeyàng de...?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "请问，[place] 在哪儿？",
+    "explanation": "Excuse me, where is [place]?",
+    "pinyin": "Qǐngwèn, [place] zài nǎr?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Number + Measure Word + Noun",
+    "explanation": "You cannot put a number directly before a noun",
+    "pinyin": "Number + Measure Word + Noun",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Number / this / that + Measure Word + Noun",
+    "explanation": "",
+    "pinyin": "Number / this / that + Measure Word + Noun",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Number → Add Measure Word",
+    "explanation": "",
+    "pinyin": "Number → Add Measure Word",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Tone Sandhi: bù (4th tone) becomes bú (2nd tone) before another 4th tone",
+    "explanation": "",
+    "pinyin": "Tone Sandhi: bù (4th tone) becomes bú (2nd tone) before another 4th tone",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "(Subject) + zhēn + hǎo + (Subject)",
+    "explanation": "really good / very nice",
+    "pinyin": "(Subject) + zhēn + hǎo + (Subject)",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Verb + le + Object + le",
+    "explanation": "action completed / change of state",
+    "pinyin": "Verb + le + Object + le",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Verb reduplication: VV / V-V",
+    "explanation": "doing something lightly / briefly",
+    "pinyin": "Verb reduplication: VV / V-V",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Subject + hěn + Adjective/Verb",
+    "explanation": "Subject is very + adj",
+    "pinyin": "Subject + hěn + Adjective/Verb",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Adjective + de",
+    "explanation": "adverbial modifier (descriptive)",
+    "pinyin": "Adjective + de",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Wǒ hěn + Adjective/Verb",
+    "explanation": "I am very + adj / I + adverb + verb",
+    "pinyin": "Wǒ hěn + Adjective/Verb",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Hand radical (扌) on the left",
+    "explanation": "related to hand actions",
+    "pinyin": "Hand radical (扌) on the left",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Subject + Verb + Quantity",
+    "explanation": "",
+    "pinyin": "Subject + Verb + Quantity",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Wǒ + [Time] + dào + [Place]",
+    "explanation": "I arrive at [place] at [time]",
+    "pinyin": "Wǒ + [Time] + dào + [Place]",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Subject + néng + Verb + ma?",
+    "explanation": "Can (subject) + verb?",
+    "pinyin": "Subject + néng + Verb + ma?",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Subject + Time + Verb",
+    "explanation": "",
+    "pinyin": "Subject + Time + Verb",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Wǒmen + qù + Verb + Noun",
+    "explanation": "We go to do [action] / We go to [place]",
+    "pinyin": "Wǒmen + qù + Verb + Noun",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Time + yǐqián / yǐhòu",
+    "explanation": "before / after [time]",
+    "pinyin": "Time + yǐqián / yǐhòu",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "下个（星期）",
+    "explanation": "next (week)",
+    "pinyin": "xià ge (xīngqī)",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Wǒ + Time + yǒu kōng",
+    "explanation": "I am free at [time]",
+    "pinyin": "Wǒ + Time + yǒu kōng",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "zài + Location",
+    "explanation": "at / in / on + location",
+    "pinyin": "zài + Location",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Subject + zài + Location + shàng",
+    "explanation": "Subject is on [location]",
+    "pinyin": "Subject + zài + Location + shàng",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Location + shàng yǒu",
+    "explanation": "There is/are on [location]",
+    "pinyin": "Location + shàng yǒu",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Subject + Location + shì + Noun",
+    "explanation": "Subject is at [location] + noun",
+    "pinyin": "Subject + Location + shì + Noun",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "多少钱",
+    "explanation": "How much does the object cost?",
+    "pinyin": "Object + duōshao qián",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Verb + yīxià",
+    "explanation": "Verb a little / briefly",
+    "pinyin": "Verb + yīxià",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Wǒ + yǒu diǎn + Negative Adjective",
+    "explanation": "I am a little + negative adj",
+    "pinyin": "Wǒ + yǒu diǎn + Negative Adjective",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Wǒ + Verb + yǒu diǎn + Adjective",
+    "explanation": "I + verb + a little + adj",
+    "pinyin": "Wǒ + Verb + yǒu diǎn + Adjective",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Adjective + jí le",
+    "explanation": "extremely + adjective",
+    "pinyin": "Adjective + jí le",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "Wǒ xiě le",
+    "explanation": "I wrote (completion)",
+    "pinyin": "Wǒ xiě le",
+    "level": "Beginner",
+    "examples": []
+  },
+  {
+    "title": "bāng + Person + Verb",
+    "explanation": "to help someone do something",
+    "pinyin": "bāng + Person + Verb",
+    "level": "Beginner",
+    "examples": []
+  }
+]

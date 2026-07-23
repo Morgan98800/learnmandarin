@@ -1,0 +1,56 @@
+[
+  {
+    "hanzi": "对不起",
+    "pinyin": "duì bu qǐ",
+    "meaning": "I'm sorry",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "meaning": "please",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "谢谢",
+    "pinyin": "xièxie",
+    "meaning": "Thanks.",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "见",
+    "pinyin": "jiàn",
+    "meaning": "to meet, to see",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "喂",
+    "pinyin": "wèi",
+    "meaning": "hello",
+    "partOfSpeech": "interjection"
+  },
+  {
+    "hanzi": "别客气",
+    "pinyin": "bié kèqi",
+    "meaning": "You are welcome.",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "劳驾",
+    "pinyin": "láojià",
+    "meaning": "Excuse me.",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "欢迎",
+    "pinyin": "huānyíng",
+    "meaning": "to welcome",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "不客气",
+    "pinyin": "bú kèqi",
+    "meaning": "you are welcome",
+    "partOfSpeech": "noun"
+  }
+]

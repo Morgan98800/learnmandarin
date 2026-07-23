@@ -1,0 +1,278 @@
+[
+  {
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "meaning": "teacher",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "英国",
+    "pinyin": "Yīngguó",
+    "meaning": "the Great Britain",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "饭店",
+    "pinyin": "fàndiàn",
+    "meaning": "restaurant",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "meaning": "to eat",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "教",
+    "pinyin": "jiāo",
+    "meaning": "to teach",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "meaning": "to drink",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "热水",
+    "pinyin": "rè shuǐ",
+    "meaning": "hot water",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "meaning": "water",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "咖啡厅",
+    "pinyin": "kāfēitīng",
+    "meaning": "coffee house",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "点菜",
+    "pinyin": "diǎn cài",
+    "meaning": "to order the dishes",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "好吃",
+    "pinyin": "hǎochī",
+    "meaning": "tasty, delicious",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "味道",
+    "pinyin": "wèidao",
+    "meaning": "taste",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "菜单",
+    "pinyin": "càidān",
+    "meaning": "menu",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "请客",
+    "pinyin": "qǐngkè",
+    "meaning": "to stand treat",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "啤酒",
+    "pinyin": "píjiǔ",
+    "meaning": "beer",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "meaning": "tea",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "meaning": "rice",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "饱",
+    "pinyin": "bǎo",
+    "meaning": "to be full, to have eaten one's fill",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "做饭",
+    "pinyin": "zuòfàn",
+    "meaning": "to cook",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "饭",
+    "pinyin": "fàn",
+    "meaning": "rice / meal",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我会吃",
+    "pinyin": "Wǒ huì chī",
+    "meaning": "I can eat / I know how to eat",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "鸡",
+    "pinyin": "jī",
+    "meaning": "chicken / machine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "怎么说？",
+    "pinyin": "Zěnme shuō?",
+    "meaning": "How do you say it? / Could you repeat?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你吃饭了吗？",
+    "pinyin": "Nǐ chīfàn le ma?",
+    "meaning": "Have you eaten?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我吃饭了",
+    "pinyin": "Wǒ chīfàn le",
+    "meaning": "I have eaten",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我没吃饭",
+    "pinyin": "Wǒ méi chīfàn",
+    "meaning": "I haven't eaten",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "他吃了吗？",
+    "pinyin": "Tā chī le ma?",
+    "meaning": "Has he eaten?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "天气",
+    "pinyin": "tiānqì",
+    "meaning": "weather",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "天气怎么样？",
+    "pinyin": "tiānqì zěnme yàng?",
+    "meaning": "How's the weather?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "鱼",
+    "pinyin": "yú",
+    "meaning": "fish",
+    "partOfSpeech": "becomes yú (2nd tone) before a 4th tone"
+  },
+  {
+    "hanzi": "我吃香蕉",
+    "pinyin": "Wǒ chī xiāngjiāo",
+    "meaning": "I eat bananas",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "一瓶饮料多少钱？",
+    "pinyin": "Yī píng yǐnliào duōshao qián?",
+    "meaning": "How much does a bottle of drink cost?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "咖啡",
+    "pinyin": "kāfēi",
+    "meaning": "coffee",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你喝不喝？",
+    "pinyin": "Nǐ hē bù hē?",
+    "meaning": "Do you drink or not?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "饭馆",
+    "pinyin": "fànguǎn",
+    "meaning": "restaurant (usually casual)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "教学楼",
+    "pinyin": "jiàoxuélóu",
+    "meaning": "teaching building",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "喝酒",
+    "pinyin": "hē jiǔ",
+    "meaning": "to drink alcohol",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我再去看老师",
+    "pinyin": "Wǒ qù zài kàn lǎoshī",
+    "meaning": "I'll go and see the teacher again",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我请你",
+    "pinyin": "Wǒ qǐng nǐ",
+    "meaning": "I'll treat you / I invite you",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你请我吧",
+    "pinyin": "Nǐ qǐng wǒ ba",
+    "meaning": "You should treat me / invite me",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "水杯",
+    "pinyin": "shuǐbēi",
+    "meaning": "water glass / cup",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "尝",
+    "pinyin": "cháng",
+    "meaning": "to taste",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "价格",
+    "pinyin": "jiàge",
+    "meaning": "price",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "肉",
+    "pinyin": "ròu",
+    "meaning": "meat",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "鸡肉",
+    "pinyin": "jīròu",
+    "meaning": "chicken meat",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "鱼肉",
+    "pinyin": "yúròu",
+    "meaning": "fish meat",
+    "partOfSpeech": "noun"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "greetings",
+    "name": "Greetings",
+    "icon": "MessageSquare"
+  },
+  {
+    "id": "ordering-food",
+    "name": "Ordering Food",
+    "icon": "Utensils"
+  },
+  {
+    "id": "clothes",
+    "name": "Clothes",
+    "icon": "Shirt"
+  },
+  {
+    "id": "directions",
+    "name": "Directions",
+    "icon": "Compass"
+  },
+  {
+    "id": "numbers",
+    "name": "Numbers",
+    "icon": "Binary"
+  },
+  {
+    "id": "family",
+    "name": "Family",
+    "icon": "Users"
+  },
+  {
+    "id": "time-dates",
+    "name": "Time & Dates",
+    "icon": "Calendar"
+  },
+  {
+    "id": "travel",
+    "name": "Travel",
+    "icon": "Plane"
+  },
+  {
+    "id": "emotions",
+    "name": "Emotions",
+    "icon": "Smile"
+  },
+  {
+    "id": "work-school",
+    "name": "Work & School",
+    "icon": "Briefcase"
+  },
+  {
+    "id": "basics",
+    "name": "General Basics",
+    "icon": "BookOpen"
+  }
+]
