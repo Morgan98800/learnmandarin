@@ -29,19 +29,19 @@ export default function App() {
   ];
 
   return (
-    <div className="w-full max-w-md min-h-screen bg-background text-on-background flex flex-col relative pb-24 border-x-0 sm:border-x border-outline-variant shadow-sm">
+    <div className="w-full max-w-md mx-auto min-h-screen bg-background text-on-background flex flex-col relative pb-24 border-x-0 sm:border-x border-outline-variant shadow-sm overflow-x-hidden">
       {/* Sticky Header */}
-      <header className="sticky top-0 z-40 w-full px-4 py-3 bg-surface/95 backdrop-blur-md border-b border-outline-variant flex justify-between items-center">
-        <h1 className="font-headline-lg-mobile text-base sm:text-lg text-primary uppercase tracking-widest font-bold">
+      <header className="sticky top-0 z-40 w-full px-4 py-3 bg-surface/95 backdrop-blur-md border-b border-outline-variant flex justify-between items-center shrink-0">
+        <h1 className="font-headline-lg-mobile text-base sm:text-lg text-primary uppercase tracking-widest font-bold truncate">
           Mandarin Scholar
         </h1>
-        <div className="text-[10px] text-outline font-bold uppercase tracking-wider bg-surface-container px-2.5 py-1 rounded">
+        <div className="text-[10px] text-outline font-bold uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded shrink-0">
           Study Tool
         </div>
       </header>
 
       {/* Main Content Area */}
-      <main className="flex-1 w-full">
+      <main className="flex-1 w-full min-w-0 overflow-x-hidden">
         {activeTab === 'vocab' && <VocabTab />}
         {activeTab === 'grammar' && <GrammarTab />}
         {activeTab === 'verbs' && <VerbsTab />}
@@ -51,7 +51,7 @@ export default function App() {
       </main>
 
       {/* Fixed Centered Mobile Navigation Bar */}
-      <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md z-50 bg-surface/95 backdrop-blur-md border-t border-outline-variant px-1.5 py-2 flex justify-around items-center">
+      <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md z-50 bg-surface/95 backdrop-blur-md border-t border-outline-variant px-1 py-1.5 flex justify-between items-center">
         {navigationItems.map((item) => {
           const Icon = item.icon;
           const isActive = activeTab === item.id;
@@ -59,14 +59,14 @@ export default function App() {
             <button
               key={item.id}
               onClick={() => setActiveTab(item.id)}
-              className={`flex flex-col items-center justify-center py-1 px-2 rounded-lg transition-all active:scale-95 duration-100 ${
+              className={`flex flex-col items-center justify-center py-1 px-1 flex-1 min-w-0 rounded-lg transition-all active:scale-95 duration-100 ${
                 isActive 
                   ? 'text-primary font-bold bg-surface-container-low' 
                   : 'text-on-surface-variant opacity-60 hover:opacity-100'
               }`}
             >
-              <Icon size={18} className="mb-0.5" />
-              <span className="text-[9px] font-semibold tracking-wider">{item.label}</span>
+              <Icon size={18} className="mb-0.5 shrink-0" />
+              <span className="text-[9px] font-semibold tracking-tighter truncate w-full text-center">{item.label}</span>
             </button>
           );
         })}

@@ -166,14 +166,14 @@ export default function VocabTab() {
               const isStarred = starredWords.includes(item.hanzi);
               return (
                 <div key={idx} className="bg-surface border border-outline-variant p-3.5 rounded-xl shadow-xs flex flex-col gap-2.5">
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-3">
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex items-center gap-2.5 min-w-0 flex-1 flex-wrap overflow-hidden">
                       {/* Interactive Pinyin Reveal */}
                       <PinyinReveal hanzi={item.hanzi} pinyin={item.pinyin} size="md" />
                       <TTSButton text={item.hanzi} />
                     </div>
                     
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1 shrink-0">
                       <button 
                         onClick={() => handleDecompose(item)}
                         title="Decompose character"
@@ -194,12 +194,12 @@ export default function VocabTab() {
                     <span className="text-[10px] text-outline font-semibold uppercase bg-surface-container-low px-1.5 py-0.5 rounded mr-2">
                       {item.partOfSpeech}
                     </span>
-                    <span className="text-xs sm:text-sm text-on-surface-variant font-body-md">{item.meaning}</span>
+                    <span className="text-xs sm:text-sm text-on-surface-variant font-body-md break-words">{item.meaning}</span>
                   </div>
 
                   {item.exampleSentence && (
-                    <div className="mt-1 pl-2.5 border-l-2 border-outline-variant bg-surface-container-lowest p-2 rounded-r-lg flex flex-col gap-1">
-                      <div className="flex items-center gap-2">
+                    <div className="mt-1 pl-2.5 border-l-2 border-outline-variant bg-surface-container-lowest p-2 rounded-r-lg flex flex-col gap-1 overflow-hidden">
+                      <div className="flex items-center gap-2 flex-wrap min-w-0 overflow-hidden">
                         <PinyinReveal 
                           hanzi={item.exampleSentence.hanzi} 
                           pinyin={item.exampleSentence.pinyin} 
@@ -207,7 +207,7 @@ export default function VocabTab() {
                         />
                         <TTSButton text={item.exampleSentence.hanzi} size={15} />
                       </div>
-                      <p className="text-xs text-outline italic">{item.exampleSentence.meaning}</p>
+                      <p className="text-xs text-outline italic break-words">{item.exampleSentence.meaning}</p>
                     </div>
                   )}
                 </div>
@@ -220,25 +220,25 @@ export default function VocabTab() {
   }
 
   return (
-    <div className="w-full px-4 py-4">
+    <div className="w-full px-4 py-4 overflow-hidden">
       <div className="mb-4">
         <h2 className="text-xl font-headline-lg text-on-background">Vocabulary</h2>
         <p className="font-body-md text-on-surface-variant text-xs sm:text-sm mt-0.5">Select a category to study.</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-2.5">
+      <div className="grid grid-cols-2 gap-2.5 w-full">
         {sections.map((section) => {
           const IconComponent = (Icons as any)[section.icon] || Icons.BookOpen;
           return (
             <button
               key={section.id}
               onClick={() => loadSection(section)}
-              className="flex items-center p-3 bg-surface border border-outline-variant rounded-xl hover:bg-surface-container-low active:scale-95 transition-all text-left w-full gap-3 shadow-xs"
+              className="flex items-center p-3 bg-surface border border-outline-variant rounded-xl hover:bg-surface-container-low active:scale-95 transition-all text-left w-full gap-2.5 shadow-xs min-w-0 overflow-hidden"
             >
-              <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
-                <IconComponent size={20} />
+              <div className="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+                <IconComponent size={18} />
               </div>
-              <span className="text-xs font-semibold text-on-background font-body-md leading-tight">{section.name}</span>
+              <span className="text-xs font-semibold text-on-background font-body-md leading-tight truncate min-w-0 flex-1">{section.name}</span>
             </button>
           );
         })}
