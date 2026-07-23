@@ -29,7 +29,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-on-background max-w-md mx-auto border-x border-outline-variant flex flex-col relative pb-24">
+    <div className="w-full min-h-screen bg-background text-on-background max-w-md mx-auto border-x border-outline-variant flex flex-col relative pb-24">
       {/* Header */}
       <header className="flex justify-between items-center w-full px-container-margin py-md sticky top-0 z-40 bg-surface border-b border-outline-variant">
         <h1 className="font-headline-lg-mobile text-lg text-primary uppercase tracking-widest font-bold">
