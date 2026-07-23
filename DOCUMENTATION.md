@@ -2,7 +2,7 @@
 
 ## 1. Executive Summary & Overview
 
-**Notes from class** (formerly Mandarin Scholar) is a modern, responsive, offline-capable Mandarin Chinese learning application engineered specifically for mobile-first and desktop pair-learning. Built with React 19, TypeScript, Vite, and Tailwind CSS v4, the application provides an intuitive reference system and spaced repetition study tool without requiring a backend database.
+**Notes from class** (formerly Mandarin Scholar) is a modern, responsive, offline-capable Progressive Web Application (PWA) engineered specifically for mobile-first and desktop pair-learning. Built with React 19, TypeScript, Vite, and Tailwind CSS v4, the application provides an installable home-screen app experience with 100% offline capability (on the subway/airplane) without requiring a backend server.
 
 ### Core Modules:
 1. **Vocabulary Explorer (`VocabTab.tsx`)**: 11 topic categories (Ordering Food, Travel, Family, Clothes, Directions, Numbers, Time & Dates, Greetings, Emotions, Work & School, General Basics) containing over 1,150+ vocabulary entries with real-time global/category search filtering and a **global Pinyin ON/OFF toggle**.
@@ -15,11 +15,14 @@
 
 ---
 
-## 2. Technology Stack & UX Accessibility Systems
+## 2. Technology Stack, PWA & Accessibility Systems
 
-### 2.1 Technology Stack
+### 2.1 Technology Stack & PWA Engine
 * **Framework**: React 19 + TypeScript (Strict Mode)
 * **Build Tooling & Bundler**: Vite 8 + Rolldown / ESBuild
+* **PWA Web Manifest (`manifest.webmanifest`)**: Configured for `standalone` display mode, portrait orientation, Imperial Red theme color (`#9e2016`), and dark background (`#140d0c`).
+* **PWA Service Worker (`sw.js`)**: Pre-caches all HTML, JS, CSS, and 14 JSON data files on installation. Employs a Cache-First / Stale-While-Revalidate caching strategy for 100% offline subway/airplane usability.
+* **App Installation Prompt (`App.tsx`)**: Header **Install** button triggers native Android/Desktop installation; displays an iOS Safari **Add to Home Screen** guide for iPhone users.
 * **Styling Engine**: Tailwind CSS v4 using CSS `@theme` design tokens
 * **Dark Mode & Theme Engine**: Instant theme switcher (Sun / Moon toggle) with persistent `localStorage` theme state (`.dark` class on root document element).
 * **Canvas Vector Engine**: `hanzi-writer` for real-time SVG stroke animations
@@ -59,6 +62,12 @@ flowchart TD
         DM --> HW[HanziWriter Canvas]
     end
 
+    subgraph Offline PWA & Service Worker
+        SW[sw.js Service Worker] <--> |Cache-First Pre-caching| V
+        SW <--> |Stale-While-Revalidate| G
+        SW <--> |Full Offline Support| D
+    end
+
     subgraph State Storage
         LS[(Browser LocalStorage)] <--> |Starred Words, Theme Mode & SRS State| VT
         LS <--> |Leitner Box Intervals & Stage Badges| FlashcardsTab
@@ -69,15 +78,9 @@ flowchart TD
 
 ## 4. Key Component Systems
 
-### 4.1 Sentence Builder Key Features (`SentenceBuilderTab.tsx`)
-* **Touch Targets ($\ge 44\text{px}$)**: All tile buttons enforce `min-h-[52px]` and `min-w-[48px]`.
-* **High Contrast Dark Mode**: Uses `border-2 border-outline-variant` and `bg-surface` for tiles.
-* **Pinyin Toggle**: Global toggle to show/hide pinyin across sentence prompts and answers.
-* **TTS Audio**: Automatic playback on correct completion + manual `<TTSButton />` replay.
-* **Score Tracking**: Progress bar with live score counter (`Score: X / Y`).
-* **Difficulty Levels**: Color-coded badges for `Easy` (3-4 chars), `Medium` (5-6 chars), and `Hard` (7+ chars).
-* **Visual Feedback & Animation**: Green/Red color coding + `animate-slideUp` / `animate-shake`.
-* **Helpful Hints**: Displays character hints after a failed attempt (`💡 Hint: The first character is "我"`).
+### 4.1 PWA & Standalone Installation (`App.tsx` / `sw.js` / `manifest.webmanifest`)
+* **Standalone Mode**: Configures iOS & Android webview parameters so the app launches fullscreen without browser address bars.
+* **Pre-cached Offline Storage**: `sw.js` automatically downloads and caches all 1,150+ vocabulary entries, Top 1,000 Hanzi etymology dictionary, HSK grammar rules, and search databases.
 
 ---
 
@@ -95,23 +98,16 @@ The project includes an automated deployment workflow:
 ```
 mandarin-app/
 ├── public/
-│   └── data/
+│   ├── apple-touch-icon.png         # iOS Home Screen App Icon (180x180)
+│   ├── icon-192.png                 # PWA App Icon (192x192)
+│   ├── icon-512.png                 # PWA App Icon (512x512)
+│   ├── manifest.webmanifest         # PWA Web Application Manifest
+│   ├── sw.js                        # PWA Service Worker for 100% offline caching
+│   └── data/                        # SINGLE SOURCE OF TRUTH FOR VOCABULARY & DATA
 │       ├── frequency-1000.json      # Top 1000 Hanzi + Etymology + Decomposition
 │       ├── dictionary.json          # Offline dictionary lookup data
 │       ├── grammar.json             # HSK Grammar points & structural formulas
-│       └── vocab/                   # SINGLE SOURCE OF TRUTH FOR VOCABULARY
-│           ├── index.json           # Category directory index
-│           ├── basics.json          # General basic phrases & vocabulary
-│           ├── clothes.json         # Apparel & accessories
-│           ├── directions.json      # Spatial orientation & navigation
-│           ├── emotions.json        # Feelings & mental states
-│           ├── family.json          # Kinship terms
-│           ├── greetings.json       # Salutations & meeting phrases
-│           ├── numbers.json         # Numerals & measure words
-│           ├── ordering-food.json   # Culinary & dining vocabulary
-│           ├── time-dates.json      # Calendar & temporal expressions
-│           ├── travel.json          # Transit & tourism
-│           └── work-school.json     # Professional & academic terms
+│       └── vocab/                   # Category vocabulary JSON files
 ├── src/
 │   ├── components/
 │   │   ├── DecompositionCard.tsx   # Stroke order canvas + Etymology details card
@@ -129,9 +125,9 @@ mandarin-app/
 │   ├── utils/
 │   │   ├── charLookup.ts           # Character metadata & etymology fetcher
 │   │   └── radicalData.ts          # Kangxi radical dictionary lookup
-│   ├── App.tsx                     # Top-level shell ("Notes from class"), Dark Mode & 24px nav
+│   ├── App.tsx                     # Top-level shell ("Notes from class"), Dark Mode & PWA Install
 │   ├── index.css                   # Tailwind v4 theme + Dark mode tokens + High contrast borders
-│   └── main.tsx                    # React application entry point
+│   └── main.tsx                    # React application entry point + Service Worker Registration
 ├── fetch_hanzi.py                  # Python pipeline script for makemeahanzi enrichment
 └── package.json                    # Dependencies & build/deploy scripts
 ```
