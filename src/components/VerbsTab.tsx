@@ -35,7 +35,7 @@ export default function VerbsTab() {
   );
 
   return (
-    <div className="px-container-margin py-lg max-w-md mx-auto">
+    <div className="w-full px-4 py-4">
       <div className="mb-6">
         <h2 className="text-2xl font-headline-lg text-on-background">Verbs Reference</h2>
         <p className="font-body-md text-on-surface-variant text-sm mt-1">Study essential verbs, particles, and verb structures.</p>

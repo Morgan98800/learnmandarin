@@ -120,10 +120,10 @@ export default function VocabTab() {
 
   if (selectedChar) {
     return (
-      <div className="px-container-margin py-lg max-w-md mx-auto">
+      <div className="w-full px-4 py-4">
         <button 
           onClick={() => setSelectedChar(null)}
-          className="mb-6 flex items-center text-primary font-label-sm font-semibold uppercase tracking-wider"
+          className="mb-4 flex items-center text-primary font-label-sm font-semibold uppercase tracking-wider"
         >
           <Icons.ChevronLeft size={16} className="mr-1" /> Back to List
         </button>
@@ -141,17 +141,17 @@ export default function VocabTab() {
 
   if (selectedSection) {
     return (
-      <div className="px-container-margin py-lg max-w-md mx-auto">
+      <div className="w-full px-4 py-4">
         <button 
           onClick={() => setSelectedSection(null)}
-          className="mb-6 flex items-center text-primary font-label-sm font-semibold uppercase tracking-wider"
+          className="mb-4 flex items-center text-primary font-label-sm font-semibold uppercase tracking-wider"
         >
           <Icons.ChevronLeft size={16} className="mr-1" /> Categories
         </button>
 
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-headline-lg text-on-background">{selectedSection.name}</h2>
-          <span className="text-xs text-outline font-semibold uppercase bg-surface-container px-2 py-1 rounded">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xl font-headline-lg text-on-background">{selectedSection.name}</h2>
+          <span className="text-xs text-outline font-semibold uppercase bg-surface-container px-2 py-0.5 rounded">
             {vocabItems.length} words
           </span>
         </div>
@@ -161,13 +161,13 @@ export default function VocabTab() {
             <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
           </div>
         ) : (
-          <div className="space-y-4">
+          <div className="space-y-3">
             {vocabItems.map((item, idx) => {
               const isStarred = starredWords.includes(item.hanzi);
               return (
-                <div key={idx} className="bg-surface border border-outline-variant p-4 rounded-xl shadow-sm flex flex-col gap-3">
+                <div key={idx} className="bg-surface border border-outline-variant p-3.5 rounded-xl shadow-xs flex flex-col gap-2.5">
                   <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-3">
                       {/* Interactive Pinyin Reveal */}
                       <PinyinReveal hanzi={item.hanzi} pinyin={item.pinyin} size="md" />
                       <TTSButton text={item.hanzi} />
@@ -177,13 +177,13 @@ export default function VocabTab() {
                       <button 
                         onClick={() => handleDecompose(item)}
                         title="Decompose character"
-                        className="p-2 text-outline hover:text-primary rounded-full hover:bg-surface-container transition-all"
+                        className="p-1.5 text-outline hover:text-primary rounded-full hover:bg-surface-container transition-all"
                       >
                         <Icons.GitMerge size={16} />
                       </button>
                       <button 
                         onClick={() => toggleStar(item)}
-                        className={`p-2 rounded-full hover:bg-surface-container transition-all ${isStarred ? 'text-primary' : 'text-outline hover:text-primary'}`}
+                        className={`p-1.5 rounded-full hover:bg-surface-container transition-all ${isStarred ? 'text-primary' : 'text-outline hover:text-primary'}`}
                       >
                         <Icons.Star size={16} fill={isStarred ? 'currentColor' : 'none'} />
                       </button>
@@ -194,20 +194,20 @@ export default function VocabTab() {
                     <span className="text-[10px] text-outline font-semibold uppercase bg-surface-container-low px-1.5 py-0.5 rounded mr-2">
                       {item.partOfSpeech}
                     </span>
-                    <span className="text-sm text-on-surface-variant font-body-md">{item.meaning}</span>
+                    <span className="text-xs sm:text-sm text-on-surface-variant font-body-md">{item.meaning}</span>
                   </div>
 
                   {item.exampleSentence && (
-                    <div className="mt-2 pl-3 border-l-2 border-outline-variant bg-surface-container-lowest p-2.5 rounded-r-lg flex flex-col gap-1">
-                      <div className="flex items-center gap-3">
+                    <div className="mt-1 pl-2.5 border-l-2 border-outline-variant bg-surface-container-lowest p-2 rounded-r-lg flex flex-col gap-1">
+                      <div className="flex items-center gap-2">
                         <PinyinReveal 
                           hanzi={item.exampleSentence.hanzi} 
                           pinyin={item.exampleSentence.pinyin} 
                           size="sm" 
                         />
-                        <TTSButton text={item.exampleSentence.hanzi} size={16} />
+                        <TTSButton text={item.exampleSentence.hanzi} size={15} />
                       </div>
-                      <p className="text-xs text-outline italic mt-1">{item.exampleSentence.meaning}</p>
+                      <p className="text-xs text-outline italic">{item.exampleSentence.meaning}</p>
                     </div>
                   )}
                 </div>
@@ -220,25 +220,25 @@ export default function VocabTab() {
   }
 
   return (
-    <div className="px-container-margin py-lg max-w-md mx-auto">
-      <div className="mb-6">
-        <h2 className="text-2xl font-headline-lg text-on-background">Vocabulary</h2>
-        <p className="font-body-md text-on-surface-variant text-sm mt-1">Select a category to study.</p>
+    <div className="w-full px-4 py-4">
+      <div className="mb-4">
+        <h2 className="text-xl font-headline-lg text-on-background">Vocabulary</h2>
+        <p className="font-body-md text-on-surface-variant text-xs sm:text-sm mt-0.5">Select a category to study.</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-2.5">
         {sections.map((section) => {
           const IconComponent = (Icons as any)[section.icon] || Icons.BookOpen;
           return (
             <button
               key={section.id}
               onClick={() => loadSection(section)}
-              className="flex flex-col items-center p-4 bg-surface border border-outline-variant rounded-xl active:scale-95 transition-transform duration-150 text-center w-full"
+              className="flex items-center p-3 bg-surface border border-outline-variant rounded-xl hover:bg-surface-container-low active:scale-95 transition-all text-left w-full gap-3 shadow-xs"
             >
-              <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-3 text-primary">
-                <IconComponent size={24} />
+              <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+                <IconComponent size={20} />
               </div>
-              <span className="text-sm font-semibold text-on-background font-body-md">{section.name}</span>
+              <span className="text-xs font-semibold text-on-background font-body-md leading-tight">{section.name}</span>
             </button>
           );
         })}

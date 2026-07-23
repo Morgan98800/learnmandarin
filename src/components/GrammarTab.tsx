@@ -40,7 +40,7 @@ export default function GrammarTab() {
   };
 
   return (
-    <div className="px-container-margin py-lg max-w-md mx-auto">
+    <div className="w-full px-4 py-4">
       <div className="mb-6">
         <h2 className="text-2xl font-headline-lg text-on-background">Grammar Rules</h2>
         <p className="font-body-md text-on-surface-variant text-sm mt-1">Study structural formulas and patterns.</p>

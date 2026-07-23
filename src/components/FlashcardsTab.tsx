@@ -140,7 +140,7 @@ export default function FlashcardsTab() {
   const activeCard = dueCards[currentCardIdx];
 
   return (
-    <div className="px-container-margin py-lg max-w-md mx-auto flex flex-col min-h-[calc(100vh-140px)]">
+    <div className="w-full px-4 py-4 flex flex-col">
       <div className="mb-6 flex justify-between items-center">
         <div>
           <h2 className="text-2xl font-headline-lg text-on-background">Flashcards</h2>
