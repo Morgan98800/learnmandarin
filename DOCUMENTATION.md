@@ -5,13 +5,13 @@
 **Notes from class** (formerly Mandarin Scholar) is a modern, responsive, offline-capable Mandarin Chinese learning application engineered specifically for mobile-first and desktop pair-learning. Built with React 19, TypeScript, Vite, and Tailwind CSS v4, the application provides an intuitive reference system and spaced repetition study tool without requiring a backend database.
 
 ### Core Modules:
-1. **Vocabulary Explorer (`VocabTab.tsx`)**: 11 topic categories (Ordering Food, Travel, Family, Clothes, Directions, Numbers, Time & Dates, Greetings, Emotions, Work & School, General Basics) containing over 1,150+ vocabulary entries with real-time global/category search filtering and Multi-Select Custom Study Deck mode.
-2. **Dynamic Verbs Reference (`VerbsTab.tsx`)**: A single-source-of-truth view that dynamically aggregates, deduplicates, and categorizes verbs across all vocabulary modules with horizontal category filter pills.
-3. **Grammar & Patterns (`GrammarTab.tsx`)**: Structural Chinese grammar rules categorized by HSK/CEFR difficulty levels with interactive Pinyin reveals and example sentences.
-4. **Spaced Repetition System (SRS) Flashcards (`FlashcardsTab.tsx`)**: Leitner 5-box algorithm for reviewing the Top 1,000 Chinese characters or user-starred vocabulary with human-friendly progress stage badges (`New / Practice`, `Learning`, `Reviewing`, `Comfortable`, `Mastered`).
-5. **Interactive Sentence Builder (`SentenceBuilderTab.tsx`)**: Character tile arrangement puzzle game for testing Chinese word order and sentence structure.
+1. **Vocabulary Explorer (`VocabTab.tsx`)**: 11 topic categories (Ordering Food, Travel, Family, Clothes, Directions, Numbers, Time & Dates, Greetings, Emotions, Work & School, General Basics) containing over 1,150+ vocabulary entries with real-time global/category search filtering and a **global Pinyin ON/OFF toggle**.
+2. **Dynamic Verbs Reference (`VerbsTab.tsx`)**: A single-source-of-truth view that dynamically aggregates, deduplicates, and categorizes verbs across all vocabulary modules with horizontal category filter pills and a **global Pinyin ON/OFF toggle**.
+3. **Grammar & Patterns (`GrammarTab.tsx`)**: Structural Chinese grammar rules categorized by HSK/CEFR difficulty levels with interactive Pinyin reveals, example sentences, and a **global Pinyin ON/OFF toggle**.
+4. **Spaced Repetition System (SRS) Flashcards (`FlashcardsTab.tsx`)**: Leitner 5-box algorithm for reviewing the Top 1,000 Chinese characters or user-starred vocabulary with human-friendly progress stage badges (`New / Practice`, `Learning`, `Reviewing`, `Comfortable`, `Mastered`) and instant component decomposition.
+5. **Interactive Sentence Builder (`SentenceBuilderTab.tsx`)**: Character tile arrangement puzzle game for testing Chinese word order and sentence structure with high-contrast dark mode tiles.
 6. **Dictionary Search (`DictionaryTab.tsx`)**: Instant offline search across the dictionary database by Hanzi, Pinyin, or English gloss.
-7. **MakeMeAHanzi Character Decomposition & Etymology Engine (`DecompositionView.tsx` / `DecompositionModal.tsx`)**: Interactive spatial breakdown of Chinese characters into constituent radicals, semantic/phonetic components, etymology formation hints, and `hanzi-writer` stroke order animations.
+7. **MakeMeAHanzi Character Decomposition & Etymology Engine (`DecompositionView.tsx` / `DecompositionModal.tsx`)**: Interactive spatial breakdown of Chinese characters into constituent radicals, semantic/phonetic components, etymology formation hints, and `hanzi-writer` stroke order animations with **instant component decomposition upon opening**.
 
 ---
 
@@ -23,38 +23,14 @@
 * **Styling Engine**: Tailwind CSS v4 using CSS `@theme` design tokens
 * **Dark Mode & Theme Engine**: Instant theme switcher (Sun / Moon toggle) with persistent `localStorage` theme state (`.dark` class on root document element).
 * **Canvas Vector Engine**: `hanzi-writer` for real-time SVG stroke animations
-* **Enhanced Audio Engine (`TTSButton.tsx`)**: Web Speech Synthesis API querying native Chinese voice engines (`Ting-Ting`, `Mei-Jia`, `Sin-Ji`, `Xiaoxiao`, `zh-CN`) with an animated 3-bar audio equalizer playing indicator.
-* **Icon System**: `lucide-react` with enlarged **24px navigation icons** in bottom bar (`min-h-[54px]` touch target).
+* **Enhanced Audio Engine (`TTSButton.tsx`)**: Web Speech Synthesis API querying native Chinese voice engines (`Ting-Ting`, `Mei-Jia`, `Sin-Ji`, `Xiaoxiao`, `zh-CN`) with an **iOS Silent Mode Hardware Audio Unlocker** and an animated 3-bar audio equalizer playing indicator.
+* **Icon System**: `lucide-react` with enlarged **24px navigation icons** in bottom bar (`min-h-[54px]` touch target) and `GitMerge` decomposition icons.
 * **Deployment**: GitHub Pages (`gh-pages`)
 
 ### 2.2 Mobile Ergonomics & High Contrast System
 * **Touch Targets ($\ge 44\text{px}$)**: All interactive buttons, icon buttons, and navigation elements enforce a minimum hitbox area of $44\text{px} \times 44\text{px}$ or $54\text{px}$ touch height. Explicit `aria-label` tags are attached to all icon controls for iOS VoiceOver compatibility.
-* **Enhanced High Contrast Borders**: High-contrast borders (`border-2 border-outline-variant/80`) provide crisp visual separation for cards, inputs, and controls in both Light and Dark themes.
-
-### 2.3 Dark Mode & Light Mode CSS Tokens
-```css
-/* Light Mode (Rice Paper & Imperial Red) */
-:root {
-  --color-primary: #9e2016;
-  --color-background: #fff8f6;
-  --color-on-background: #261816;
-  --color-surface: #fff8f6;
-  --color-on-surface: #261816;
-  --color-outline: #8d706c;
-  --color-outline-variant: #e1bfb9;
-}
-
-/* Dark Mode (Warm Charcoal & Glowing Crimson) */
-.dark {
-  --color-primary: #ff5252;
-  --color-background: #140d0c;
-  --color-on-background: #f5e8e4;
-  --color-surface: #1e1513;
-  --color-on-surface: #f5e8e4;
-  --color-outline: #b5948f;
-  --color-outline-variant: #523c37;
-}
-```
+* **iOS Silent Mode Audio Override**: Automatically initializes and resumes a silent Web Audio context prior to TTS playback to bypass the hardware silent/vibrate switch on iPhones (`AVAudioSessionCategoryPlayback`).
+* **High Contrast Dark Mode Tiles**: High-contrast surface tokens (`bg-surface`, `border-2 border-outline-variant`) eliminate harsh white text tiles in dark mode.
 
 ---
 
@@ -70,13 +46,13 @@ flowchart TD
     end
 
     subgraph Core Components
-        SSOT --> VT[Vocab Tab (Search & Multi-Select Deck)]
-        SSOT --> VR[Verbs Tab (Filtered Query)]
+        SSOT --> VT[Vocab Tab (Search & Pinyin Toggle)]
+        SSOT --> VR[Verbs Tab (Filtered Query & Pinyin Toggle)]
         VT --> VC[VocabCard Component]
         VR --> VC
         VC --> PP[PinyinPill Component]
-        VC --> TT[TTSButton (Chinese Voice + Audio Bars)]
-        VC --> DM[DecompositionModal]
+        VC --> TT[TTSButton (iOS Silent Unlocker + Audio Bars)]
+        VC --> DM[DecompositionModal (Instant Decomposition)]
         MH --> DM
         DM --> DV[DecompositionView]
         DM --> HW[HanziWriter Canvas]
@@ -92,32 +68,18 @@ flowchart TD
 
 ## 4. Key Component Systems
 
-### 4.1 Header & Navigation (`App.tsx`)
-* **Renamed Header**: App renamed to **Notes from class** with subtitle tag **课堂笔记**.
-* **Dark Mode Switcher**: Header Sun/Moon icon toggle instantly flips between Light Mode and Dark Mode.
-* **Larger 24px Navigation Bar**: Bottom navigation bar icons enlarged to **24px stroke-width 2.2** for prominent touch selection.
+### 4.1 Global Pinyin Toggle (`VocabTab`, `VerbsTab`, `GrammarTab`)
+* **Default State**: Pinyin is shown by default (`Pinyin: ON`).
+* **Toggle Button**: Clicking the header `<Pinyin: ON / OFF>` button instantly hides/masks Pinyin across all items in that view until clicked or toggled back on.
 
-### 4.2 Audio Pronunciation with Playing Indicator (`TTSButton.tsx`)
-* Automatically queries browser SpeechSynthesis voices for preferred native Chinese voices (`Ting-Ting`, `Mei-Jia`, `Sin-Ji`, `Xiaoxiao`, `zh-CN`).
-* Renders an animated 3-bar equalizer graphic and ring pulse while audio is playing.
+### 4.2 Audio Pronunciation with iOS Silent Mode Unlocker (`TTSButton.tsx`)
+* Bypasses the iPhone hardware mute switch viaWeb Audio Context activation.
+* Queries native Chinese voices (`Ting-Ting`, `Mei-Jia`, `Sin-Ji`, `Xiaoxiao`, `zh-CN`).
+* Displays an animated 3-bar audio equalizer graphic while speaking.
 
-### 4.3 Unified `VocabCard` Component (`VocabCard.tsx`)
-Features a 2-row full-width layout with high-contrast borders, 44px touch targets, and expandable example sentence accordion:
-
-```
-+-------------------------------------------------------------------------+
-| [ TOP ROW ]                                                             |
-|  木木木  (48-56px Hanzi)  [🔊 TTS (44px)]    [✨ Decompose (44px)] [⭐ Star] |
-|                                                                         |
-| [ SECOND ROW ]                                                          |
-|  [ pīn yīn · reveal ] (44px)           [VERB] to meet, to know someone  |
-|                                                                         |
-| [ ACCORDION SECTION - COLLAPSIBLE ▾ ]                                   |
-|  Example sentence ▾                                                     |
-|  | 认识你很高兴。 (Rènshi nǐ hěn gāoxìng.)                               |
-|  | Nice to meet you.                                                    |
-+-------------------------------------------------------------------------+
-```
+### 4.3 Instant Character Component Decomposition (`DecompositionView.tsx`)
+* Opens directly in **Instant Spatial Decomposition Mode** (`initialDecomposed: true`), eliminating extra clicks.
+* Uses the **`GitMerge`** icon to visually signify breaking a character down into constituent parts.
 
 ---
 
@@ -156,16 +118,16 @@ mandarin-app/
 │   ├── components/
 │   │   ├── DecompositionCard.tsx   # Stroke order canvas + Etymology details card
 │   │   ├── DecompositionModal.tsx  # Pop-up modal wrapper for decomposition
-│   │   ├── DecompositionView.tsx   # Interactive spatial tap-to-decompose component
+│   │   ├── DecompositionView.tsx   # Instant spatial tap-to-decompose component
 │   │   ├── DictionaryTab.tsx       # Search dictionary view
 │   │   ├── FlashcardsTab.tsx       # SRS Leitner flashcard review system + Human badges
-│   │   ├── GrammarTab.tsx          # Grammar rules & pattern list
+│   │   ├── GrammarTab.tsx          # Grammar rules + Global Pinyin Toggle
 │   │   ├── PinyinPill.tsx          # Interactive pill-styled Pinyin reveal control (44px)
 │   │   ├── PinyinReveal.tsx        # Inline Hanzi character Pinyin reveal wrapper
-│   │   ├── SentenceBuilderTab.tsx  # Word order arrangement puzzle
-│   │   ├── TTSButton.tsx           # Chinese voice selection + Animated audio equalizer
-│   │   ├── VerbsTab.tsx            # Dynamic aggregated verb reference view
-│   │   └── VocabCard.tsx           # Unified 2-row card + Expandable Example Accordion
+│   │   ├── SentenceBuilderTab.tsx  # Word order arrangement puzzle + High-contrast tiles
+│   │   ├── TTSButton.tsx           # iOS Silent Unlocker + Chinese Voice + Audio Equalizer
+│   │   ├── VerbsTab.tsx            # Dynamic aggregated verbs + Global Pinyin Toggle
+│   │   └── VocabCard.tsx           # Unified 2-row card + GitMerge icon + Pinyin Toggle
 │   ├── utils/
 │   │   ├── charLookup.ts           # Character metadata & etymology fetcher
 │   │   └── radicalData.ts          # Kangxi radical dictionary lookup
