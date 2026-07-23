@@ -7,7 +7,7 @@ interface DecompositionViewProps {
   pinyin?: string;
   meaning?: string;
   radical?: string;
-  decomposition?: string[];
+  decomposition?: string[] | string;
   className?: string;
   showAudio?: boolean;
 }
@@ -23,20 +23,28 @@ export default function DecompositionView({
 }: DecompositionViewProps) {
   const [isDecomposed, setIsDecomposed] = useState(false);
 
+  // Helper to safely convert decomposition to character array
+  const getDecompArray = (decomp: any): string[] => {
+    if (!decomp) return [];
+    if (Array.isArray(decomp)) return decomp;
+    if (typeof decomp === 'string') return decomp.split('');
+    return [];
+  };
+
+  const decompArray = getDecompArray(decomposition);
+
   // Helper to check if a character is an Ideographic Description Character (IDC)
   const isIDC = (char: string) => {
-    if (!char) return false;
+    if (!char || typeof char !== 'string') return false;
     const code = char.charCodeAt(0);
     return code >= 0x2FF0 && code <= 0x2FFB;
   };
 
   // Extract layout IDC if present
-  const layoutIDC = decomposition ? decomposition.find(char => isIDC(char)) || '' : '';
+  const layoutIDC = decompArray.find(char => isIDC(char)) || '';
 
   // Extract component characters
-  let cleanComponents = decomposition
-    ? decomposition.filter(char => char !== character && !isIDC(char))
-    : [];
+  let cleanComponents = decompArray.filter(char => char !== character && !isIDC(char));
 
   // Fallback: if no decomposition array provided but radical exists, use radical
   if (cleanComponents.length === 0 && radical && radical !== character) {
@@ -58,7 +66,7 @@ export default function DecompositionView({
     }
 
     // 3 components (e.g. 森 = 木 + 木 + 木)
-    if (componentsInfo.length === 3 || layoutIDC === '⿳' || layoutIDC === '⿲') {
+    if (componentsInfo.length === 3 || layoutIDC === '⿳' || layoutIDC === '<ctrl42>') {
       const topComp = componentsInfo[0];
       const leftComp = componentsInfo[1] || topComp;
       const rightComp = componentsInfo[2] || topComp;
