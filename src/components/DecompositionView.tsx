@@ -106,7 +106,7 @@ export default function DecompositionView({
     }
 
     // 3 components (e.g. 森 = 木 + 木 + 木)
-    if (componentsInfo.length === 3 || layoutIDC === '⿳' || layoutIDC === '⿲') {
+    if (componentsInfo.length === 3 || layoutIDC === '⿳' || layoutIDC === '<ctrl42>') {
       const topComp = componentsInfo[0];
       const leftComp = componentsInfo[1] || topComp;
       const rightComp = componentsInfo[2] || topComp;
@@ -186,7 +186,7 @@ export default function DecompositionView({
   return (
     <div
       onClick={() => setIsDecomposed(!isDecomposed)}
-      className={`relative aspect-square w-full max-w-[280px] sm:max-w-[320px] mx-auto bg-surface border border-outline-variant rounded-2xl p-4 shadow-sm flex flex-col items-center justify-between cursor-pointer select-none tian-zi-ge transition-all duration-200 hover:border-primary active:scale-[0.98] ${className}`}
+      className={`relative aspect-square w-full max-w-[280px] sm:max-w-[320px] mx-auto bg-surface border border-outline-variant rounded-2xl p-4 shadow-sm flex flex-col items-center justify-between cursor-pointer select-none transition-all duration-200 hover:border-primary active:scale-[0.98] ${className}`}
     >
       {/* Audio Button */}
       {showAudio && (

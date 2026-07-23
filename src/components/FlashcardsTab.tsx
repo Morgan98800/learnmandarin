@@ -226,7 +226,7 @@ export default function FlashcardsTab() {
           {activeCard && (
             <div 
               onClick={() => setIsFlipped(!isFlipped)}
-              className="relative aspect-square w-full max-w-[280px] sm:max-w-[320px] mx-auto bg-surface border-2 border-outline-variant/80 shadow-sm rounded-2xl flex flex-col items-center justify-center p-6 cursor-pointer select-none tian-zi-ge transition-all duration-200 active:scale-[0.98] hover:border-outline"
+              className="relative aspect-square w-full max-w-[280px] sm:max-w-[320px] mx-auto bg-surface border-2 border-outline-variant/80 shadow-sm rounded-2xl flex flex-col items-center justify-center p-6 cursor-pointer select-none transition-all duration-200 active:scale-[0.98] hover:border-outline"
             >
               {/* Decompose Action Button (GitMerge Icon) */}
               <button 

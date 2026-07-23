@@ -104,7 +104,7 @@ export default function DecompositionCard({
       <div className="w-full border-t border-outline-variant pt-4 flex flex-col items-center">
         <h4 className="text-xs uppercase tracking-wider text-outline font-bold mb-3">Stroke Order Practice</h4>
         <div 
-          className="relative w-[150px] h-[150px] border border-outline-variant rounded-xl bg-surface-container-lowest tian-zi-ge flex items-center justify-center cursor-pointer shadow-xs"
+          className="relative w-[150px] h-[150px] border border-outline-variant rounded-xl bg-surface-container-lowest flex items-center justify-center cursor-pointer shadow-xs"
           onClick={animate}
         >
           <div ref={writerRef}></div>

@@ -101,34 +101,21 @@ html, body {
     vertical-align: middle;
   }
 
+  /* Clean background cards without diagonal cross lines */
   .tian-zi-ge {
-    background-image: 
-        linear-gradient(to right, #BDC3C722 1px, transparent 1px),
-        linear-gradient(to bottom, #BDC3C722 1px, transparent 1px),
-        linear-gradient(45deg, transparent 49%, #BDC3C711 49.5%, #BDC3C711 50.5%, transparent 51%),
-        linear-gradient(-45deg, transparent 49%, #BDC3C711 49.5%, #BDC3C711 50.5%, transparent 51%);
-    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
-    background-position: center;
+    background-image: none;
   }
 
   .hanzi-grid {
-    background-image: 
-        linear-gradient(to right, #e1bfb9 1px, transparent 1px),
-        linear-gradient(to bottom, #e1bfb9 1px, transparent 1px);
-    background-size: 50% 50%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: none;
   }
 
   .hanzi-diagonal {
-    background: linear-gradient(to bottom right, transparent calc(50% - 0.5px), #e1bfb9 50%, transparent calc(50% + 0.5px)),
-                linear-gradient(to bottom left, transparent calc(50% - 0.5px), #e1bfb9 50%, transparent calc(50% + 0.5px));
+    background-image: none;
   }
 
   .chinese-grid-bg {
-    background-image: linear-gradient(to right, #e1bfb9 1px, transparent 1px), linear-gradient(to bottom, #e1bfb9 1px, transparent 1px);
-    background-size: 40px 40px;
-    opacity: 0.1;
+    background-image: none;
   }
 
   .hide-scrollbar::-webkit-scrollbar { display: none; }
