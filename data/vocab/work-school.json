@@ -45,7 +45,7 @@
     "hanzi": "下班",
     "pinyin": "xià bān",
     "meaning": "to be off duty, to get off work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "总公司",
@@ -75,12 +75,6 @@
     "hanzi": "女生",
     "pinyin": "nǚshēng",
     "meaning": "schoolgirl",
-    "partOfSpeech": "noun"
-  },
-  {
-    "hanzi": "面包",
-    "pinyin": "miànbāo",
-    "meaning": "bread",
     "partOfSpeech": "noun"
   },
   {
@@ -201,7 +195,7 @@
     "hanzi": "阅读",
     "pinyin": "yuèdú",
     "meaning": "to read / reading",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "花",
@@ -237,6 +231,6 @@
     "hanzi": "发生",
     "pinyin": "fāshēng",
     "meaning": "to happen / to occur",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   }
 ]

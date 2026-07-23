@@ -52,5 +52,17 @@
     "pinyin": "bú kèqi",
     "meaning": "you are welcome",
     "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "认识",
+    "pinyin": "rènshi",
+    "meaning": "to meet, to know",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "好久不见",
+    "pinyin": "hǎo jiǔ bùjiàn",
+    "meaning": "long time no see",
+    "partOfSpeech": "phrase"
   }
 ]

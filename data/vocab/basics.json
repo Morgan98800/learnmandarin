@@ -639,7 +639,7 @@
     "hanzi": "还",
     "pinyin": "hái",
     "meaning": "yet, still",
-    "partOfSpeech": "adverb"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "漂亮",
@@ -939,7 +939,7 @@
     "hanzi": "起床",
     "pinyin": "qǐ chuáng",
     "meaning": "to get up",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "以后",
@@ -951,7 +951,7 @@
     "hanzi": "睡觉",
     "pinyin": "shuì jiào",
     "meaning": "to sleep",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "这么",
@@ -981,7 +981,7 @@
     "hanzi": "有空儿",
     "pinyin": "yǒu kòngr",
     "meaning": "to be free",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "这",
@@ -1563,7 +1563,7 @@
     "hanzi": "开玩笑",
     "pinyin": "kāi wánxiào",
     "meaning": "to joke",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "用",
@@ -2061,7 +2061,7 @@
     "hanzi": "着急",
     "pinyin": "zháo jí",
     "meaning": "worried",
-    "partOfSpeech": "verb, adjective"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "快",
@@ -2289,7 +2289,7 @@
     "hanzi": "下雨",
     "pinyin": "xiàyǔ",
     "meaning": "to rain",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "盘",
@@ -2355,7 +2355,7 @@
     "hanzi": "想象",
     "pinyin": "xiǎngxiàng",
     "meaning": "to imagine",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "超级",
@@ -2445,7 +2445,7 @@
     "hanzi": "拉",
     "pinyin": "lā",
     "meaning": "to pull / to drag",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "女人",
@@ -2541,13 +2541,13 @@
     "hanzi": "毕业",
     "pinyin": "bìyè",
     "meaning": "to graduate",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "保管",
     "pinyin": "bǎoguǎn",
     "meaning": "to keep / to hold / to manage",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "屋子",
@@ -2583,7 +2583,7 @@
     "hanzi": "只有",
     "pinyin": "zhǐyǒu",
     "meaning": "to have only",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "东西",
@@ -2691,19 +2691,19 @@
     "hanzi": "想",
     "pinyin": "xiǎng",
     "meaning": "to think / to want",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "散步",
     "pinyin": "sànbù",
     "meaning": "to take a walk / to stroll",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "想要",
     "pinyin": "xiǎngyào",
     "meaning": "to want",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "条",
@@ -2769,7 +2769,7 @@
     "hanzi": "打篮球",
     "pinyin": "dǎ lánqiú",
     "meaning": "to play basketball",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "馆",
@@ -2871,7 +2871,7 @@
     "hanzi": "服",
     "pinyin": "fú",
     "meaning": "to serve",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "猪肉",
@@ -2889,7 +2889,7 @@
     "hanzi": "排",
     "pinyin": "pái",
     "meaning": "to queue / line up",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "我来做",
@@ -2943,7 +2943,7 @@
     "hanzi": "提",
     "pinyin": "tí",
     "meaning": "to lift / to mention",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "我提吧",

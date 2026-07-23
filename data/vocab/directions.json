@@ -57,7 +57,7 @@
     "hanzi": "东边",
     "pinyin": "dōngbian",
     "meaning": "to the east",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "阳光小区",
@@ -81,13 +81,13 @@
     "hanzi": "上班",
     "pinyin": "shàng bān",
     "meaning": "to go to work",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "回国",
     "pinyin": "huí guó",
     "meaning": "to return to one's homeland",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "南门",
@@ -291,7 +291,7 @@
     "hanzi": "回家",
     "pinyin": "huíjiā",
     "meaning": "to go home",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "外",
@@ -327,7 +327,7 @@
     "hanzi": "回去",
     "pinyin": "huíqù",
     "meaning": "to go back (away from speaker)",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "你想在哪儿？",

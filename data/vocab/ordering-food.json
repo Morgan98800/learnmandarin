@@ -57,7 +57,7 @@
     "hanzi": "点菜",
     "pinyin": "diǎn cài",
     "meaning": "to order the dishes",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "好吃",
@@ -219,7 +219,7 @@
     "hanzi": "喝酒",
     "pinyin": "hē jiǔ",
     "meaning": "to drink alcohol",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "我再去看老师",
@@ -249,7 +249,7 @@
     "hanzi": "尝",
     "pinyin": "cháng",
     "meaning": "to taste",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "价格",
@@ -273,6 +273,12 @@
     "hanzi": "鱼肉",
     "pinyin": "yúròu",
     "meaning": "fish meat",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "面包",
+    "pinyin": "miànbāo",
+    "meaning": "bread",
     "partOfSpeech": "noun"
   }
 ]

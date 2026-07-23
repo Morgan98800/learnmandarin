@@ -33,7 +33,7 @@
     "hanzi": "爱",
     "pinyin": "ài",
     "meaning": "to love",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "我喜欢",
@@ -75,7 +75,7 @@
     "hanzi": "摸",
     "pinyin": "mō",
     "meaning": "to touch / to feel",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "爱吗？",
@@ -87,7 +87,7 @@
     "hanzi": "怕",
     "pinyin": "pà",
     "meaning": "to fear / to be afraid",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "我想",
@@ -105,6 +105,6 @@
     "hanzi": "看样",
     "pinyin": "kànyàng",
     "meaning": "to seem / to look like",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   }
 ]
