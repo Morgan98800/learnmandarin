@@ -12,6 +12,7 @@ interface DecompositionViewProps {
   etymology?: EtymologyInfo | null;
   className?: string;
   showAudio?: boolean;
+  initialDecomposed?: boolean;
 }
 
 export default function DecompositionView({
@@ -23,8 +24,9 @@ export default function DecompositionView({
   etymology,
   className = '',
   showAudio = true,
+  initialDecomposed = true,
 }: DecompositionViewProps) {
-  const [isDecomposed, setIsDecomposed] = useState(false);
+  const [isDecomposed, setIsDecomposed] = useState(initialDecomposed);
 
   // Helper to safely convert decomposition to character array
   const getDecompArray = (decomp: any): string[] => {
@@ -211,7 +213,7 @@ export default function DecompositionView({
 
       {/* Bottom Hint */}
       <div className="text-[11px] text-outline italic font-body-md tracking-wide mt-2">
-        {isDecomposed ? 'Tap to show character' : 'Tap to decompose'}
+        {isDecomposed ? 'Tap to show full character' : 'Tap to decompose'}
       </div>
     </div>
   );

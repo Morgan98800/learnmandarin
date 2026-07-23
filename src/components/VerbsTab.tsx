@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import VocabCard from './VocabCard';
 import DecompositionModal from './DecompositionModal';
-import { Search, Filter, BookOpen } from 'lucide-react';
+import { Search, Filter, BookOpen, Eye, EyeOff } from 'lucide-react';
 
 interface VocabItem {
   hanzi: string;
@@ -31,6 +31,7 @@ export default function VerbsTab() {
   const [loading, setLoading] = useState(true);
   const [decomposeChar, setDecomposeChar] = useState<string | null>(null);
   const [starredWords, setStarredWords] = useState<string[]>([]);
+  const [showPinyin, setShowPinyin] = useState<boolean>(true);
 
   useEffect(() => {
     // Load starred words
@@ -132,11 +133,26 @@ export default function VerbsTab() {
         onClose={() => setDecomposeChar(null)} 
       />
 
-      <div className="mb-6">
-        <h2 className="text-2xl font-headline-lg text-on-background">Verbs Reference</h2>
-        <p className="font-body-md text-on-surface-variant text-sm mt-1">
-          Dynamic view of all verbs ({verbs.length}) aggregated across vocabulary categories.
-        </p>
+      <div className="mb-6 flex justify-between items-start gap-2">
+        <div>
+          <h2 className="text-2xl font-headline-lg text-on-background">Verbs Reference</h2>
+          <p className="font-body-md text-on-surface-variant text-sm mt-1">
+            Dynamic view of all verbs ({verbs.length}) aggregated across vocabulary categories.
+          </p>
+        </div>
+
+        {/* Global Pinyin Toggle */}
+        <button
+          onClick={() => setShowPinyin(!showPinyin)}
+          className={`px-3 py-2 text-xs font-semibold rounded-full border transition-all min-h-[44px] shrink-0 flex items-center gap-1.5 ${
+            showPinyin
+              ? 'bg-primary/10 border-primary/30 text-primary'
+              : 'bg-surface-container border-outline-variant text-outline'
+          }`}
+        >
+          {showPinyin ? <Eye size={15} /> : <EyeOff size={15} />}
+          <span>Pinyin: {showPinyin ? 'ON' : 'OFF'}</span>
+        </button>
       </div>
 
       {/* Search Bar */}
@@ -146,9 +162,9 @@ export default function VerbsTab() {
           placeholder="Search verbs by Hanzi, Pinyin, or Meaning..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 pr-4 py-2.5 bg-surface-container border border-outline rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none text-sm placeholder:text-outline font-body-md"
+          className="w-full pl-10 pr-4 py-2.5 bg-surface-container border border-outline rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none text-sm placeholder:text-outline font-body-md min-h-[48px]"
         />
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-outline" size={16} />
+        <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-outline" size={18} />
       </div>
 
       {/* Category Filter Pills */}
@@ -158,7 +174,7 @@ export default function VerbsTab() {
         </span>
         <button
           onClick={() => setSelectedCategory('All')}
-          className={`px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all border shrink-0 ${
+          className={`px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all border shrink-0 min-h-[44px] ${
             selectedCategory === 'All'
               ? 'bg-primary border-primary text-white shadow-sm'
               : 'bg-surface border-outline-variant text-on-surface-variant hover:border-outline'
@@ -175,7 +191,7 @@ export default function VerbsTab() {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all border shrink-0 ${
+              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all border shrink-0 min-h-[44px] ${
                 selectedCategory === cat.id
                   ? 'bg-primary border-primary text-white shadow-sm'
                   : 'bg-surface border-outline-variant text-on-surface-variant hover:border-outline'
@@ -206,6 +222,7 @@ export default function VerbsTab() {
               pinyin={v.pinyin}
               meaning={v.meaning}
               partOfSpeech={`verb · ${v._categoryName || ''}`}
+              showPinyinGlobal={showPinyin}
               isStarred={starredWords.includes(v.hanzi)}
               onToggleStar={() => toggleStar(v)}
               onDecompose={(char) => setDecomposeChar(char)}

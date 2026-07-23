@@ -31,6 +31,7 @@ export default function VocabTab() {
   const [loading, setLoading] = useState(false);
   const [decomposeChar, setDecomposeChar] = useState<string | null>(null);
   const [starredWords, setStarredWords] = useState<string[]>([]);
+  const [showPinyin, setShowPinyin] = useState<boolean>(true); // Default Pinyin is shown
 
   useEffect(() => {
     // Load index & preload all vocab for global search
@@ -127,27 +128,43 @@ export default function VocabTab() {
     sec.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  // Single Category View
   if (selectedSection) {
     return (
-      <div className="w-full px-4 py-4">
+      <div className="w-full px-4 py-4 animate-fadeIn">
         <DecompositionModal 
           character={decomposeChar} 
           onClose={() => setDecomposeChar(null)} 
         />
 
-        <button 
-          onClick={() => {
-            setSelectedSection(null);
-            setSearchQuery('');
-          }}
-          className="mb-4 flex items-center text-primary font-label-sm font-semibold uppercase tracking-wider hover:underline"
-        >
-          <Icons.ChevronLeft size={16} className="mr-1" /> Categories
-        </button>
+        <div className="flex justify-between items-center mb-4">
+          <button 
+            onClick={() => {
+              setSelectedSection(null);
+              setSearchQuery('');
+            }}
+            className="flex items-center text-primary font-label-sm font-semibold uppercase tracking-wider hover:underline min-h-[44px]"
+          >
+            <Icons.ChevronLeft size={16} className="mr-1" /> Categories
+          </button>
+
+          {/* Global Pinyin Toggle Button */}
+          <button
+            onClick={() => setShowPinyin(!showPinyin)}
+            className={`px-3 py-1.5 text-xs font-semibold rounded-full border transition-all min-h-[44px] flex items-center gap-1.5 ${
+              showPinyin
+                ? 'bg-primary/10 border-primary/30 text-primary'
+                : 'bg-surface-container border-outline-variant text-outline'
+            }`}
+          >
+            {showPinyin ? <Icons.Eye size={15} /> : <Icons.EyeOff size={15} />}
+            <span>Pinyin: {showPinyin ? 'ON' : 'OFF'}</span>
+          </button>
+        </div>
 
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-headline-lg text-on-background">{selectedSection.name}</h2>
-          <span className="text-xs text-outline font-semibold uppercase bg-surface-container px-2.5 py-0.5 rounded">
+          <span className="text-xs text-outline font-semibold uppercase bg-surface-container px-2.5 py-1 rounded-full border border-outline-variant">
             {filteredCategoryItems.length} words
           </span>
         </div>
@@ -159,13 +176,14 @@ export default function VocabTab() {
             placeholder={`Search in ${selectedSection.name}...`}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 bg-surface-container border border-outline rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none text-sm placeholder:text-outline font-body-md min-h-[44px]"
+            className="w-full pl-10 pr-10 py-2.5 bg-surface-container border border-outline rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none text-sm placeholder:text-outline font-body-md min-h-[48px]"
           />
-          <Icons.Search className="absolute left-3 top-1/2 -translate-y-1/2 text-outline" size={16} />
+          <Icons.Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-outline" size={18} />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-primary p-1"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-outline hover:text-primary min-h-[44px] min-w-[44px] flex items-center justify-center"
+              aria-label="Clear search"
             >
               ✕
             </button>
@@ -190,6 +208,7 @@ export default function VocabTab() {
                 pinyin={item.pinyin}
                 meaning={item.meaning}
                 partOfSpeech={item.partOfSpeech}
+                showPinyinGlobal={showPinyin}
                 isStarred={starredWords.includes(item.hanzi)}
                 onToggleStar={() => toggleStar(item)}
                 onDecompose={handleDecompose}
@@ -202,32 +221,51 @@ export default function VocabTab() {
     );
   }
 
+  // Main Categories View
   return (
-    <div className="w-full px-4 py-4 overflow-hidden">
+    <div className="w-full px-4 py-4 overflow-hidden relative">
       <DecompositionModal 
         character={decomposeChar} 
         onClose={() => setDecomposeChar(null)} 
       />
 
-      <div className="mb-4">
-        <h2 className="text-xl font-headline-lg text-on-background">Vocabulary</h2>
-        <p className="font-body-md text-on-surface-variant text-xs sm:text-sm mt-0.5">Explore categories or search across 1,150+ words.</p>
+      <div className="mb-4 flex justify-between items-start gap-2">
+        <div>
+          <h2 className="text-xl font-headline-lg text-on-background">Vocabulary</h2>
+          <p className="font-body-md text-on-surface-variant text-xs sm:text-sm mt-0.5">
+            Explore 11 categories or search 1,150+ words.
+          </p>
+        </div>
+
+        {/* Global Pinyin Toggle Button */}
+        <button
+          onClick={() => setShowPinyin(!showPinyin)}
+          className={`px-3 py-2 text-xs font-semibold rounded-full border transition-all min-h-[44px] shrink-0 flex items-center gap-1.5 ${
+            showPinyin
+              ? 'bg-primary/10 border-primary/30 text-primary'
+              : 'bg-surface-container border-outline-variant text-outline'
+          }`}
+        >
+          {showPinyin ? <Icons.Eye size={15} /> : <Icons.EyeOff size={15} />}
+          <span>Pinyin: {showPinyin ? 'ON' : 'OFF'}</span>
+        </button>
       </div>
 
       {/* Global Search Input */}
-      <div className="relative mb-6">
+      <div className="relative mb-5">
         <input
           type="text"
           placeholder="Search all vocabulary (e.g. 妈妈, māma, mom)..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 pr-4 py-2.5 bg-surface-container border border-outline rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none text-sm placeholder:text-outline font-body-md min-h-[44px]"
+          className="w-full pl-10 pr-10 py-2.5 bg-surface-container border border-outline rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none text-sm placeholder:text-outline font-body-md min-h-[48px]"
         />
-        <Icons.Search className="absolute left-3 top-1/2 -translate-y-1/2 text-outline" size={16} />
+        <Icons.Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-outline" size={18} />
         {searchQuery && (
           <button
             onClick={() => setSearchQuery('')}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-primary p-1"
+            className="absolute right-2 top-1/2 -translate-y-1/2 text-outline hover:text-primary min-h-[44px] min-w-[44px] flex items-center justify-center"
+            aria-label="Clear search"
           >
             ✕
           </button>
@@ -236,7 +274,7 @@ export default function VocabTab() {
 
       {/* Global Search Results Mode */}
       {searchQuery.trim() !== '' ? (
-        <div>
+        <div className="animate-fadeIn">
           <div className="flex justify-between items-center mb-3">
             <span className="text-xs font-semibold text-outline uppercase">
               Search Results ({filteredGlobalItems.length})
@@ -257,6 +295,7 @@ export default function VocabTab() {
                   pinyin={item.pinyin}
                   meaning={item.meaning}
                   partOfSpeech={`${item.partOfSpeech}${item._categoryName ? ' · ' + item._categoryName : ''}`}
+                  showPinyinGlobal={showPinyin}
                   isStarred={starredWords.includes(item.hanzi)}
                   onToggleStar={() => toggleStar(item)}
                   onDecompose={handleDecompose}
@@ -268,19 +307,23 @@ export default function VocabTab() {
         </div>
       ) : (
         /* Categories Grid */
-        <div className="grid grid-cols-2 gap-2.5 w-full">
-          {filteredSections.map((section) => {
+        <div className="grid grid-cols-2 gap-2.5 w-full pb-8">
+          {filteredSections.map((section, idx) => {
             const IconComponent = (Icons as any)[section.icon] || Icons.BookOpen;
+
             return (
               <button
                 key={section.id}
                 onClick={() => loadSection(section)}
-                className="flex items-center p-3 bg-surface border border-outline-variant rounded-xl hover:bg-surface-container-low active:scale-95 transition-all text-left w-full gap-2.5 shadow-xs min-w-0 overflow-hidden min-h-[56px]"
+                style={{ animationDelay: `${idx * 0.02}s` }}
+                className="flex items-center p-3 rounded-xl border border-outline-variant bg-surface hover:bg-surface-container-low hover:border-outline transition-all cursor-pointer select-none text-left w-full gap-2.5 shadow-xs min-w-0 overflow-hidden min-h-[56px] animate-slideUp"
               >
                 <div className="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
                   <IconComponent size={18} />
                 </div>
-                <span className="text-xs font-semibold text-on-background font-body-md leading-tight truncate min-w-0 flex-1">{section.name}</span>
+                <span className="text-xs font-semibold text-on-background font-body-md leading-tight truncate min-w-0 flex-1">
+                  {section.name}
+                </span>
               </button>
             );
           })}

@@ -18,11 +18,11 @@ interface SRSState {
 }
 
 const STAGE_LABELS: Record<number, { label: string; badgeClass: string }> = {
-  1: { label: 'New / Practice', badgeClass: 'bg-primary-fixed text-primary border-primary/20' },
-  2: { label: 'Learning', badgeClass: 'bg-amber-500/10 text-amber-800 border-amber-500/20' },
-  3: { label: 'Reviewing', badgeClass: 'bg-indigo-500/10 text-indigo-800 border-indigo-500/20' },
-  4: { label: 'Comfortable', badgeClass: 'bg-teal-500/10 text-teal-800 border-teal-500/20' },
-  5: { label: 'Mastered', badgeClass: 'bg-emerald-500/10 text-emerald-800 border-emerald-500/20' },
+  1: { label: 'New / Practice', badgeClass: 'bg-primary/10 text-primary border-primary/20' },
+  2: { label: 'Learning', badgeClass: 'bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-500/20' },
+  3: { label: 'Reviewing', badgeClass: 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 border-indigo-500/20' },
+  4: { label: 'Comfortable', badgeClass: 'bg-teal-500/10 text-teal-700 dark:text-teal-400 border-teal-500/20' },
+  5: { label: 'Mastered', badgeClass: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/20' },
 };
 
 export default function FlashcardsTab() {
@@ -211,36 +211,32 @@ export default function FlashcardsTab() {
             />
           </div>
 
+          {/* Clean Card Counter & Stage Badge */}
           <div className="flex justify-between items-center text-xs text-outline mb-2">
             <div className="flex items-center gap-2">
-              <span>Card {currentCardIdx + 1} of {dueCards.length}</span>
-              <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border ${stageInfo.badgeClass}`}>
+              <span className="font-semibold text-on-surface">Card {currentCardIdx + 1} of {dueCards.length}</span>
+              <span className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${stageInfo.badgeClass}`}>
                 {stageInfo.label}
               </span>
             </div>
-            <button 
-              onClick={() => setIsFlipped(!isFlipped)}
-              className="text-primary font-semibold text-[11px] uppercase tracking-wider hover:underline min-h-[44px] flex items-center px-1"
-            >
-              {isFlipped ? 'Show Front' : 'Flip Card'}
-            </button>
+            <span className="text-[11px] text-outline italic">Tap card to flip</span>
           </div>
 
           {/* Flashcard Box */}
           {activeCard && (
             <div 
               onClick={() => setIsFlipped(!isFlipped)}
-              className="relative aspect-square w-full max-w-[280px] sm:max-w-[320px] mx-auto bg-surface border border-outline-variant shadow-sm rounded-2xl flex flex-col items-center justify-center p-6 cursor-pointer select-none tian-zi-ge transition-all duration-200 active:scale-[0.98]"
+              className="relative aspect-square w-full max-w-[280px] sm:max-w-[320px] mx-auto bg-surface border-2 border-outline-variant/80 shadow-sm rounded-2xl flex flex-col items-center justify-center p-6 cursor-pointer select-none tian-zi-ge transition-all duration-200 active:scale-[0.98] hover:border-outline"
             >
-              {/* Decompose Action Button (Top Left - Min 44px Touch Target) */}
+              {/* Decompose Action Button (GitMerge Icon) */}
               <button 
                 onClick={(e) => {
                   e.stopPropagation();
                   setDecomposeChar(activeCard.character);
                 }}
-                aria-label="Decompose Character Radicals"
-                className="absolute top-3 left-3 z-20 min-h-[44px] min-w-[44px] px-3 bg-surface-container hover:bg-surface-container-high text-primary rounded-full transition-all flex items-center justify-center gap-1.5 text-[11px] font-bold uppercase border border-outline-variant shadow-xs"
-                title="Decompose Character Radicals"
+                aria-label="Decompose Character Components"
+                className="absolute top-3 left-3 z-20 min-h-[44px] min-w-[44px] px-3 bg-surface-container hover:bg-surface-container-high text-primary rounded-full transition-all flex items-center justify-center gap-1.5 text-[11px] font-bold uppercase border border-outline-variant/60 shadow-xs"
+                title="Decompose Character Components"
               >
                 <Icons.GitMerge size={16} />
                 Decompose
@@ -258,7 +254,7 @@ export default function FlashcardsTab() {
                     {activeCard.character}
                   </span>
                   <div className="absolute bottom-4 left-0 right-0 text-center text-[10px] text-outline font-semibold uppercase tracking-wider">
-                    Tap card to flip answer
+                    Tap card to reveal answer
                   </div>
                 </div>
               ) : (
@@ -270,7 +266,7 @@ export default function FlashcardsTab() {
                   <h3 className="font-label-pinyin text-primary text-xl font-bold tracking-wider mt-4">
                     {activeCard.pinyin}
                   </h3>
-                  <p className="font-body-md text-on-surface-variant mt-2 text-sm max-w-[240px] mx-auto">
+                  <p className="font-body-md text-on-surface-variant mt-2 text-sm max-w-[240px] mx-auto font-medium">
                     {activeCard.meaning}
                   </p>
                   <div className="absolute bottom-4 left-0 right-0 text-center text-[10px] text-outline italic">
@@ -281,17 +277,17 @@ export default function FlashcardsTab() {
             </div>
           )}
 
-          {/* SRS Action Buttons (Min 48px Touch Height) */}
+          {/* SRS Action Buttons */}
           <div className="mt-6 flex gap-4 w-full">
             <button 
               onClick={() => handleSRSResponse(false)}
-              className="flex-1 py-3.5 min-h-[48px] border border-primary text-primary text-xs font-bold uppercase tracking-widest bg-transparent hover:bg-surface-container active:scale-95 transition-all rounded-lg flex items-center justify-center"
+              className="flex-1 py-3.5 min-h-[48px] border-2 border-primary text-primary text-xs font-bold uppercase tracking-widest bg-transparent hover:bg-primary/5 active:scale-95 transition-all rounded-xl flex items-center justify-center"
             >
               Needs Practice
             </button>
             <button 
               onClick={() => handleSRSResponse(true)}
-              className="flex-1 py-3.5 min-h-[48px] bg-primary text-white text-xs font-bold uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-md flex items-center justify-center"
+              className="flex-1 py-3.5 min-h-[48px] bg-primary text-white text-xs font-bold uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-xl shadow-md flex items-center justify-center"
             >
               I know it
             </button>

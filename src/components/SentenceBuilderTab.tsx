@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as Icons from 'lucide-react';
+import TTSButton from './TTSButton';
 
 interface Sentence {
   english: string;
@@ -71,14 +72,10 @@ export default function SentenceBuilderTab() {
     // Parse Chinese characters, ignoring punctuation for tiles
     const cleanSentence = current.correctHanzi.replace(/[。，？！?.!, ]/g, '');
     
-    // Split into individual characters/words
-    // For single-user study, character-level building is very good for Hanzi writing.
-    // If it's a multi-character word (like 喜欢 or 衣服), we can group them if we parse them, 
-    // but building character-by-character forces direct character recognition!
-    // Let's do character-by-character tiles.
+    // Split into individual characters
     const chars = cleanSentence.split('');
     
-    // Add 2 random distractors from the character deck or common chars
+    // Add 2 random distractors from common chars
     const distractors = ['的', '是', '不', '我', '有', '在', '他', '她', '国', '人'];
     const selectedDistractors: string[] = [];
     while (selectedDistractors.length < 2) {
@@ -108,7 +105,6 @@ export default function SentenceBuilderTab() {
     
     if (isFromSelected) {
       // Remove from selected, return to bank
-      // Find first occurrence in selectedWords
       const idx = selectedWords.indexOf(word);
       if (idx > -1) {
         const updated = [...selectedWords];
@@ -133,7 +129,7 @@ export default function SentenceBuilderTab() {
   const checkAnswer = () => {
     if (sentences.length === 0) return;
     const current = sentences[currentIdx];
-    const cleanTarget = current.correctHanzi.replace(/[。，？！?.!, ]/g, '');
+    const cleanTarget = current.correctHanzi.replace(/[。，机制，？！?.!, ]/g, '');
     const userString = selectedWords.join('');
 
     if (userString === cleanTarget) {
@@ -178,8 +174,8 @@ export default function SentenceBuilderTab() {
       {activeSentence && (
         <div className="flex-1 flex flex-col gap-6">
           {/* Prompt card */}
-          <div className="bg-surface border border-outline-variant p-5 rounded-xl shadow-sm">
-            <span className="text-[10px] text-outline font-bold uppercase tracking-wider bg-surface-container px-2 py-1 rounded">
+          <div className="bg-surface border-2 border-outline-variant p-5 rounded-xl shadow-sm">
+            <span className="text-[10px] text-primary font-bold uppercase tracking-wider bg-primary/10 border border-primary/20 px-2 py-1 rounded">
               Translate
             </span>
             <p className="text-lg text-on-background font-body-md mt-3 font-semibold">
@@ -190,9 +186,9 @@ export default function SentenceBuilderTab() {
           {/* Answer Box */}
           <div 
             className={`min-h-[100px] border-2 border-dashed rounded-xl p-4 flex flex-wrap gap-2.5 items-center justify-center transition-all duration-300 ${
-              status === 'correct' ? 'bg-secondary-container border-secondary' : 
-              status === 'incorrect' ? 'bg-error-container border-error animate-shake' : 
-              'border-outline-variant bg-surface-container'
+              status === 'correct' ? 'bg-secondary-container/30 border-secondary text-secondary' : 
+              status === 'incorrect' ? 'bg-error-container/30 border-error animate-shake' : 
+              'border-outline-variant bg-surface-container-low'
             }`}
           >
             {selectedWords.length === 0 ? (
@@ -202,7 +198,7 @@ export default function SentenceBuilderTab() {
                 <button
                   key={idx}
                   onClick={() => handleTileTap(word, true)}
-                  className="bg-white border border-primary text-primary font-display-hanzi text-2xl px-4 py-2.5 rounded-lg shadow-sm hover:translate-y-[-1px] transition-transform active:scale-95"
+                  className="bg-surface border-2 border-primary text-primary font-display-hanzi text-3xl px-4 py-2.5 rounded-xl shadow-sm hover:translate-y-[-1px] transition-all active:scale-95 min-w-[50px] min-h-[50px] flex items-center justify-center"
                 >
                   {word}
                 </button>
@@ -216,7 +212,7 @@ export default function SentenceBuilderTab() {
               <button
                 key={idx}
                 onClick={() => handleTileTap(word, false)}
-                className="bg-white border border-outline text-on-background font-display-hanzi text-2xl px-4 py-2.5 rounded-lg shadow-sm hover:border-primary hover:text-primary active:scale-95 transition-all"
+                className="bg-surface-container border-2 border-outline-variant hover:border-primary text-on-surface hover:text-primary font-display-hanzi text-3xl px-4 py-2.5 rounded-xl shadow-sm active:scale-95 transition-all min-w-[50px] min-h-[50px] flex items-center justify-center"
               >
                 {word}
               </button>
@@ -225,12 +221,13 @@ export default function SentenceBuilderTab() {
 
           {/* Status message */}
           {status === 'correct' && (
-            <div className="text-center p-3 bg-secondary-container text-on-secondary-container border border-secondary rounded-lg font-body-md text-sm font-semibold">
-              🎉 Correct! "{activeSentence.correctHanzi}" ({activeSentence.pinyin})
+            <div className="text-center p-3.5 bg-secondary-container/40 text-on-surface border border-secondary rounded-xl font-body-md text-sm font-semibold flex items-center justify-center gap-2">
+              <span>🎉 Correct! "{activeSentence.correctHanzi}" ({activeSentence.pinyin})</span>
+              <TTSButton text={activeSentence.correctHanzi} size={18} />
             </div>
           )}
           {status === 'incorrect' && (
-            <div className="text-center p-3 bg-error-container text-on-error-container border border-error rounded-lg font-body-md text-sm font-semibold">
+            <div className="text-center p-3.5 bg-error-container/40 text-on-surface border border-error rounded-xl font-body-md text-sm font-semibold">
               ❌ Try again. Remember the Subject-Verb-Object word order!
             </div>
           )}
@@ -240,22 +237,22 @@ export default function SentenceBuilderTab() {
             {status === 'correct' ? (
               <button
                 onClick={nextRound}
-                className="w-full py-3.5 bg-secondary text-white text-xs font-bold uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-md flex items-center justify-center gap-1"
+                className="w-full py-3.5 min-h-[48px] bg-secondary text-white text-xs font-bold uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-xl shadow-md flex items-center justify-center gap-1"
               >
-                Next Sentence <Icons.ArrowRight size={14} />
+                Next Sentence <Icons.ArrowRight size={16} />
               </button>
             ) : (
               <>
                 <button
                   onClick={resetRound}
-                  className="flex-1 py-3.5 border border-primary text-primary text-xs font-bold uppercase tracking-widest hover:bg-surface-container active:scale-95 transition-all rounded-lg"
+                  className="flex-1 py-3.5 min-h-[48px] border-2 border-primary text-primary text-xs font-bold uppercase tracking-widest hover:bg-primary/5 active:scale-95 transition-all rounded-xl"
                 >
                   Reset
                 </button>
                 <button
                   onClick={checkAnswer}
                   disabled={selectedWords.length === 0}
-                  className="flex-1 py-3.5 bg-primary text-white text-xs font-bold uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-md disabled:opacity-40"
+                  className="flex-1 py-3.5 min-h-[48px] bg-primary text-white text-xs font-bold uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-xl shadow-md disabled:opacity-40"
                 >
                   Check
                 </button>
