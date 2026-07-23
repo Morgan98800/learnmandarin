@@ -1,11 +1,5 @@
 [
   {
-    "hanzi": "认识",
-    "pinyin": "rènshi",
-    "meaning": "to meet, to know",
-    "partOfSpeech": "verb"
-  },
-  {
     "hanzi": "每天",
     "pinyin": "měitiān",
     "meaning": "everyday",
@@ -81,7 +75,7 @@
     "hanzi": "加班",
     "pinyin": "jiā bān",
     "meaning": "to work overtime",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "星期五",
@@ -285,7 +279,7 @@
     "hanzi": "下雪",
     "pinyin": "xiàxuě",
     "meaning": "to snow",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "verb"
   },
   {
     "hanzi": "倍",
@@ -303,12 +297,6 @@
     "hanzi": "十二点",
     "pinyin": "shí'èr diǎn",
     "meaning": "12 o'clock",
-    "partOfSpeech": "noun"
-  },
-  {
-    "hanzi": "好久不见",
-    "pinyin": "hǎo jiǔ bùjiàn",
-    "meaning": "long time no see",
     "partOfSpeech": "noun"
   },
   {
