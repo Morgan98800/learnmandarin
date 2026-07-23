@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PinyinReveal from './PinyinReveal';
-import TTSButton from './TTSButton';
+import VocabCard from './VocabCard';
 import DecompositionModal from './DecompositionModal';
 import { Search } from 'lucide-react';
 
@@ -61,49 +60,15 @@ export default function VerbsTab() {
 
       <div className="space-y-4">
         {filteredVerbs.map((v, idx) => (
-          <div key={idx} className="bg-surface border border-outline-variant p-4 rounded-xl shadow-sm space-y-3">
-            <div className="flex justify-between items-start">
-              <div className="flex items-center gap-4">
-                <PinyinReveal 
-                  hanzi={v.hanzi} 
-                  pinyin={v.pinyin} 
-                  size="md" 
-                  onDecompose={(char) => setDecomposeChar(char)}
-                />
-                <TTSButton text={v.hanzi} />
-              </div>
-            </div>
-
-            <div>
-              <span className="text-[10px] text-outline font-semibold uppercase bg-surface-container-low px-1.5 py-0.5 rounded mr-2">
-                Verb
-              </span>
-              <span className="text-sm text-on-surface-variant font-body-md">{v.meaning}</span>
-            </div>
-
-            {v.patterns && v.patterns.length > 0 && (
-              <div className="mt-3 border-t border-outline-variant pt-3 space-y-3">
-                <h4 className="text-[10px] uppercase tracking-wider text-outline font-bold">Common Patterns</h4>
-                <div className="space-y-2.5">
-                  {v.patterns.map((pat, pIdx) => (
-                    <div key={pIdx} className="bg-surface-container-lowest border border-outline-variant p-2.5 rounded-lg space-y-1">
-                      <div className="text-xs font-semibold text-primary">{pat.pattern}</div>
-                      <div className="flex items-center gap-2 mt-1">
-                        <PinyinReveal 
-                          hanzi={pat.exampleHanzi} 
-                          pinyin={pat.examplePinyin} 
-                          size="sm" 
-                          onDecompose={(char) => setDecomposeChar(char)}
-                        />
-                        <TTSButton text={pat.exampleHanzi} size={14} />
-                      </div>
-                      <div className="text-xs text-outline italic">{pat.exampleMeaning}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+          <VocabCard
+            key={idx}
+            hanzi={v.hanzi}
+            pinyin={v.pinyin}
+            meaning={v.meaning}
+            partOfSpeech="verb"
+            onDecompose={(char) => setDecomposeChar(char)}
+            patterns={v.patterns}
+          />
         ))}
       </div>
     </div>
