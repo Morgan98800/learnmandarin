@@ -5,17 +5,17 @@
 **Mandarin Scholar** is a modern, responsive, offline-capable Mandarin Chinese learning application engineered specifically for mobile-first and desktop pair-learning. Built with React 19, TypeScript, Vite, and Tailwind CSS v4, the application provides an intuitive reference system and spaced repetition study tool without requiring a backend database.
 
 ### Core Modules:
-1. **Vocabulary Explorer (`VocabTab.tsx`)**: 11 topic categories (Ordering Food, Travel, Family, Clothes, Directions, Numbers, Time & Dates, Greetings, Emotions, Work & School, General Basics) containing over 1,150+ vocabulary entries.
-2. **Dynamic Verbs Reference (`VerbsTab.tsx`)**: A single-source-of-truth view that dynamically aggregates, deduplicates, and categorizes verbs across all vocabulary modules.
+1. **Vocabulary Explorer (`VocabTab.tsx`)**: 11 topic categories (Ordering Food, Travel, Family, Clothes, Directions, Numbers, Time & Dates, Greetings, Emotions, Work & School, General Basics) containing over 1,150+ vocabulary entries with real-time global and category search filtering.
+2. **Dynamic Verbs Reference (`VerbsTab.tsx`)**: A single-source-of-truth view that dynamically aggregates, deduplicates, and categorizes verbs across all vocabulary modules with horizontal category filter pills.
 3. **Grammar & Patterns (`GrammarTab.tsx`)**: Structural Chinese grammar rules categorized by HSK/CEFR difficulty levels with interactive Pinyin reveals and example sentences.
-4. **Spaced Repetition System (SRS) Flashcards (`FlashcardsTab.tsx`)**: Leitner 5-box algorithm for reviewing the Top 1,000 Chinese characters or user-starred vocabulary.
+4. **Spaced Repetition System (SRS) Flashcards (`FlashcardsTab.tsx`)**: Leitner 5-box algorithm for reviewing the Top 1,000 Chinese characters or user-starred vocabulary with human-friendly progress stage badges (`New / Practice`, `Learning`, `Reviewing`, `Comfortable`, `Mastered`).
 5. **Interactive Sentence Builder (`SentenceBuilderTab.tsx`)**: Character tile arrangement puzzle game for testing Chinese word order and sentence structure.
 6. **Dictionary Search (`DictionaryTab.tsx`)**: Instant offline search across the dictionary database by Hanzi, Pinyin, or English gloss.
 7. **MakeMeAHanzi Character Decomposition & Etymology Engine (`DecompositionView.tsx` / `DecompositionModal.tsx`)**: Interactive spatial breakdown of Chinese characters into constituent radicals, semantic/phonetic components, etymology formation hints, and `hanzi-writer` stroke order animations.
 
 ---
 
-## 2. Technology Stack & Design System
+## 2. Technology Stack & UX Accessibility Systems
 
 ### 2.1 Technology Stack
 * **Framework**: React 19 + TypeScript (Strict Mode)
@@ -26,9 +26,10 @@
 * **Icon System**: `lucide-react`
 * **Deployment**: GitHub Pages (`gh-pages`)
 
-### 2.2 Design System & Material Design 3 HSL Tokens
-The visual design utilizes custom Material Design 3 HSL color palettes tailored for maximum readability and contrast:
+### 2.2 Mobile Ergonomics & Touch Target System ($\ge 44\text{px}$)
+All interactive buttons and icon controls enforce a minimum hit box area of $44\text{px} \times 44\text{px}$ (`min-w-[44px] min-h-[44px]`), preventing accidental miss-taps on iOS/Android mobile screens. Explicit `aria-label` tags are attached to all icon controls for iOS VoiceOver compatibility.
 
+### 2.3 Design System & Material Design 3 HSL Tokens
 ```css
 @theme {
   --color-primary: #9e2016; /* Imperial Red */
@@ -64,7 +65,7 @@ flowchart TD
     end
 
     subgraph Core Components
-        SSOT --> VT[Vocab Tab]
+        SSOT --> VT[Vocab Tab (Global + Category Search)]
         SSOT --> VR[Verbs Tab (Filtered Query)]
         VT --> VC[VocabCard Component]
         VR --> VC
@@ -78,7 +79,7 @@ flowchart TD
 
     subgraph State Storage
         LS[(Browser LocalStorage)] <--> |Starred Words & SRS State| VT
-        LS <--> |Leitner Box Intervals| FlashcardsTab
+        LS <--> |Leitner Box Intervals & Stage Badges| FlashcardsTab
     end
 ```
 
@@ -132,15 +133,15 @@ Sourced from the **MakeMeAHanzi** dataset, enriched with Unicode Ideographic Des
 ## 4. Key Component Systems
 
 ### 4.1 Unified `VocabCard` Component (`VocabCard.tsx`)
-Designed to solve right-side empty space issues, the `VocabCard` features a 2-row full-width responsive flexbox layout:
+Features a 2-row full-width responsive flexbox layout with $44\text{px}$ touch targets:
 
 ```
 +-------------------------------------------------------------------------+
 | [ TOP ROW ]                                                             |
-|  木木木  (48-56px Hanzi)  [🔊 TTS]              [🔀 Decompose]  [⭐ Star] |
+|  木木木  (48-56px Hanzi)  [🔊 TTS (44px)]    [🔀 Decompose (44px)]  [⭐ Star] |
 |                                                                         |
 | [ SECOND ROW ]                                                          |
-|  [ pīn yīn · reveal ]                  [VERB] to meet, to know someone  |
+|  [ pīn yīn · reveal ] (44px)           [VERB] to meet, to know someone  |
 |                                                                         |
 | [ BOTTOM SECTION - OPTIONAL ]                                           |
 |  | 认识你很高兴。 (Rènshi nǐ hěn gāoxìng.)                               |
@@ -151,23 +152,22 @@ Designed to solve right-side empty space issues, the `VocabCard` features a 2-ro
 * **Top Row**:
   * **Dominant Hanzi**: Responsive font size scaling based on string length (`text-4xl sm:text-5xl` for 1-2 chars, `text-3xl` for 3 chars, `text-2xl` for 4+ chars).
   * **Clickable Characters**: Each character in the string can be clicked individually to launch character radical decomposition.
-  * **Inline TTS Audio**: Vertically centered speaker icon.
-  * **Right Action Icons**: Muted icon group for decomposition and flashcard starring.
+  * **Inline TTS Audio**: Vertically centered speaker icon with 44px touch hitbox.
+  * **Right Action Icons**: 44px touch target icon buttons for decomposition and flashcard starring.
 * **Second Row**:
-  * **Left**: `<PinyinPill />` interactive reveal control.
+  * **Left**: `<PinyinPill />` interactive reveal control with 44px touch height.
   * **Right**: Part-of-speech badge + English gloss at 16–17px font size with text wrapping.
 
 ### 4.2 Interactive Pinyin Reveal Pill (`PinyinPill.tsx`)
-Instead of static text, Pinyin is encapsulated inside a rounded pill button:
 * **Unrevealed State**: Displays `pīn yīn · reveal` with an `EyeOff` icon in muted colors.
 * **Revealed State**: Tapping (on touch screens) or hovering (on desktop) dynamically expands the pill to reveal the tone-marked Pinyin (e.g. `māma`) styled in Imperial Red with an `Eye` icon.
 
 ### 4.3 Character Decomposition & Etymology Engine (`DecompositionView.tsx` / `DecompositionModal.tsx`)
 Implements spatial layout rendering derived from Ideographic Description Characters (IDC):
 * **Layout Geometries**:
-  * `⿳` / `⿲` (3-tier stack like `森` -> `木`, `木`, `木`): Top center item + Bottom row items.
+  * `⿳` / `<ctrl42>` (3-tier stack like `森` -> `木`, `木`, `木`): Top center item + Bottom row items.
   * `⿰` (Left-Right): Side-by-side flex layout.
-  * `⿱` (Top-Bottom): Vertical stacked flex layout.
+  * `<ctrl42>` (Top-Bottom): Vertical stacked flex layout.
 * **Role Detection**:
   * Cross-references character components with MakeMeAHanzi etymology data.
   * Explicitly labels components as **`Semantic`** (meaning-bearing component), **`Phonetic`** (sound-bearing component), or **`Radical`**.
@@ -175,15 +175,14 @@ Implements spatial layout rendering derived from Ideographic Description Charact
 * **Character Origin Panel**: Displays character formation types (`Pictophonetic`, `Ideographic`, `Pictographic`) along with historical formation hints.
 
 ### 4.4 Spaced Repetition System (SRS) Flashcards (`FlashcardsTab.tsx`)
-Uses a 5-box Leitner Spaced Repetition Algorithm to schedule reviews:
-$$\Delta t_{\text{review}} = \text{BoxInterval}(\text{box})$$
-* **Box 1**: 1 Day (24 hours)
-* **Box 2**: 2 Days (48 hours)
-* **Box 3**: 4 Days (96 hours)
-* **Box 4**: 7 Days (168 hours)
-* **Box 5**: 14 Days (336 hours)
+Uses a 5-box Leitner Spaced Repetition Algorithm mapped to human progress stage badges:
+* **Box 1**: `New / Practice` (1 Day interval)
+* **Box 2**: `Learning` (2 Days interval)
+* **Box 3**: `Reviewing` (4 Days interval)
+* **Box 4**: `Comfortable` (7 Days interval)
+* **Box 5**: `Mastered` (14 Days interval)
 
-Reviews are persisted in `localStorage` under `srs_vocab_data`. Correct answers advance the card to the next box, while incorrect answers reset it to Box 1.
+Reviews are persisted in `localStorage` under `srs_vocab_data`. Correct answers advance the card to the next box stage, while incorrect answers reset it to Box 1.
 
 ---
 
@@ -224,14 +223,14 @@ mandarin-app/
 │   │   ├── DecompositionModal.tsx  # Pop-up modal wrapper for decomposition
 │   │   ├── DecompositionView.tsx   # Interactive spatial tap-to-decompose component
 │   │   ├── DictionaryTab.tsx       # Search dictionary view
-│   │   ├── FlashcardsTab.tsx       # SRS Leitner flashcard review system
+│   │   ├── FlashcardsTab.tsx       # SRS Leitner flashcard review system + Human badges
 │   │   ├── GrammarTab.tsx          # Grammar rules & pattern list
-│   │   ├── PinyinPill.tsx          # Interactive pill-styled Pinyin reveal control
+│   │   ├── PinyinPill.tsx          # Interactive pill-styled Pinyin reveal control (44px)
 │   │   ├── PinyinReveal.tsx        # Inline Hanzi character Pinyin reveal wrapper
 │   │   ├── SentenceBuilderTab.tsx  # Word order arrangement puzzle
-│   │   ├── TTSButton.tsx           # Web Speech Synthesis audio speaker button
+│   │   ├── TTSButton.tsx           # Web Speech Synthesis audio speaker button (44px)
 │   │   ├── VerbsTab.tsx            # Dynamic aggregated verb reference view
-│   │   └── VocabCard.tsx           # Unified 2-row full-width vocabulary card
+│   │   └── VocabCard.tsx           # Unified 2-row full-width vocabulary card (44px)
 │   ├── utils/
 │   │   ├── charLookup.ts           # Character metadata & etymology fetcher
 │   │   └── radicalData.ts          # Kangxi radical dictionary lookup
