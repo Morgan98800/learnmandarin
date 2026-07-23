@@ -1,0 +1,140 @@
+[
+  {
+    "hanzi": "护照",
+    "pinyin": "hùzhào",
+    "meaning": "passport",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "长安饭店",
+    "pinyin": "Cháng'ān Fàndiàn",
+    "meaning": "Chang'an Hotel",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "meaning": "busy",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "训练",
+    "pinyin": "xùnliàn",
+    "meaning": "to train",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "占线",
+    "pinyin": "zhànxiàn",
+    "meaning": "the line's busy",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "注意",
+    "pinyin": "zhùyì",
+    "meaning": "to take care",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "meaning": "to take (a bus/taxi)",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "出租车",
+    "pinyin": "chūzūchē",
+    "meaning": "taxi",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "公共汽车",
+    "pinyin": "gōnggòng qìchē",
+    "meaning": "bus",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "电车",
+    "pinyin": "diànchē",
+    "meaning": "trolleybus",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "车票",
+    "pinyin": "chēpiào",
+    "meaning": "ticket",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "换",
+    "pinyin": "huàn",
+    "meaning": "to change (bus or train)",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "地铁",
+    "pinyin": "dìtiě",
+    "meaning": "subway",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "车",
+    "pinyin": "chē",
+    "meaning": "car / vehicle",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我开车",
+    "pinyin": "Wǒ kāi chē",
+    "meaning": "I drive a car",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我坐地铁",
+    "pinyin": "Wǒ zuò dìtiě",
+    "meaning": "I take the subway",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "公交",
+    "pinyin": "gōngjiāo",
+    "meaning": "bus / public transit",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "火车",
+    "pinyin": "huǒchē",
+    "meaning": "train",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "飞机",
+    "pinyin": "fēijī",
+    "meaning": "airplane",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "很忙",
+    "pinyin": "hěn máng",
+    "meaning": "very busy",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "旅游",
+    "pinyin": "lǚyóu",
+    "meaning": "to travel / tourism",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "访问",
+    "pinyin": "fǎngwèn",
+    "meaning": "to visit",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "没有空",
+    "pinyin": "méi yǒu kōng",
+    "meaning": "not free / busy",
+    "partOfSpeech": "noun"
+  }
+]

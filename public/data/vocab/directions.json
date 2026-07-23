@@ -1,0 +1,374 @@
+[
+  {
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "meaning": "well, good",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "meaning": "where",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "东北",
+    "pinyin": "Dōngběi",
+    "meaning": "the Northeast of China",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "小区",
+    "pinyin": "xiǎoqū",
+    "meaning": "residential district",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "去",
+    "pinyin": "qù",
+    "meaning": "to go to",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "meaning": "inside",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "前边",
+    "pinyin": "qiánbian",
+    "meaning": "in front of",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "路",
+    "pinyin": "lù",
+    "meaning": "road",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "远",
+    "pinyin": "yuǎn",
+    "meaning": "far",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "东边",
+    "pinyin": "dōngbian",
+    "meaning": "to the east",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "阳光小区",
+    "pinyin": "Yángguāng Xiǎoqū",
+    "meaning": "Yangguang Residential District",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "东城路",
+    "pinyin": "Dōngchéng Lù",
+    "meaning": "Dongcheng Road",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "前面",
+    "pinyin": "qiánmian",
+    "meaning": "ahead, front",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "上班",
+    "pinyin": "shàng bān",
+    "meaning": "to go to work",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "回国",
+    "pinyin": "huí guó",
+    "meaning": "to return to one's homeland",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "南门",
+    "pinyin": "nán mén",
+    "meaning": "south gate",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "南",
+    "pinyin": "nán",
+    "meaning": "south",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "外边",
+    "pinyin": "wàibian",
+    "meaning": "outside",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "里边",
+    "pinyin": "lǐbian",
+    "meaning": "inside",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "留学生",
+    "pinyin": "liúxuéshēng",
+    "meaning": "student studying abroad",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "西边",
+    "pinyin": "xībian",
+    "meaning": "west",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "西",
+    "pinyin": "xī",
+    "meaning": "west",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "南边",
+    "pinyin": "nánbian",
+    "meaning": "south",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "北边",
+    "pinyin": "běibian",
+    "meaning": "north",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "北",
+    "pinyin": "běi",
+    "meaning": "north",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "东",
+    "pinyin": "dōng",
+    "meaning": "east",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "郊游",
+    "pinyin": "jiāoyóu",
+    "meaning": "to go for an outing",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "走",
+    "pinyin": "zǒu",
+    "meaning": "to get to, to go",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "一直",
+    "pinyin": "yīzhí",
+    "meaning": "straight",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "左",
+    "pinyin": "zuǒ",
+    "meaning": "left",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "拐",
+    "pinyin": "guǎi",
+    "meaning": "to turn",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "meaning": "goodbye",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "路上",
+    "pinyin": "lù shang",
+    "meaning": "on the road",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "马路",
+    "pinyin": "mǎlù",
+    "meaning": "street, road",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "北面",
+    "pinyin": "běimiàn",
+    "meaning": "north",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "右",
+    "pinyin": "yòu",
+    "meaning": "right",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "开",
+    "pinyin": "kāi",
+    "meaning": "to turn on",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "站",
+    "pinyin": "zhàn",
+    "meaning": "station, stop",
+    "partOfSpeech": "noun, measure word"
+  },
+  {
+    "hanzi": "学院路站",
+    "pinyin": "Xuéyuànlù Zhàn",
+    "meaning": "the stop of Xueyuan Road",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "地图",
+    "pinyin": "dìtú",
+    "meaning": "map",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我想去蒙特利尔",
+    "pinyin": "Wǒ xiǎng qù Méngtèlì'ěr",
+    "meaning": "I want to go to Montreal",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "田",
+    "pinyin": "tián",
+    "meaning": "field / farmland",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "晚安",
+    "pinyin": "wǎn'ān",
+    "meaning": "good night",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你从哪里来？",
+    "pinyin": "Nǐ cóng nǎlǐ lái?",
+    "meaning": "Where do you come from?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我们去医院",
+    "pinyin": "Wǒmen qù yīyuàn",
+    "meaning": "We go to the hospital",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "很好",
+    "pinyin": "hěn hǎo",
+    "meaning": "very good",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "一旁",
+    "pinyin": "yīpáng",
+    "meaning": "at the side / beside",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "好朋友",
+    "pinyin": "hǎo péngyou",
+    "meaning": "good friend",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "回家",
+    "pinyin": "huíjiā",
+    "meaning": "to go home",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "外",
+    "pinyin": "wài",
+    "meaning": "outside / outer",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你住在哪儿？",
+    "pinyin": "Nǐ zhù zài nǎr?",
+    "meaning": "Where do you live?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "附近",
+    "pinyin": "fùjìn",
+    "meaning": "nearby / vicinity",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "A+B里",
+    "pinyin": "A + B lǐ",
+    "meaning": "A is inside B",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "将要",
+    "pinyin": "jiāngyào",
+    "meaning": "will / going to (future)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "回去",
+    "pinyin": "huíqù",
+    "meaning": "to go back (away from speaker)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你想在哪儿？",
+    "pinyin": "Nǐ xiǎng zài nǎr?",
+    "meaning": "Where do you want to be?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "北门",
+    "pinyin": "běimén",
+    "meaning": "north gate",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "西门",
+    "pinyin": "xīmén",
+    "meaning": "west gate",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "东门",
+    "pinyin": "dōngmén",
+    "meaning": "east gate",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "旁边",
+    "pinyin": "pángbiān",
+    "meaning": "beside / next to",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我们去吧",
+    "pinyin": "Wǒmen qù ba",
+    "meaning": "Let's go",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我对了",
+    "pinyin": "Wǒ duì le",
+    "meaning": "I was right",
+    "partOfSpeech": "noun"
+  }
+]

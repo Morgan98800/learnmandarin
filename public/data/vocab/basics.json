@@ -1,0 +1,2954 @@
+[
+  {
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "meaning": "you",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "meaning": "I",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "是",
+    "pinyin": "shì",
+    "meaning": "to be",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "您",
+    "pinyin": "nín",
+    "meaning": "you",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "你们",
+    "pinyin": "nǐmen",
+    "meaning": "you (plural)",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "她",
+    "pinyin": "tā",
+    "meaning": "she",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "谁",
+    "pinyin": "shuí",
+    "meaning": "who",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "他",
+    "pinyin": "tā",
+    "meaning": "he",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "麦克",
+    "pinyin": "Màikè",
+    "meaning": "Mike",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "刘少华",
+    "pinyin": "Liú Shàohuá",
+    "meaning": "Liu Shaohua",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "赵玉兰",
+    "pinyin": "Zhào Yùlán",
+    "meaning": "Zhao Yulan",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "张芳芳",
+    "pinyin": "Zhāng Fāngfāng",
+    "meaning": "Zhang Fangfang",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "张圆圆",
+    "pinyin": "Zhāng Yuányuán",
+    "meaning": "Zhang Yuanyuan",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "金太成",
+    "pinyin": "Jīn Tàichéng",
+    "meaning": "Kim Tae-sung",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "山口和子",
+    "pinyin": "Shānkǒu Hézǐ",
+    "meaning": "Yamaguchi Kazuko",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "王杨",
+    "pinyin": "Wáng Yáng",
+    "meaning": "Wang Yang",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "玛丽",
+    "pinyin": "Mǎlì",
+    "meaning": "Mary",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "菲雅",
+    "pinyin": "Fēiyǎ",
+    "meaning": "Faye",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "李冬生",
+    "pinyin": "Lǐ Dōngshēng",
+    "meaning": "Li Dongsheng",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "陈晓红",
+    "pinyin": "Chén Xiǎohóng",
+    "meaning": "Chen Xiaohong",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "姓",
+    "pinyin": "xìng",
+    "meaning": "surname",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "meaning": "to call, to be called",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "名字",
+    "pinyin": "míngzi",
+    "meaning": "name",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "没关系",
+    "pinyin": "méi guānxi",
+    "meaning": "It doesn't matter.",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "嗯",
+    "pinyin": "ng",
+    "meaning": "eh",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "meaning": "a particle used at the end of a question",
+    "partOfSpeech": "modal word"
+  },
+  {
+    "hanzi": "贵姓",
+    "pinyin": "guìxìng",
+    "meaning": "your surname (honorific)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "请问",
+    "pinyin": "qǐngwèn",
+    "meaning": "May I ask...?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "问",
+    "pinyin": "wèn",
+    "meaning": "to ask",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "meaning": "very, quite",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "也",
+    "pinyin": "yě",
+    "meaning": "too, also, as well, either",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "介绍",
+    "pinyin": "jièshào",
+    "meaning": "to introduce",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "从",
+    "pinyin": "cóng",
+    "meaning": "from",
+    "partOfSpeech": "preposition"
+  },
+  {
+    "hanzi": "姓名",
+    "pinyin": "xìngmíng",
+    "meaning": "name",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "国籍",
+    "pinyin": "guójí",
+    "meaning": "nationality",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "再",
+    "pinyin": "zài",
+    "meaning": "again, once more",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "meaning": "to speak",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "遍",
+    "pinyin": "biàn",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "meaning": "which",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "哦",
+    "pinyin": "ò",
+    "meaning": "oh (expressing realization and understanding)",
+    "partOfSpeech": "interjection"
+  },
+  {
+    "hanzi": "的",
+    "pinyin": "de",
+    "meaning": "of",
+    "partOfSpeech": "auxiliary word"
+  },
+  {
+    "hanzi": "给",
+    "pinyin": "gěi",
+    "meaning": "give",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "吧",
+    "pinyin": "ba",
+    "meaning": "a particle used at the end of a question",
+    "partOfSpeech": "modal word"
+  },
+  {
+    "hanzi": "不",
+    "pinyin": "bù",
+    "meaning": "no, not",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "地方",
+    "pinyin": "dìfang",
+    "meaning": "place",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "但",
+    "pinyin": "dàn",
+    "meaning": "but",
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "hanzi": "伦敦",
+    "pinyin": "Lúndūn",
+    "meaning": "London",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "法国",
+    "pinyin": "Fǎguó",
+    "meaning": "France",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "美国",
+    "pinyin": "Měiguó",
+    "meaning": "the USA",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "日本",
+    "pinyin": "Rìběn",
+    "meaning": "Japan",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "韩国",
+    "pinyin": "Hánguó",
+    "meaning": "Korea",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "北京",
+    "pinyin": "Běijīng",
+    "meaning": "Beijing",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "上海",
+    "pinyin": "Shànghǎi",
+    "meaning": "Shanghai",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "广东",
+    "pinyin": "Guǎngdōng",
+    "meaning": "Guangdong",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "东京",
+    "pinyin": "Dōngjīng",
+    "meaning": "Tokyo",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "中国",
+    "pinyin": "Zhōngguó",
+    "meaning": "China",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "在",
+    "pinyin": "zài",
+    "meaning": "at, in, on",
+    "partOfSpeech": "preposition"
+  },
+  {
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "大家",
+    "pinyin": "dàjiā",
+    "meaning": "everybody",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "教练",
+    "pinyin": "jiàoliàn",
+    "meaning": "coach",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "护士",
+    "pinyin": "hùshi",
+    "meaning": "nurse",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "名",
+    "pinyin": "míng",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "秘书",
+    "pinyin": "mìshū",
+    "meaning": "secretary",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "每",
+    "pinyin": "měi",
+    "meaning": "every, each",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "图书馆",
+    "pinyin": "túshūguǎn",
+    "meaning": "library",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "部门经理",
+    "pinyin": "bùmén jīnglǐ",
+    "meaning": "department manager",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "部门",
+    "pinyin": "bùmén",
+    "meaning": "department",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "经理",
+    "pinyin": "jīnglǐ",
+    "meaning": "manager",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "meaning": "to do, to make",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "记者",
+    "pinyin": "jìzhě",
+    "meaning": "reporter",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "画",
+    "pinyin": "huà",
+    "meaning": "to paint, to draw",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "画儿",
+    "pinyin": "huàr",
+    "meaning": "painting, drawing, picture",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "啊",
+    "pinyin": "ā",
+    "meaning": "aha, used to express sudden realization",
+    "partOfSpeech": "interjection"
+  },
+  {
+    "hanzi": "个",
+    "pinyin": "gè",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "画家",
+    "pinyin": "huàjiā",
+    "meaning": "painter, artist",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "珍妮",
+    "pinyin": "Zhēnní",
+    "meaning": "Jane",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "澳大利亚",
+    "pinyin": "Àodàlìyà",
+    "meaning": "Australia",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "多大",
+    "pinyin": "duō dà",
+    "meaning": "how old",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "健身",
+    "pinyin": "jiànshēn",
+    "meaning": "to keep fit",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "可以",
+    "pinyin": "kěyǐ",
+    "meaning": "OK",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "大妈",
+    "pinyin": "dàmā",
+    "meaning": "aunty",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "京剧",
+    "pinyin": "jīngjù",
+    "meaning": "Beijing opera",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "声音",
+    "pinyin": "shēngyīn",
+    "meaning": "voice",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "真",
+    "pinyin": "zhēn",
+    "meaning": "really",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "好听",
+    "pinyin": "hǎotīng",
+    "meaning": "pleasant to the ear",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "年纪",
+    "pinyin": "niánjì",
+    "meaning": "age",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "meaning": "to take a look",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "赵汉",
+    "pinyin": "Zhào Hàn",
+    "meaning": "Zhao Han",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "男朋友",
+    "pinyin": "nánpéngyou",
+    "meaning": "boyfriend",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "怎么样",
+    "pinyin": "zěnmeyàng",
+    "meaning": "how about",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "不错",
+    "pinyin": "búcuò",
+    "meaning": "not bad",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "外国人",
+    "pinyin": "wàiguó rén",
+    "meaning": "foreigner",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "大学",
+    "pinyin": "dàxué",
+    "meaning": "university",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "男",
+    "pinyin": "nán",
+    "meaning": "male",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "还是",
+    "pinyin": "háishì",
+    "meaning": "or",
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "hanzi": "高",
+    "pinyin": "gāo",
+    "meaning": "tall",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "米",
+    "pinyin": "mǐ",
+    "meaning": "meter",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "左右",
+    "pinyin": "zuǒyòu",
+    "meaning": "about",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "找",
+    "pinyin": "zhǎo",
+    "meaning": "to look for",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "这样",
+    "pinyin": "zhèyàng",
+    "meaning": "this kind",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "小姐",
+    "pinyin": "xiǎojie",
+    "meaning": "miss",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "休息",
+    "pinyin": "xiūxi",
+    "meaning": "to have a rest",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "要",
+    "pinyin": "yào",
+    "meaning": "will, to want",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "太",
+    "pinyin": "tài",
+    "meaning": "too",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "胖",
+    "pinyin": "pàng",
+    "meaning": "fat",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "公斤",
+    "pinyin": "gōngjīn",
+    "meaning": "kilogram",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "还",
+    "pinyin": "hái",
+    "meaning": "yet, still",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "漂亮",
+    "pinyin": "piàoliang",
+    "meaning": "pretty",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "汉语",
+    "pinyin": "Hànyǔ",
+    "meaning": "Chinese language",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "meaning": "to live at",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "meaning": "our, we, us",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "meaning": "there be, to have",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "健美操",
+    "pinyin": "jiànměicāo",
+    "meaning": "aerobic exercise",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "比赛",
+    "pinyin": "bǐsài",
+    "meaning": "competition",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "参加",
+    "pinyin": "cānjiā",
+    "meaning": "to participate",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "当",
+    "pinyin": "dāng",
+    "meaning": "to act as, to serve as",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "宿舍",
+    "pinyin": "sùshè",
+    "meaning": "dormitory",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "楼",
+    "pinyin": "lóu",
+    "meaning": "building",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "房间",
+    "pinyin": "fángjiān",
+    "meaning": "room",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "宴会",
+    "pinyin": "yànhuì",
+    "meaning": "banquet",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "接",
+    "pinyin": "jiē",
+    "meaning": "to pick up",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "层",
+    "pinyin": "céng",
+    "meaning": "floor of a building",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "等",
+    "pinyin": "děng",
+    "meaning": "to wait, to expect",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "第二",
+    "pinyin": "dì-èr",
+    "meaning": "the second",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "医院",
+    "pinyin": "yīyuàn",
+    "meaning": "hospital",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "离",
+    "pinyin": "lí",
+    "meaning": "from",
+    "partOfSpeech": "preposition"
+  },
+  {
+    "hanzi": "这儿",
+    "pinyin": "zhèr",
+    "meaning": "here",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "别",
+    "pinyin": "bié",
+    "meaning": "don't",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "客气",
+    "pinyin": "kèqi",
+    "meaning": "to be polite",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "第二医院",
+    "pinyin": "Dì-èr Yīyuàn",
+    "meaning": "No.2 Hospital",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "和",
+    "pinyin": "hé",
+    "meaning": "and",
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "hanzi": "律师",
+    "pinyin": "lǜshī",
+    "meaning": "lawyer",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "非常",
+    "pinyin": "fēicháng",
+    "meaning": "very, extremely",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "希望",
+    "pinyin": "xīwàng",
+    "meaning": "to hope, to wish",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "银行",
+    "pinyin": "yínháng",
+    "meaning": "bank",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "可是",
+    "pinyin": "kěshì",
+    "meaning": "but",
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "hanzi": "大夫",
+    "pinyin": "dàifu",
+    "meaning": "doctor",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "只",
+    "pinyin": "zhǐ",
+    "meaning": "only",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "meaning": "modal word",
+    "partOfSpeech": "modal word"
+  },
+  {
+    "hanzi": "双胞胎",
+    "pinyin": "shuāngbāotāi",
+    "meaning": "twins",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "就",
+    "pinyin": "jiù",
+    "meaning": "just",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "送",
+    "pinyin": "sòng",
+    "meaning": "to send off",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "一起",
+    "pinyin": "yìqǐ",
+    "meaning": "together",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "meaning": "all",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "他们",
+    "pinyin": "tāmen",
+    "meaning": "they",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "一共",
+    "pinyin": "yígòng",
+    "meaning": "altogether",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "最近",
+    "pinyin": "zuìjìn",
+    "meaning": "lately, recently",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "姑娘",
+    "pinyin": "gūniang",
+    "meaning": "miss",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "差",
+    "pinyin": "chà",
+    "meaning": "to be less than, to be short of",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "愿意",
+    "pinyin": "yuànyì",
+    "meaning": "to be willing",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "能",
+    "pinyin": "néng",
+    "meaning": "to be able to",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "到",
+    "pinyin": "dào",
+    "meaning": "to arrive at",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "晚饭",
+    "pinyin": "wǎnfàn",
+    "meaning": "supper, dinner",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "开始",
+    "pinyin": "kāishǐ",
+    "meaning": "to start",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "先生",
+    "pinyin": "xiānsheng",
+    "meaning": "Mr.",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "起床",
+    "pinyin": "qǐ chuáng",
+    "meaning": "to get up",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "以后",
+    "pinyin": "yǐhòu",
+    "meaning": "later, after",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "睡觉",
+    "pinyin": "shuì jiào",
+    "meaning": "to sleep",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "这么",
+    "pinyin": "zhème",
+    "meaning": "so",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "项",
+    "pinyin": "xiàng",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "重要",
+    "pinyin": "zhòngyào",
+    "meaning": "important",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "不一定",
+    "pinyin": "bù yīdìng",
+    "meaning": "not sure",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "有空儿",
+    "pinyin": "yǒu kòngr",
+    "meaning": "to be free",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "meaning": "this",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "真的",
+    "pinyin": "zhēnde",
+    "meaning": "really",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "没什么",
+    "pinyin": "méi shénme",
+    "meaning": "nothing",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下",
+    "pinyin": "xià",
+    "meaning": "next",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "好的",
+    "pinyin": "hǎo de",
+    "meaning": "OK",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "朋友",
+    "pinyin": "péngyou",
+    "meaning": "friend",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "没有",
+    "pinyin": "méi yǒu",
+    "meaning": "do not have; be without",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "回来",
+    "pinyin": "huílái",
+    "meaning": "to come back",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "噢",
+    "pinyin": "ō",
+    "meaning": "an interjection expressing understanding",
+    "partOfSpeech": "interjection"
+  },
+  {
+    "hanzi": "巧",
+    "pinyin": "qiǎo",
+    "meaning": "coincident",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "英汉词典",
+    "pinyin": "Yīng-Hàn cídiǎn",
+    "meaning": "English-Chinese dictionary",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "词典",
+    "pinyin": "cídiǎn",
+    "meaning": "dictionary",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "桌子",
+    "pinyin": "zhuōzi",
+    "meaning": "desk, table",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "meaning": "on, at",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "抽屉",
+    "pinyin": "chōuti",
+    "meaning": "drawer",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "汉英词典",
+    "pinyin": "Hàn-Yīng cídiǎn",
+    "meaning": "Chinese-English dictionary",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "可能",
+    "pinyin": "kěnéng",
+    "meaning": "probably",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "看见",
+    "pinyin": "kànjiàn",
+    "meaning": "to see",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "沙发",
+    "pinyin": "shāfā",
+    "meaning": "sofa",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下边",
+    "pinyin": "xiàbian",
+    "meaning": "under",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "咱们",
+    "pinyin": "zánmen",
+    "meaning": "we, us",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "古玩店",
+    "pinyin": "gǔwàndiàn",
+    "meaning": "antique store",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "挺",
+    "pinyin": "tǐng",
+    "meaning": "quite",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "公寓",
+    "pinyin": "gōngyù",
+    "meaning": "boarding house",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "游泳馆",
+    "pinyin": "yóuyǒngguǎn",
+    "meaning": "natatorium",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "游泳",
+    "pinyin": "yóuyǒng",
+    "meaning": "to swim",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "篮球场",
+    "pinyin": "lánqiúchǎng",
+    "meaning": "basketball court",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "篮球",
+    "pinyin": "lánqiú",
+    "meaning": "basketball",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "晕",
+    "pinyin": "yūn",
+    "meaning": "to be dizzy",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "包",
+    "pinyin": "bāo",
+    "meaning": "bag",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "红色",
+    "pinyin": "hóngsè",
+    "meaning": "red",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "带",
+    "pinyin": "dài",
+    "meaning": "to bring along with",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "水果",
+    "pinyin": "shuǐguǒ",
+    "meaning": "fruit",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "饮料",
+    "pinyin": "yǐnliào",
+    "meaning": "beverage",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "纸巾",
+    "pinyin": "zhǐjīn",
+    "meaning": "napkin",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "套",
+    "pinyin": "tào",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "客厅",
+    "pinyin": "kètīng",
+    "meaning": "living room",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "电视",
+    "pinyin": "diànshì",
+    "meaning": "TV",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "冰箱",
+    "pinyin": "bīngxiāng",
+    "meaning": "refrigerator",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "上网",
+    "pinyin": "shàngwǎng",
+    "meaning": "to surf the Internet, to be online",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "方便",
+    "pinyin": "fāngbiàn",
+    "meaning": "convenient",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "生活",
+    "pinyin": "shēnghuó",
+    "meaning": "living, life",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "条件",
+    "pinyin": "tiáojiàn",
+    "meaning": "condition",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "衣柜",
+    "pinyin": "yīguì",
+    "meaning": "wardrobe",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "颜色",
+    "pinyin": "yánsè",
+    "meaning": "color",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "这种",
+    "pinyin": "zhè zhǒng",
+    "meaning": "this kind",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "种",
+    "pinyin": "zhǒng",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "别的",
+    "pinyin": "biéde",
+    "meaning": "other",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "白",
+    "pinyin": "bái",
+    "meaning": "white",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "meaning": "small",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "商店",
+    "pinyin": "shāngdiàn",
+    "meaning": "store",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "怎么",
+    "pinyin": "zěnme",
+    "meaning": "how",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "综合楼",
+    "pinyin": "zònghé lóu",
+    "meaning": "building for multipurpose",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "往",
+    "pinyin": "wǎng",
+    "meaning": "to, along",
+    "partOfSpeech": "preposition"
+  },
+  {
+    "hanzi": "前",
+    "pinyin": "qián",
+    "meaning": "ahead",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "路口",
+    "pinyin": "lùkǒu",
+    "meaning": "crossing",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "电梯",
+    "pinyin": "diàntī",
+    "meaning": "elevator",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下来",
+    "pinyin": "xiàlái",
+    "meaning": "to come down",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "楼梯",
+    "pinyin": "lóutī",
+    "meaning": "stair",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "瓶",
+    "pinyin": "píng",
+    "meaning": "measure word, a bottle of",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "出去",
+    "pinyin": "chūqù",
+    "meaning": "to get out",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "那边",
+    "pinyin": "nàbian",
+    "meaning": "over there",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "堵车",
+    "pinyin": "dǔchē",
+    "meaning": "traffic jam",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "学院",
+    "pinyin": "xuéyuàn",
+    "meaning": "institute",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "桥",
+    "pinyin": "qiáo",
+    "meaning": "overpass",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "百货大楼",
+    "pinyin": "bǎihuò dàlóu",
+    "meaning": "department store",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "上来",
+    "pinyin": "shànglái",
+    "meaning": "to come up",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "一会儿见",
+    "pinyin": "yíhuìr jiàn",
+    "meaning": "See you later.",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "学院桥",
+    "pinyin": "Xuéyuàn Qiáo",
+    "meaning": "Xueyuan Overpass",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "人民币",
+    "pinyin": "rénmínbì",
+    "meaning": "RMB, name of Chinese currency",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "元",
+    "pinyin": "yuán",
+    "meaning": "measure word, yuan, a denomination of Chinese currency",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "角",
+    "pinyin": "jiǎo",
+    "meaning": "measure word, jiao, a denomination of Chinese currency",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "meaning": "how much",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "硬币",
+    "pinyin": "yìngbì",
+    "meaning": "coin",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "算",
+    "pinyin": "suàn",
+    "meaning": "to figure, to calculate",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "光临",
+    "pinyin": "guānglín",
+    "meaning": "to be present",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "位",
+    "pinyin": "wèi",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "meaning": "to buy",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "这边",
+    "pinyin": "zhèbian",
+    "meaning": "here",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "跟",
+    "pinyin": "gēn",
+    "meaning": "to follow",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "旗袍",
+    "pinyin": "qípáo",
+    "meaning": "cheongsam",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "蓝色",
+    "pinyin": "lǎnsè",
+    "meaning": "blue",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "试",
+    "pinyin": "shì",
+    "meaning": "to try on",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "合适",
+    "pinyin": "héshì",
+    "meaning": "to be fit",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "有点儿",
+    "pinyin": "yǒudiǎnr",
+    "meaning": "a bit",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "交",
+    "pinyin": "jiāo",
+    "meaning": "to hand over",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "香港",
+    "pinyin": "Xiānggǎng",
+    "meaning": "Hong Kong",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "meaning": "dish",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "烤鸭",
+    "pinyin": "kǎoyā",
+    "meaning": "roast duck",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "筷子",
+    "pinyin": "kuàizi",
+    "meaning": "chopsticks",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "难",
+    "pinyin": "nán",
+    "meaning": "difficult",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "刀",
+    "pinyin": "dāo",
+    "meaning": "knife",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "叉",
+    "pinyin": "chā",
+    "meaning": "fork",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "副",
+    "pinyin": "fù",
+    "meaning": "measure word, a pair of",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "不用",
+    "pinyin": "búyòng",
+    "meaning": "need not",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "开玩笑",
+    "pinyin": "kāi wánxiào",
+    "meaning": "to joke",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "用",
+    "pinyin": "yòng",
+    "meaning": "to use",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "极",
+    "pinyin": "jí",
+    "meaning": "extremely",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "勺",
+    "pinyin": "sháo",
+    "meaning": "spoon",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "甜",
+    "pinyin": "tián",
+    "meaning": "sweet",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "古老肉",
+    "pinyin": "gǔlǎoròu",
+    "meaning": "fried pork in sweet and sour sauce",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "清炒西兰花",
+    "pinyin": "qīngchǎo xīlánhuā",
+    "meaning": "stir-fried cauliflower",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "(一)点儿",
+    "pinyin": "(yī) diǎnr",
+    "meaning": "a little, indefinite amount",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "服务员",
+    "pinyin": "fúwùyuán",
+    "meaning": "waiter or waitress",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "碗",
+    "pinyin": "wǎn",
+    "meaning": "bowl",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "壶",
+    "pinyin": "hú",
+    "meaning": "pot",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "这些",
+    "pinyin": "zhèxiē",
+    "meaning": "these",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "打包",
+    "pinyin": "dǎbāo",
+    "meaning": "to pack up",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "登山",
+    "pinyin": "dēng shān",
+    "meaning": "mountainclimbing",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "俱乐部",
+    "pinyin": "jùlèbù",
+    "meaning": "club",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "错",
+    "pinyin": "cuò",
+    "meaning": "wrong",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "报名",
+    "pinyin": "bàomíng",
+    "meaning": "to sign up",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "转",
+    "pinyin": "zhuǎn",
+    "meaning": "to put a call through",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "查",
+    "pinyin": "chá",
+    "meaning": "to check",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "世纪",
+    "pinyin": "shìjì",
+    "meaning": "century",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "数码",
+    "pinyin": "shùmǎ",
+    "meaning": "digital",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "清楚",
+    "pinyin": "qīngchu",
+    "meaning": "sure, clear",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "帮",
+    "pinyin": "bāng",
+    "meaning": "to help",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "转告",
+    "pinyin": "zhuǎngào",
+    "meaning": "to pass word to",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "哪位",
+    "pinyin": "nǎ wèi",
+    "meaning": "who",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "舞会",
+    "pinyin": "wǔhuì",
+    "meaning": "dancing party, ball",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "发",
+    "pinyin": "fā",
+    "meaning": "to send",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "短信",
+    "pinyin": "duǎnxìn",
+    "meaning": "note, a short message",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "告诉",
+    "pinyin": "gàosu",
+    "meaning": "to tell, to inform",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "地点",
+    "pinyin": "dìdiǎn",
+    "meaning": "place",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "礼堂",
+    "pinyin": "lǐtáng",
+    "meaning": "auditorium",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "门口",
+    "pinyin": "ménkǒu",
+    "meaning": "gate, entrance",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "不见不散",
+    "pinyin": "bú jiàn bú sàn",
+    "meaning": "be there or be square, not leave without seeing each other",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "阳台",
+    "pinyin": "yángtái",
+    "meaning": "balcony",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "那儿",
+    "pinyin": "nàr",
+    "meaning": "there",
+    "partOfSpeech": "pronoun"
+  },
+  {
+    "hanzi": "厨房",
+    "pinyin": "chúfáng",
+    "meaning": "kitchen",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "身体",
+    "pinyin": "shēntǐ",
+    "meaning": "health",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "同屋",
+    "pinyin": "tóngwū",
+    "meaning": "roommate",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "还行",
+    "pinyin": "hái xíng",
+    "meaning": "not bad",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "隔壁",
+    "pinyin": "gébi",
+    "meaning": "next door",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "共",
+    "pinyin": "gòng",
+    "meaning": "together",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "浴室",
+    "pinyin": "yùshì",
+    "meaning": "bathroom",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "卫生间",
+    "pinyin": "wèishēngjiān",
+    "meaning": "toilet",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "宿舍楼",
+    "pinyin": "sùshèlóu",
+    "meaning": "dormitory building",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "公用",
+    "pinyin": "gōngyòng",
+    "meaning": "for public use, public",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "洗衣房",
+    "pinyin": "xīyīfáng",
+    "meaning": "laundry, washhouse",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "乱",
+    "pinyin": "luàn",
+    "meaning": "messy, poorly organized",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "哪里哪里",
+    "pinyin": "nǎli nǎli",
+    "meaning": "you are exaggerating (a self-abasement expression in a response to a praise)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "平时",
+    "pinyin": "píngshí",
+    "meaning": "usually",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "写字台",
+    "pinyin": "xiězìtái",
+    "meaning": "desk, secretaire",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "不少",
+    "pinyin": "bùshǎo",
+    "meaning": "quite a lot",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "书桌",
+    "pinyin": "shūzhuō",
+    "meaning": "desk",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "灯",
+    "pinyin": "dēng",
+    "meaning": "light, lamp",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "大灯",
+    "pinyin": "dàdēng",
+    "meaning": "headlight",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "应该",
+    "pinyin": "yīnggāi",
+    "meaning": "should",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "靠",
+    "pinyin": "kào",
+    "meaning": "to stand sth. against sth. else",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "窗户",
+    "pinyin": "chuānghu",
+    "meaning": "window",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "汽车",
+    "pinyin": "qìchē",
+    "meaning": "automobile",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "古玩",
+    "pinyin": "gǔwán",
+    "meaning": "antique",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "站牌",
+    "pinyin": "zhànpái",
+    "meaning": "route board",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "才",
+    "pinyin": "cái",
+    "meaning": "only",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "辆",
+    "pinyin": "liàng",
+    "meaning": "measure word for vehicle",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "张",
+    "pinyin": "zhāng",
+    "meaning": "measure word",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "语言",
+    "pinyin": "yǔyán",
+    "meaning": "language",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "支线",
+    "pinyin": "zhīxiàn",
+    "meaning": "branch line",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下车",
+    "pinyin": "xiàchē",
+    "meaning": "to get off",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "师傅",
+    "pinyin": "shīfu",
+    "meaning": "master",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "上车",
+    "pinyin": "shàngchē",
+    "meaning": "to get aboard",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "对面",
+    "pinyin": "duìmiàn",
+    "meaning": "opposite",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "环线",
+    "pinyin": "huánxiàn",
+    "meaning": "loop line",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "得",
+    "pinyin": "děi",
+    "meaning": "should",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "线",
+    "pinyin": "xiàn",
+    "meaning": "line",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "古玩城",
+    "pinyin": "Gǔwán Chéng",
+    "meaning": "the Antique Town",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "语言大学",
+    "pinyin": "Yǔyán Dàxué",
+    "meaning": "Language University",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "西直门",
+    "pinyin": "Xīzhímén",
+    "meaning": "Xizhimen",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "本",
+    "pinyin": "běn",
+    "meaning": "measure word, copy",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "地图册",
+    "pinyin": "dìtúcè",
+    "meaning": "atlas",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "没问题",
+    "pinyin": "méi wèntí",
+    "meaning": "no problem",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "详细",
+    "pinyin": "xiángxì",
+    "meaning": "detailed",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "纸条",
+    "pinyin": "zhǐtiáo",
+    "meaning": "slip, scrip",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "样",
+    "pinyin": "yàng",
+    "meaning": "kind",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "黄色",
+    "pinyin": "huángsè",
+    "meaning": "yellow",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "上面",
+    "pinyin": "shàngmiàn",
+    "meaning": "on",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "着急",
+    "pinyin": "zháo jí",
+    "meaning": "worried",
+    "partOfSpeech": "verb, adjective"
+  },
+  {
+    "hanzi": "快",
+    "pinyin": "kuài",
+    "meaning": "quickly",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "哈",
+    "pinyin": "hā",
+    "meaning": "expressing triumph or satisfaction, usu. reduplicated",
+    "partOfSpeech": "interjection"
+  },
+  {
+    "hanzi": "女朋友",
+    "pinyin": "nǚ péngyou",
+    "meaning": "girlfriend",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "普通",
+    "pinyin": "pǔtōng",
+    "meaning": "ordinary",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "打扰",
+    "pinyin": "dǎrǎo",
+    "meaning": "to bother",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "院子",
+    "pinyin": "yuànzi",
+    "meaning": "courtyard",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "诶",
+    "pinyin": "ēi",
+    "meaning": "hey (interjection)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "凹",
+    "pinyin": "āo",
+    "meaning": "ao (interjection)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "狗",
+    "pinyin": "gǒu",
+    "meaning": "dog",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "哇",
+    "pinyin": "wā",
+    "meaning": "wow (interjection)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "喔",
+    "pinyin": "wō",
+    "meaning": "woohoo (interjection)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "歪",
+    "pinyin": "wāi",
+    "meaning": "wai (interjection)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我会说中文",
+    "pinyin": "Wǒ huì shuō Zhōngwén",
+    "meaning": "I can speak Chinese",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "机器",
+    "pinyin": "jīqì",
+    "meaning": "machine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你呢？",
+    "pinyin": "Nǐ ne?",
+    "meaning": "And you?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我饱了",
+    "pinyin": "Wǒ bǎo le",
+    "meaning": "I'm full",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "月亮",
+    "pinyin": "yuèliang",
+    "meaning": "moon",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "汉字",
+    "pinyin": "hànzì",
+    "meaning": "Chinese characters",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "问题",
+    "pinyin": "wèntí",
+    "meaning": "question / problem",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我晕了",
+    "pinyin": "Wǒ yūn le",
+    "meaning": "I'm dizzy",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "足",
+    "pinyin": "zú",
+    "meaning": "foot",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你是谁？",
+    "pinyin": "Nǐ shì shuí?",
+    "meaning": "Who are you?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我很好",
+    "pinyin": "Wǒ hěn hǎo",
+    "meaning": "I'm fine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "套语",
+    "pinyin": "tàoyǔ",
+    "meaning": "polite expression / formulaic phrase",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你几岁？",
+    "pinyin": "Nǐ jǐ suì?",
+    "meaning": "How old are you?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "高楼",
+    "pinyin": "gāolóu",
+    "meaning": "skyscraper / high-rise building",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "模型",
+    "pinyin": "móxíng",
+    "meaning": "model",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "黑色",
+    "pinyin": "hēisè",
+    "meaning": "black",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我的模型",
+    "pinyin": "Wǒ de móxíng",
+    "meaning": "my model",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我有一个问题",
+    "pinyin": "Wǒ yǒu yīgè wèntí",
+    "meaning": "I have a question",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我说英文",
+    "pinyin": "Wǒ shuō Yīngwén",
+    "meaning": "I speak English",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我是法国人",
+    "pinyin": "Wǒ shì Fǎguó rén",
+    "meaning": "I am French",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "乃",
+    "pinyin": "nǎi",
+    "meaning": "so / therefore",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我从（中国）来",
+    "pinyin": "Wǒ cóng (Zhōngguó) lái",
+    "meaning": "I come from (China)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "晴天",
+    "pinyin": "qíngtiān",
+    "meaning": "sunny / clear sky",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "阴天",
+    "pinyin": "yīntiān",
+    "meaning": "overcast / cloudy",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "多云",
+    "pinyin": "duōyún",
+    "meaning": "cloudy",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下雨",
+    "pinyin": "xiàyǔ",
+    "meaning": "to rain",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "盘",
+    "pinyin": "pán",
+    "meaning": "measure word for plates / dish",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "公民",
+    "pinyin": "gōngmín",
+    "meaning": "citizen",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "医生",
+    "pinyin": "yīshēng",
+    "meaning": "doctor",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "也是",
+    "pinyin": "yěshì",
+    "meaning": "also / too (is)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "大",
+    "pinyin": "dà",
+    "meaning": "big / old",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "不对",
+    "pinyin": "bù duì",
+    "meaning": "not correct / wrong",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我们给你发工资",
+    "pinyin": "Wǒmen gěi nǐ fā gōngzī",
+    "meaning": "We pay you a salary",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "不可以",
+    "pinyin": "bù kěyǐ",
+    "meaning": "cannot / not allowed",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "音乐",
+    "pinyin": "yīnyuè",
+    "meaning": "music",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "果汁",
+    "pinyin": "guǒzhī",
+    "meaning": "fruit juice",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "想象",
+    "pinyin": "xiǎngxiàng",
+    "meaning": "to imagine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "超级",
+    "pinyin": "chāojí",
+    "meaning": "super / extremely",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "他超过一米八",
+    "pinyin": "Tā chāoguò yīmǐ bā",
+    "meaning": "He is over 1.8 meters tall",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我的个子是一米八",
+    "pinyin": "Wǒ de gèzi shì yīmǐ bā",
+    "meaning": "I am 1.8 meters tall",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "美",
+    "pinyin": "měi",
+    "meaning": "beautiful",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "聪明",
+    "pinyin": "cōngming",
+    "meaning": "clever / smart",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "meaning": "cat",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "女孩",
+    "pinyin": "nǚhái",
+    "meaning": "girl",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "然后",
+    "pinyin": "ránhòu",
+    "meaning": "then / afterwards",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "照片",
+    "pinyin": "zhàopiàn",
+    "meaning": "photograph / picture",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "专业",
+    "pinyin": "zhuānyè",
+    "meaning": "major / specialty / professional",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我八十公斤",
+    "pinyin": "Wǒ bāshí gōngjīn",
+    "meaning": "I weigh 80 kilograms",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "太热了",
+    "pinyin": "tài rè le",
+    "meaning": "too hot",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "你多重？",
+    "pinyin": "nǐ duō zhòng?",
+    "meaning": "How much do you weigh?",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "手",
+    "pinyin": "shǒu",
+    "meaning": "hand",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "拉",
+    "pinyin": "lā",
+    "meaning": "to pull / to drag",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "女人",
+    "pinyin": "nǚrén",
+    "meaning": "woman",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "门",
+    "pinyin": "mén",
+    "meaning": "door / gate",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "球",
+    "pinyin": "qiú",
+    "meaning": "ball",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "市中心",
+    "pinyin": "shì zhōngxīn",
+    "meaning": "city center",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我在奥林匹克公园",
+    "pinyin": "Wǒ zài Àolínpǐkè gōngyuán",
+    "meaning": "I am at the Olympic Park",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "公园",
+    "pinyin": "gōngyuán",
+    "meaning": "park",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "派对",
+    "pinyin": "pàiduì",
+    "meaning": "party",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我住在",
+    "pinyin": "wǒ zhù zài",
+    "meaning": "I live at",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我接你",
+    "pinyin": "Wǒ jiē nǐ",
+    "meaning": "I'll pick you up",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "微辣",
+    "pinyin": "wēi là",
+    "meaning": "lightly spicy",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "不辣",
+    "pinyin": "bù là",
+    "meaning": "not spicy",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "太辣",
+    "pinyin": "tài là",
+    "meaning": "too spicy",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "可爱",
+    "pinyin": "kě'ài",
+    "meaning": "cute / adorable",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "不要",
+    "pinyin": "bù yào",
+    "meaning": "don't want / don't",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "电脑",
+    "pinyin": "diànnǎo",
+    "meaning": "computer",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "毕业",
+    "pinyin": "bìyè",
+    "meaning": "to graduate",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "保管",
+    "pinyin": "bǎoguǎn",
+    "meaning": "to keep / to hold / to manage",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "屋子",
+    "pinyin": "wūzi",
+    "meaning": "room / house",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "银",
+    "pinyin": "yín",
+    "meaning": "silver",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "健康",
+    "pinyin": "jiànkāng",
+    "meaning": "healthy",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "顺利",
+    "pinyin": "shùnlì",
+    "meaning": "smoothly / successfully",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "恐龙",
+    "pinyin": "kǒnglóng",
+    "meaning": "dinosaur",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "只有",
+    "pinyin": "zhǐyǒu",
+    "meaning": "to have only",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "东西",
+    "pinyin": "dōngxi",
+    "meaning": "thing / stuff",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "总共",
+    "pinyin": "zǒnggòng",
+    "meaning": "total / in total",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "还有",
+    "pinyin": "háiyǒu",
+    "meaning": "there is/are also / in addition",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "目",
+    "pinyin": "mù",
+    "meaning": "eye (radical)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "眼睛",
+    "pinyin": "yǎnjīng",
+    "meaning": "eyes",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "猪",
+    "pinyin": "zhū",
+    "meaning": "pig",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "肝",
+    "pinyin": "gān",
+    "meaning": "liver",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "中午",
+    "pinyin": "zhōngwǔ",
+    "meaning": "noon",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "以前",
+    "pinyin": "yǐqián",
+    "meaning": "before / earlier",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "电影",
+    "pinyin": "diànyǐng",
+    "meaning": "movie / film",
+    "partOfSpeech": "electric shadow"
+  },
+  {
+    "hanzi": "一点",
+    "pinyin": "yīdiǎn",
+    "meaning": "a little / a bit",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "树",
+    "pinyin": "shù",
+    "meaning": "tree",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "墨",
+    "pinyin": "mò",
+    "meaning": "ink",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "各种",
+    "pinyin": "gè zhǒng",
+    "meaning": "all kinds / various",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "一月五日",
+    "pinyin": "yīyuè wǔ rì",
+    "meaning": "January 5th",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "五月一日",
+    "pinyin": "wǔyuè yī rì",
+    "meaning": "May 1st",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "第三",
+    "pinyin": "dì sān",
+    "meaning": "third",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "meaning": "to think / to want",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "散步",
+    "pinyin": "sànbù",
+    "meaning": "to take a walk / to stroll",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "想要",
+    "pinyin": "xiǎngyào",
+    "meaning": "to want",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "条",
+    "pinyin": "tiáo",
+    "meaning": "measure word for long, thin objects",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "碟",
+    "pinyin": "dié",
+    "meaning": "small plate / dish / measure word",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "一双",
+    "pinyin": "yī shuāng",
+    "meaning": "a pair of",
+    "partOfSpeech": "kuài zi = chopsticks"
+  },
+  {
+    "hanzi": "事儿",
+    "pinyin": "shìr",
+    "meaning": "matter / affair / thing",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "特别",
+    "pinyin": "tèbié",
+    "meaning": "special / especially",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "草",
+    "pinyin": "cǎo",
+    "meaning": "grass (radical)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "后院",
+    "pinyin": "hòuyuàn",
+    "meaning": "backyard",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "地板",
+    "pinyin": "dìbǎn",
+    "meaning": "floor (ground)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "杂志",
+    "pinyin": "zázhì",
+    "meaning": "magazine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "玩具店",
+    "pinyin": "wánjù diàn",
+    "meaning": "toy shop / toy store",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "打篮球",
+    "pinyin": "dǎ lánqiú",
+    "meaning": "to play basketball",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "馆",
+    "pinyin": "guǎn",
+    "meaning": "building / hall / venue (indoor)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "酒",
+    "pinyin": "jiǔ",
+    "meaning": "alcohol / liquor",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "白酒",
+    "pinyin": "báijiǔ",
+    "meaning": "white liquor / baijiu (50°+)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "元角分",
+    "pinyin": "Yuán jiǎo fēn",
+    "meaning": "yuan, jiao, fen (currency units)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "能便宜一点吗？",
+    "pinyin": "Néng piányi yīdiǎn ma?",
+    "meaning": "Can you make it a little cheaper?",
+    "partOfSpeech": "Bargaining"
+  },
+  {
+    "hanzi": "更",
+    "pinyin": "gèng",
+    "meaning": "more (comparative)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "最",
+    "pinyin": "zuì",
+    "meaning": "most (superlative)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "低",
+    "pinyin": "dī",
+    "meaning": "low",
+    "partOfSpeech": "<-> gāo (high)"
+  },
+  {
+    "hanzi": "公共",
+    "pinyin": "gōnggòng",
+    "meaning": "public",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "交通",
+    "pinyin": "jiāotōng",
+    "meaning": "transportation / traffic",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "桌",
+    "pinyin": "zhuō",
+    "meaning": "table / desk",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "meaning": "cold",
+    "partOfSpeech": "→ rè (hot)"
+  },
+  {
+    "hanzi": "饿",
+    "pinyin": "è",
+    "meaning": "hungry",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "假",
+    "pinyin": "jiǎ",
+    "meaning": "fake / false",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "法国菜",
+    "pinyin": "Fǎguó cài",
+    "meaning": "French cuisine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "头发",
+    "pinyin": "tóufa",
+    "meaning": "hair",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "服",
+    "pinyin": "fú",
+    "meaning": "to serve",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "猪肉",
+    "pinyin": "zhūròu",
+    "meaning": "pork",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "牛肉",
+    "pinyin": "niúròu",
+    "meaning": "beef",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "排",
+    "pinyin": "pái",
+    "meaning": "to queue / line up",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我来做",
+    "pinyin": "Wǒ lái zuò",
+    "meaning": "I'll do it / Let me do it",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "饺子",
+    "pinyin": "jiǎozi",
+    "meaning": "dumplings",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "一盘饺子",
+    "pinyin": "yī pán jiǎozi",
+    "meaning": "a plate of dumplings",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "免费",
+    "pinyin": "miǎn fèi",
+    "meaning": "free (of charge)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我错了",
+    "pinyin": "Wǒ cuò le",
+    "meaning": "I was wrong / I made a mistake",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我给你打电话",
+    "pinyin": "Wǒ gěi nǐ dǎ diànhuà",
+    "meaning": "I'll call you",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "什么时候",
+    "pinyin": "shénme shíhou",
+    "meaning": "when",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "不告诉",
+    "pinyin": "bù gàosu",
+    "meaning": "not tell",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "提",
+    "pinyin": "tí",
+    "meaning": "to lift / to mention",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我提吧",
+    "pinyin": "Wǒ tí ba",
+    "meaning": "I'll mention it / I'll bring it up",
+    "partOfSpeech": "noun"
+  }
+]

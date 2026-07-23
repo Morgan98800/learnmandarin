@@ -1,0 +1,242 @@
+[
+  {
+    "hanzi": "学生",
+    "pinyin": "xuéshēng",
+    "meaning": "student",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "公司",
+    "pinyin": "gōngsī",
+    "meaning": "firm, company",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "工作",
+    "pinyin": "gōngzuò",
+    "meaning": "to work",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "大学生",
+    "pinyin": "dàxuéshēng",
+    "meaning": "college student",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "职员",
+    "pinyin": "zhíyuán",
+    "meaning": "office clerk",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "学习",
+    "pinyin": "xuéxí",
+    "meaning": "to learn",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "学校",
+    "pinyin": "xuéxiào",
+    "meaning": "school",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下班",
+    "pinyin": "xià bān",
+    "meaning": "to be off duty, to get off work",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "总公司",
+    "pinyin": "zǒnggōngsī",
+    "meaning": "head office",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "学",
+    "pinyin": "xué",
+    "meaning": "to learn",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "书架",
+    "pinyin": "shūjià",
+    "meaning": "bookshelf",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "书包",
+    "pinyin": "shūbāo",
+    "meaning": "schoolbag",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "女生",
+    "pinyin": "nǚshēng",
+    "meaning": "schoolgirl",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "面包",
+    "pinyin": "miànbāo",
+    "meaning": "bread",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "贵",
+    "pinyin": "guì",
+    "meaning": "expensive",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "hanzi": "已经",
+    "pinyin": "yǐjīng",
+    "meaning": "already",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "报名处",
+    "pinyin": "bàomíngchù",
+    "meaning": "registration office, office for signing-up",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "记录",
+    "pinyin": "jìlù",
+    "meaning": "to write down",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "上课",
+    "pinyin": "shàngkè",
+    "meaning": "to have class",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "世纪数码公司",
+    "pinyin": "Shìjì Shùmǎ Gōngsī",
+    "meaning": "The Century Digital Company",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "meaning": "classmate",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "书房",
+    "pinyin": "shūfáng",
+    "meaning": "study",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "书柜",
+    "pinyin": "shūguì",
+    "meaning": "bookcase",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "书",
+    "pinyin": "shū",
+    "meaning": "book",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "台灯",
+    "pinyin": "táidēng",
+    "meaning": "reading lamp",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "书店",
+    "pinyin": "shūdiàn",
+    "meaning": "bookstore",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我是（学生）",
+    "pinyin": "Wǒ shì (xuéshēng)",
+    "meaning": "I am (a student)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我在（公司）工作",
+    "pinyin": "Wǒ zài (gōngsī) gōngzuò",
+    "meaning": "I work at (a company)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我工作",
+    "pinyin": "Wǒ gōngzuò",
+    "meaning": "I work",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "汉书",
+    "pinyin": "Hànshū",
+    "meaning": "History of the Han Dynasty / Chinese book",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "校",
+    "pinyin": "xiào",
+    "meaning": "school (in compounds)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "警察",
+    "pinyin": "jǐngchá",
+    "meaning": "police / police officer",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我看书",
+    "pinyin": "Wǒ kàn shū",
+    "meaning": "I read (a book)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "阅读",
+    "pinyin": "yuèdú",
+    "meaning": "to read / reading",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "花",
+    "pinyin": "huā",
+    "meaning": "flower / to spend",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "笔",
+    "pinyin": "bǐ",
+    "meaning": "pen / pencil",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "场",
+    "pinyin": "chǎng",
+    "meaning": "field / open space",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "建筑学",
+    "pinyin": "jiànzhù xué",
+    "meaning": "architecture (study)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "便宜",
+    "pinyin": "piányi",
+    "meaning": "cheap / inexpensive",
+    "partOfSpeech": "→ guì (expensive)"
+  },
+  {
+    "hanzi": "发生",
+    "pinyin": "fāshēng",
+    "meaning": "to happen / to occur",
+    "partOfSpeech": "noun"
+  }
+]

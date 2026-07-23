@@ -1,0 +1,392 @@
+[
+  {
+    "hanzi": "认识",
+    "pinyin": "rènshi",
+    "meaning": "to meet, to know",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "每天",
+    "pinyin": "měitiān",
+    "meaning": "everyday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "天",
+    "pinyin": "tiān",
+    "meaning": "day",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下午",
+    "pinyin": "xiàwǔ",
+    "meaning": "afternoon",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "现在",
+    "pinyin": "xiànzài",
+    "meaning": "now",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "星期六",
+    "pinyin": "xīngqīliù",
+    "meaning": "Saturday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "上午",
+    "pinyin": "shàngwǔ",
+    "meaning": "morning",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "明天",
+    "pinyin": "míngtiān",
+    "meaning": "tomorrow",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "meaning": "today",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "晚上",
+    "pinyin": "wǎnshang",
+    "meaning": "evening",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "知道",
+    "pinyin": "zhīdào",
+    "meaning": "to know",
+    "partOfSpeech": "verb"
+  },
+  {
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "meaning": "hour",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "分",
+    "pinyin": "fēn",
+    "meaning": "minute",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "加班",
+    "pinyin": "jiā bān",
+    "meaning": "to work overtime",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "星期五",
+    "pinyin": "xīngqīwǔ",
+    "meaning": "Friday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下次",
+    "pinyin": "xià cì",
+    "meaning": "next time",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "次",
+    "pinyin": "cì",
+    "meaning": "time",
+    "partOfSpeech": "measure word"
+  },
+  {
+    "hanzi": "星期三",
+    "pinyin": "xīngqīsān",
+    "meaning": "Wednesday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "时间",
+    "pinyin": "shíjiān",
+    "meaning": "time",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "生日",
+    "pinyin": "shēngrì",
+    "meaning": "birthday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "meaning": "month",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "去年",
+    "pinyin": "qùnián",
+    "meaning": "last year",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "星期",
+    "pinyin": "xīngqī",
+    "meaning": "week",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "明年",
+    "pinyin": "míngnián",
+    "meaning": "next year",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "星期天",
+    "pinyin": "xīngqītiān",
+    "meaning": "Sunday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "圣诞节",
+    "pinyin": "Shèngdàn Jié",
+    "meaning": "Christmas Day",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "国庆节",
+    "pinyin": "Guóqìng Jié",
+    "meaning": "National Day",
+    "partOfSpeech": "proper name"
+  },
+  {
+    "hanzi": "刚才",
+    "pinyin": "gāngcái",
+    "meaning": "just now",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "请稍等",
+    "pinyin": "qǐng shāo děng",
+    "meaning": "Just a minute.",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "老",
+    "pinyin": "lǎo",
+    "meaning": "all the time",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "hanzi": "周末",
+    "pinyin": "zhōumò",
+    "meaning": "weekend",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "周五",
+    "pinyin": "zhōuwǔ",
+    "meaning": "Friday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "星期一",
+    "pinyin": "xīngqīyī",
+    "meaning": "Monday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "分钟",
+    "pinyin": "fēnzhōng",
+    "meaning": "minute",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "小时",
+    "pinyin": "xiǎoshí",
+    "meaning": "hour",
+    "partOfSpeech": "nián: year"
+  },
+  {
+    "hanzi": "我知道",
+    "pinyin": "Wǒ zhī dào",
+    "meaning": "I know",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "日",
+    "pinyin": "rì",
+    "meaning": "day / sun",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "会",
+    "pinyin": "huì",
+    "meaning": "can / know how to",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我二十二岁",
+    "pinyin": "Wǒ èrshí'èr suì",
+    "meaning": "I am 22 years old",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "从现在",
+    "pinyin": "cóng xiànzài",
+    "meaning": "from now on",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "前天",
+    "pinyin": "qiántiān",
+    "meaning": "the day before yesterday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "今天 明天 后天",
+    "pinyin": "jīntiān míngtiān hòutiān",
+    "meaning": "today, tomorrow, the day after tomorrow",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "星期（数字）",
+    "pinyin": "Xīngqī + (number)",
+    "meaning": "day of the week",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "年",
+    "pinyin": "nián",
+    "meaning": "year",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "昨天",
+    "pinyin": "zuótiān",
+    "meaning": "yesterday",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "后天",
+    "pinyin": "hòutiān",
+    "meaning": "the day after tomorrow",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "今天下雨",
+    "pinyin": "Jīntiān xiàyǔ",
+    "meaning": "It's raining today",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下雪",
+    "pinyin": "xiàxuě",
+    "meaning": "to snow",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "倍",
+    "pinyin": "bèi",
+    "meaning": "measure word for times / -fold",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我二十三岁",
+    "pinyin": "Wǒ èrshísān suì",
+    "meaning": "I am 23 years old",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "十二点",
+    "pinyin": "shí'èr diǎn",
+    "meaning": "12 o'clock",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "好久不见",
+    "pinyin": "hǎo jiǔ bùjiàn",
+    "meaning": "long time no see",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "上周",
+    "pinyin": "shàng zhōu",
+    "meaning": "last week",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "下周",
+    "pinyin": "xià zhōu",
+    "meaning": "next week",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "这周",
+    "pinyin": "zhè zhōu",
+    "meaning": "this week",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "晚上九点",
+    "pinyin": "wǎnshang jiǔ diǎn",
+    "meaning": "9 o'clock in the evening",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "半夜",
+    "pinyin": "bànyè",
+    "meaning": "midnight",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "早上",
+    "pinyin": "zǎoshang",
+    "meaning": "morning",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "凌晨",
+    "pinyin": "língchén",
+    "meaning": "early morning (before dawn)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "现在来学习",
+    "pinyin": "Xiànzài lái xuéxí",
+    "meaning": "Now let's study",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我不知道，我不确定。",
+    "pinyin": "Wǒ bù zhīdào, wǒ bù quèdìng.",
+    "meaning": "I don't know, I'm not sure.",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "空",
+    "pinyin": "kōng",
+    "meaning": "empty / free (time)",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "我的生日是二十号",
+    "pinyin": "Wǒ de shēngrì shì èrshí hào",
+    "meaning": "My birthday is on the 20th",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "刚",
+    "pinyin": "gāng",
+    "meaning": "just now / just",
+    "partOfSpeech": "noun"
+  },
+  {
+    "hanzi": "为了你的生日，我给你买蛋糕",
+    "pinyin": "Wèi le nǐ de shēngrì, wǒ gěi nǐ mǎi dàngāo",
+    "meaning": "For your birthday, I'll buy you a cake",
+    "partOfSpeech": "noun"
+  }
+]
