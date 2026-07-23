@@ -1,0 +1,24 @@
+{
+  "short_name": "Notes from class",
+  "name": "Notes from class — Chinese Learning App",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#140d0c",
+  "theme_color": "#9e2016",
+  "description": "Mobile-first offline Mandarin Chinese learning application for vocabulary, verbs, grammar, and flashcard practice."
+}
