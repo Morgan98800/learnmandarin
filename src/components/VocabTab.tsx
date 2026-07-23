@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import * as Icons from 'lucide-react';
 import PinyinReveal from './PinyinReveal';
 import TTSButton from './TTSButton';
-import DecompositionCard from './DecompositionCard';
+import DecompositionModal from './DecompositionModal';
 
 interface VocabItem {
   hanzi: string;
@@ -27,7 +27,7 @@ export default function VocabTab() {
   const [selectedSection, setSelectedSection] = useState<Section | null>(null);
   const [vocabItems, setVocabItems] = useState<VocabItem[]>([]);
   const [loading, setLoading] = useState(false);
-  const [selectedChar, setSelectedChar] = useState<any | null>(null);
+  const [decomposeChar, setDecomposeChar] = useState<string | null>(null);
   const [starredWords, setStarredWords] = useState<string[]>([]);
 
   useEffect(() => {
@@ -82,66 +82,18 @@ export default function VocabTab() {
     localStorage.setItem('starred_vocab', JSON.stringify(updated));
   };
 
-  const handleDecompose = (item: VocabItem) => {
-    // Find radical info in the 1000 frequency list if it exists
-    fetch('data/frequency-1000.json')
-      .then(res => res.json())
-      .then((chars: any[]) => {
-        const found = chars.find(c => c.character === item.hanzi[0]);
-        if (found) {
-          setSelectedChar({
-            character: found.character,
-            pinyin: found.pinyin,
-            meaning: found.meaning,
-            radical: found.radical,
-            decomposition: found.decomposition
-          });
-        } else {
-          // Fallback with current item details
-          setSelectedChar({
-            character: item.hanzi[0],
-            pinyin: item.pinyin,
-            meaning: item.meaning,
-            radical: '',
-            decomposition: []
-          });
-        }
-      })
-      .catch(() => {
-        setSelectedChar({
-          character: item.hanzi[0],
-          pinyin: item.pinyin,
-          meaning: item.meaning,
-          radical: '',
-          decomposition: []
-        });
-      });
+  const handleDecompose = (char: string) => {
+    setDecomposeChar(char);
   };
-
-  if (selectedChar) {
-    return (
-      <div className="w-full px-4 py-4">
-        <button 
-          onClick={() => setSelectedChar(null)}
-          className="mb-4 flex items-center text-primary font-label-sm font-semibold uppercase tracking-wider"
-        >
-          <Icons.ChevronLeft size={16} className="mr-1" /> Back to List
-        </button>
-        <DecompositionCard 
-          character={selectedChar.character}
-          pinyin={selectedChar.pinyin}
-          meaning={selectedChar.meaning}
-          radical={selectedChar.radical}
-          decomposition={selectedChar.decomposition}
-          onClose={() => setSelectedChar(null)}
-        />
-      </div>
-    );
-  }
 
   if (selectedSection) {
     return (
       <div className="w-full px-4 py-4">
+        <DecompositionModal 
+          character={decomposeChar} 
+          onClose={() => setDecomposeChar(null)} 
+        />
+
         <button 
           onClick={() => setSelectedSection(null)}
           className="mb-4 flex items-center text-primary font-label-sm font-semibold uppercase tracking-wider"
@@ -168,16 +120,21 @@ export default function VocabTab() {
                 <div key={idx} className="bg-surface border border-outline-variant p-3.5 rounded-xl shadow-xs flex flex-col gap-2.5">
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex items-center gap-2.5 min-w-0 flex-1 flex-wrap overflow-hidden">
-                      {/* Interactive Pinyin Reveal */}
-                      <PinyinReveal hanzi={item.hanzi} pinyin={item.pinyin} size="md" />
+                      {/* Interactive Pinyin Reveal with character decomposition on tap */}
+                      <PinyinReveal 
+                        hanzi={item.hanzi} 
+                        pinyin={item.pinyin} 
+                        size="md" 
+                        onDecompose={handleDecompose}
+                      />
                       <TTSButton text={item.hanzi} />
                     </div>
                     
                     <div className="flex items-center gap-1 shrink-0">
                       <button 
-                        onClick={() => handleDecompose(item)}
+                        onClick={() => handleDecompose(item.hanzi[0])}
                         title="Decompose character"
-                        className="p-1.5 text-outline hover:text-primary rounded-full hover:bg-surface-container transition-all"
+                        className="p-1.5 text-outline hover:text-primary rounded-full hover:bg-surface-container transition-all flex items-center gap-1 text-[10px] font-semibold"
                       >
                         <Icons.GitMerge size={16} />
                       </button>
@@ -204,6 +161,7 @@ export default function VocabTab() {
                           hanzi={item.exampleSentence.hanzi} 
                           pinyin={item.exampleSentence.pinyin} 
                           size="sm" 
+                          onDecompose={handleDecompose}
                         />
                         <TTSButton text={item.exampleSentence.hanzi} size={15} />
                       </div>
@@ -221,6 +179,11 @@ export default function VocabTab() {
 
   return (
     <div className="w-full px-4 py-4 overflow-hidden">
+      <DecompositionModal 
+        character={decomposeChar} 
+        onClose={() => setDecomposeChar(null)} 
+      />
+
       <div className="mb-4">
         <h2 className="text-xl font-headline-lg text-on-background">Vocabulary</h2>
         <p className="font-body-md text-on-surface-variant text-xs sm:text-sm mt-0.5">Select a category to study.</p>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PinyinReveal from './PinyinReveal';
 import TTSButton from './TTSButton';
+import DecompositionModal from './DecompositionModal';
 import { Search } from 'lucide-react';
 
 interface Pattern {
@@ -20,6 +21,7 @@ interface VerbItem {
 export default function VerbsTab() {
   const [verbs, setVerbs] = useState<VerbItem[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const [decomposeChar, setDecomposeChar] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('data/verbs.json')
@@ -36,6 +38,11 @@ export default function VerbsTab() {
 
   return (
     <div className="w-full px-4 py-4">
+      <DecompositionModal 
+        character={decomposeChar} 
+        onClose={() => setDecomposeChar(null)} 
+      />
+
       <div className="mb-6">
         <h2 className="text-2xl font-headline-lg text-on-background">Verbs Reference</h2>
         <p className="font-body-md text-on-surface-variant text-sm mt-1">Study essential verbs, particles, and verb structures.</p>
@@ -57,7 +64,12 @@ export default function VerbsTab() {
           <div key={idx} className="bg-surface border border-outline-variant p-4 rounded-xl shadow-sm space-y-3">
             <div className="flex justify-between items-start">
               <div className="flex items-center gap-4">
-                <PinyinReveal hanzi={v.hanzi} pinyin={v.pinyin} size="md" />
+                <PinyinReveal 
+                  hanzi={v.hanzi} 
+                  pinyin={v.pinyin} 
+                  size="md" 
+                  onDecompose={(char) => setDecomposeChar(char)}
+                />
                 <TTSButton text={v.hanzi} />
               </div>
             </div>
@@ -77,7 +89,12 @@ export default function VerbsTab() {
                     <div key={pIdx} className="bg-surface-container-lowest border border-outline-variant p-2.5 rounded-lg space-y-1">
                       <div className="text-xs font-semibold text-primary">{pat.pattern}</div>
                       <div className="flex items-center gap-2 mt-1">
-                        <PinyinReveal hanzi={pat.exampleHanzi} pinyin={pat.examplePinyin} size="sm" />
+                        <PinyinReveal 
+                          hanzi={pat.exampleHanzi} 
+                          pinyin={pat.examplePinyin} 
+                          size="sm" 
+                          onDecompose={(char) => setDecomposeChar(char)}
+                        />
                         <TTSButton text={pat.exampleHanzi} size={14} />
                       </div>
                       <div className="text-xs text-outline italic">{pat.exampleMeaning}</div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PinyinReveal from './PinyinReveal';
 import TTSButton from './TTSButton';
+import DecompositionModal from './DecompositionModal';
 import { ChevronDown, ChevronUp, BookOpen } from 'lucide-react';
 
 interface Example {
@@ -21,6 +22,7 @@ export default function GrammarTab() {
   const [grammarPoints, setGrammarPoints] = useState<GrammarPoint[]>([]);
   const [filterLevel, setFilterLevel] = useState<string>('All');
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [decomposeChar, setDecomposeChar] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('data/grammar.json')
@@ -41,6 +43,11 @@ export default function GrammarTab() {
 
   return (
     <div className="w-full px-4 py-4">
+      <DecompositionModal 
+        character={decomposeChar} 
+        onClose={() => setDecomposeChar(null)} 
+      />
+
       <div className="mb-6">
         <h2 className="text-2xl font-headline-lg text-on-background">Grammar Rules</h2>
         <p className="font-body-md text-on-surface-variant text-sm mt-1">Study structural formulas and patterns.</p>
@@ -109,7 +116,12 @@ export default function GrammarTab() {
                           {gp.examples.map((ex, eIdx) => (
                             <div key={eIdx} className="bg-surface border border-outline-variant p-3 rounded-lg flex flex-col gap-1.5">
                               <div className="flex items-center gap-3">
-                                <PinyinReveal hanzi={ex.hanzi} pinyin={ex.pinyin} size="sm" />
+                                <PinyinReveal 
+                                  hanzi={ex.hanzi} 
+                                  pinyin={ex.pinyin} 
+                                  size="sm" 
+                                  onDecompose={(char) => setDecomposeChar(char)}
+                                />
                                 <TTSButton text={ex.hanzi} size={16} />
                               </div>
                               <p className="text-xs text-outline italic">{ex.meaning}</p>

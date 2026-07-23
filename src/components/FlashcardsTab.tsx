@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import * as Icons from 'lucide-react';
 import TTSButton from './TTSButton';
-import DecompositionCard from './DecompositionCard';
-import DecompositionView from './DecompositionView';
+import DecompositionModal from './DecompositionModal';
 
 interface CardItem {
   character: string;
@@ -25,7 +24,7 @@ export default function FlashcardsTab() {
   const [dueCards, setDueCards] = useState<CardItem[]>([]);
   const [currentCardIdx, setCurrentCardIdx] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [showDecompose, setShowDecompose] = useState(false);
+  const [decomposeChar, setDecomposeChar] = useState<string | null>(null);
 
   // Leitner system intervals in milliseconds
   const boxIntervals: Record<number, number> = {
@@ -43,7 +42,7 @@ export default function FlashcardsTab() {
   const loadDeck = async () => {
     setLoading(true);
     setIsFlipped(false);
-    setShowDecompose(false);
+    setDecomposeChar(null);
     setCurrentCardIdx(0);
 
     try {
@@ -122,7 +121,7 @@ export default function FlashcardsTab() {
 
     // Next Card
     setIsFlipped(false);
-    setShowDecompose(false);
+    setDecomposeChar(null);
     if (currentCardIdx + 1 < dueCards.length) {
       setCurrentCardIdx(currentCardIdx + 1);
     } else {
@@ -144,6 +143,11 @@ export default function FlashcardsTab() {
 
   return (
     <div className="w-full px-4 py-4 flex flex-col">
+      <DecompositionModal 
+        character={decomposeChar} 
+        onClose={() => setDecomposeChar(null)} 
+      />
+
       <div className="mb-6 flex justify-between items-center">
         <div>
           <h2 className="text-2xl font-headline-lg text-on-background">Flashcards</h2>
@@ -181,25 +185,6 @@ export default function FlashcardsTab() {
             Review Deck Anyway
           </button>
         </div>
-      ) : showDecompose && activeCard ? (
-        <div className="flex-1 flex flex-col justify-center">
-          <div className="mb-4">
-            <button 
-              onClick={() => setShowDecompose(false)}
-              className="flex items-center text-primary font-label-sm font-semibold uppercase tracking-wider"
-            >
-              <Icons.ChevronLeft size={16} className="mr-1" /> Back to Card
-            </button>
-          </div>
-          <DecompositionCard 
-            character={activeCard.character}
-            pinyin={activeCard.pinyin}
-            meaning={activeCard.meaning}
-            radical={activeCard.radical}
-            decomposition={activeCard.decomposition}
-            onClose={() => setShowDecompose(false)}
-          />
-        </div>
       ) : (
         <div className="flex-1 flex flex-col justify-between">
           {/* Progress bar */}
@@ -216,54 +201,56 @@ export default function FlashcardsTab() {
               onClick={() => setIsFlipped(!isFlipped)}
               className="text-primary font-semibold text-[11px] uppercase tracking-wider hover:underline"
             >
-              {isFlipped ? 'Show Hanzi' : 'Flip for Answer'}
+              {isFlipped ? 'Show Front' : 'Flip Card'}
             </button>
           </div>
 
-          {/* Flashcard Area */}
+          {/* Flashcard Box */}
           {activeCard && (
-            <div className="w-full flex justify-center">
+            <div 
+              onClick={() => setIsFlipped(!isFlipped)}
+              className="relative aspect-square w-full max-w-[280px] sm:max-w-[320px] mx-auto bg-surface border border-outline-variant shadow-sm rounded-2xl flex flex-col items-center justify-center p-6 cursor-pointer select-none tian-zi-ge transition-all duration-200 active:scale-[0.98]"
+            >
+              {/* Decompose Action Button (Top Left) */}
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setDecomposeChar(activeCard.character);
+                }}
+                className="absolute top-3 left-3 z-20 p-2 bg-surface-container hover:bg-surface-container-high text-primary rounded-full transition-all flex items-center gap-1 text-[10px] font-bold uppercase border border-outline-variant shadow-xs"
+                title="Decompose Character Radicals"
+              >
+                <Icons.GitMerge size={16} />
+                Decompose
+              </button>
+
+              {/* Audio Button (Top Right) */}
+              <div className="absolute top-3 right-3 z-20" onClick={(e) => e.stopPropagation()}>
+                <TTSButton text={activeCard.character} size={18} />
+              </div>
+
               {!isFlipped ? (
-                /* Front Side: Interactive Tap-To-Decompose Card */
-                <DecompositionView 
-                  character={activeCard.character}
-                  radical={activeCard.radical}
-                  decomposition={activeCard.decomposition}
-                  showAudio={true}
-                  className="w-full"
-                />
+                /* FRONT SIDE: Hanzi Character */
+                <div className="text-center">
+                  <span className="font-display-hanzi text-8xl sm:text-9xl text-on-surface leading-none">
+                    {activeCard.character}
+                  </span>
+                  <div className="absolute bottom-4 left-0 right-0 text-center text-[10px] text-outline font-semibold uppercase tracking-wider">
+                    Tap card to flip answer
+                  </div>
+                </div>
               ) : (
-                /* Back Side: Character + Pinyin + Meaning */
-                <div 
-                  onClick={() => setIsFlipped(false)}
-                  className="relative aspect-square w-full max-w-[280px] sm:max-w-[320px] mx-auto bg-surface border border-outline-variant shadow-sm rounded-2xl flex flex-col items-center justify-center p-6 cursor-pointer select-none tian-zi-ge"
-                >
-                  <div className="absolute top-4 right-4 z-20" onClick={(e) => e.stopPropagation()}>
-                    <TTSButton text={activeCard.character} />
-                  </div>
-                  
-                  <button 
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setShowDecompose(true);
-                    }}
-                    title="Stroke Order Animation"
-                    className="absolute top-4 left-4 z-20 p-2 text-outline hover:text-primary rounded-full hover:bg-surface-container transition-all flex items-center gap-1 text-[10px] font-bold uppercase"
-                  >
-                    <Icons.GitMerge size={18} />
-                    Strokes
-                  </button>
-
-                  <div className="text-center px-4">
-                    <span className="font-display-hanzi text-6xl sm:text-7xl text-on-surface opacity-45">{activeCard.character}</span>
-                    <h3 className="font-label-pinyin text-primary text-xl font-bold tracking-wider mt-4">
-                      {activeCard.pinyin}
-                    </h3>
-                    <p className="font-body-md text-on-surface-variant mt-2 text-sm max-w-[240px] mx-auto">
-                      {activeCard.meaning}
-                    </p>
-                  </div>
-
+                /* BACK SIDE: Pinyin & Meaning */
+                <div className="text-center px-4">
+                  <span className="font-display-hanzi text-5xl sm:text-6xl text-on-surface opacity-35 leading-none">
+                    {activeCard.character}
+                  </span>
+                  <h3 className="font-label-pinyin text-primary text-xl font-bold tracking-wider mt-4">
+                    {activeCard.pinyin}
+                  </h3>
+                  <p className="font-body-md text-on-surface-variant mt-2 text-sm max-w-[240px] mx-auto">
+                    {activeCard.meaning}
+                  </p>
                   <div className="absolute bottom-4 left-0 right-0 text-center text-[10px] text-outline italic">
                     Tap to show front
                   </div>

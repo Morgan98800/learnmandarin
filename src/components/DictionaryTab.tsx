@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import * as Icons from 'lucide-react';
 import PinyinReveal from './PinyinReveal';
 import TTSButton from './TTSButton';
+import DecompositionModal from './DecompositionModal';
 
 interface DictEntry {
   hanzi: string;
@@ -14,6 +15,7 @@ export default function DictionaryTab() {
   const [dictionary, setDictionary] = useState<DictEntry[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
+  const [decomposeChar, setDecomposeChar] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('data/dictionary.json')
@@ -38,6 +40,11 @@ export default function DictionaryTab() {
 
   return (
     <div className="w-full px-4 py-4 flex flex-col">
+      <DecompositionModal 
+        character={decomposeChar} 
+        onClose={() => setDecomposeChar(null)} 
+      />
+
       <div className="mb-6">
         <h2 className="text-2xl font-headline-lg text-on-background">Dictionary Search</h2>
         <p className="font-body-md text-on-surface-variant text-sm mt-1">Look up words by Hanzi, Pinyin, or English translation.</p>
@@ -74,7 +81,12 @@ export default function DictionaryTab() {
             <div key={idx} className="bg-surface border border-outline-variant p-4 rounded-xl shadow-sm flex flex-col gap-2">
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-4">
-                  <PinyinReveal hanzi={entry.hanzi} pinyin={entry.pinyin} size="md" />
+                  <PinyinReveal 
+                    hanzi={entry.hanzi} 
+                    pinyin={entry.pinyin} 
+                    size="md" 
+                    onDecompose={(char) => setDecomposeChar(char)}
+                  />
                   <TTSButton text={entry.hanzi} />
                 </div>
               </div>
