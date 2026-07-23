@@ -187,7 +187,7 @@ export function getComponentInfo(char: string): ComponentInfo {
   }
   return {
     character: char,
-    pinyin: char.toLowerCase(),
-    meaning: 'part'
+    pinyin: '',
+    meaning: ''
   };
 }

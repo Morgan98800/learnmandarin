@@ -1,17 +1,27 @@
 import React, { useEffect, useRef } from 'react';
 import HanziWriter from 'hanzi-writer';
 import DecompositionView from './DecompositionView';
+import type { EtymologyInfo } from '../utils/charLookup';
 
 interface DecompositionCardProps {
   character: string;
   pinyin: string;
   meaning: string;
   radical?: string;
-  decomposition?: string[];
+  decomposition?: string[] | string;
+  etymology?: EtymologyInfo | null;
   onClose?: () => void;
 }
 
-export default function DecompositionCard({ character, pinyin, meaning, radical, decomposition, onClose }: DecompositionCardProps) {
+export default function DecompositionCard({
+  character,
+  pinyin,
+  meaning,
+  radical,
+  decomposition,
+  etymology,
+  onClose,
+}: DecompositionCardProps) {
   const writerRef = useRef<HTMLDivElement>(null);
   const writerInstance = useRef<HanziWriter | null>(null);
 
@@ -51,8 +61,44 @@ export default function DecompositionCard({ character, pinyin, meaning, radical,
         meaning={meaning}
         radical={radical}
         decomposition={decomposition}
+        etymology={etymology}
         showAudio={true}
       />
+
+      {/* Etymology Formation Panel (Makemeahanzi Data) */}
+      {etymology && (etymology.type || etymology.hint) && (
+        <div className="w-full border-t border-outline-variant pt-4 flex flex-col gap-2 bg-surface-container-low p-3 rounded-xl">
+          <div className="flex items-center justify-between">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-outline">Character Formation</span>
+            {etymology.type && (
+              <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-primary-fixed text-primary border border-primary/20">
+                {etymology.type}
+              </span>
+            )}
+          </div>
+          
+          {etymology.hint && (
+            <p className="text-xs text-on-surface-variant font-body-md leading-relaxed">
+              {etymology.hint}
+            </p>
+          )}
+
+          {etymology.type === 'pictophonetic' && (etymology.semantic || etymology.phonetic) && (
+            <div className="flex gap-2 mt-1 text-[11px] font-label-pinyin">
+              {etymology.semantic && (
+                <span className="bg-surface border border-outline-variant px-2 py-0.5 rounded text-on-surface">
+                  Semantic: <strong className="text-primary font-display-hanzi">{etymology.semantic}</strong>
+                </span>
+              )}
+              {etymology.phonetic && (
+                <span className="bg-surface border border-outline-variant px-2 py-0.5 rounded text-on-surface">
+                  Phonetic: <strong className="text-primary font-display-hanzi">{etymology.phonetic}</strong>
+                </span>
+              )}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Stroke Animation Container */}
       <div className="w-full border-t border-outline-variant pt-4 flex flex-col items-center">

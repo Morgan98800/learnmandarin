@@ -45,6 +45,7 @@ export default function DecompositionModal({ character, onClose }: Decomposition
             meaning={details.meaning}
             radical={details.radical}
             decomposition={details.decomposition}
+            etymology={details.etymology}
             onClose={onClose}
           />
         ) : null}

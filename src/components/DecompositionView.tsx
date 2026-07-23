@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TTSButton from './TTSButton';
-import { getComponentInfo } from '../utils/radicalData';
+import { getComponentInfo, type ComponentInfo } from '../utils/radicalData';
+import type { EtymologyInfo } from '../utils/charLookup';
 
 interface DecompositionViewProps {
   character: string;
@@ -8,6 +9,7 @@ interface DecompositionViewProps {
   meaning?: string;
   radical?: string;
   decomposition?: string[] | string;
+  etymology?: EtymologyInfo | null;
   className?: string;
   showAudio?: boolean;
 }
@@ -18,6 +20,7 @@ export default function DecompositionView({
   meaning,
   radical,
   decomposition,
+  etymology,
   className = '',
   showAudio = true,
 }: DecompositionViewProps) {
@@ -54,6 +57,41 @@ export default function DecompositionView({
   // Look up Pinyin & Meaning for each component
   const componentsInfo = cleanComponents.map(comp => getComponentInfo(comp));
 
+  // Helper to render component description (no fake "(part)" labels)
+  const renderComponentMeta = (compChar: string, compInfo: ComponentInfo) => {
+    let roleLabel = '';
+    if (etymology && etymology.type === 'pictophonetic') {
+      if (compChar === etymology.semantic) roleLabel = 'Semantic';
+      else if (compChar === etymology.phonetic) roleLabel = 'Phonetic';
+    }
+    
+    if (!roleLabel && compChar === radical) {
+      roleLabel = 'Radical';
+    }
+
+    const pinyinText = compInfo.pinyin ? compInfo.pinyin.toUpperCase() : '';
+    const meaningText = compInfo.meaning ? `(${compInfo.meaning.split('/')[0].trim()})` : '';
+
+    if (!pinyinText && !meaningText && !roleLabel) {
+      return null; // Omit gloss entirely for unknown sub-components
+    }
+
+    return (
+      <div className="flex flex-col items-center mt-0.5">
+        {roleLabel && (
+          <span className="text-[9px] font-bold text-outline uppercase tracking-widest bg-surface-container-high px-1.5 py-0.5 rounded mb-0.5">
+            {roleLabel}
+          </span>
+        )}
+        {(pinyinText || meaningText) && (
+          <span className="font-label-pinyin text-[10px] sm:text-xs text-primary font-bold tracking-wider uppercase text-center max-w-[110px] break-words">
+            {pinyinText} {meaningText}
+          </span>
+        )}
+      </div>
+    );
+  };
+
   // Determine structural spatial layout
   const renderSpatialDecomposition = () => {
     if (componentsInfo.length === 0) {
@@ -66,7 +104,7 @@ export default function DecompositionView({
     }
 
     // 3 components (e.g. 森 = 木 + 木 + 木)
-    if (componentsInfo.length === 3 || layoutIDC === '⿳' || layoutIDC === '<ctrl42>') {
+    if (componentsInfo.length === 3 || layoutIDC === '⿳' || layoutIDC === '⿲') {
       const topComp = componentsInfo[0];
       const leftComp = componentsInfo[1] || topComp;
       const rightComp = componentsInfo[2] || topComp;
@@ -74,26 +112,20 @@ export default function DecompositionView({
       return (
         <div className="flex flex-col items-center justify-center h-full w-full py-2">
           {/* Top Component */}
-          <div className="flex flex-col items-center mb-2">
+          <div className="flex flex-col items-center mb-1">
             <span className="font-display-hanzi text-3xl sm:text-4xl text-on-surface leading-none">{topComp.character}</span>
-            <span className="font-label-pinyin text-[10px] sm:text-xs text-primary font-bold tracking-wider mt-0.5 uppercase">
-              {topComp.pinyin} ({topComp.meaning.split('/')[0].trim()})
-            </span>
+            {renderComponentMeta(topComp.character, topComp)}
           </div>
 
           {/* Bottom Row Components */}
           <div className="flex justify-around w-full px-2 mt-1">
             <div className="flex flex-col items-center">
               <span className="font-display-hanzi text-3xl sm:text-4xl text-on-surface leading-none">{leftComp.character}</span>
-              <span className="font-label-pinyin text-[10px] sm:text-xs text-primary font-bold tracking-wider mt-0.5 uppercase">
-                {leftComp.pinyin} ({leftComp.meaning.split('/')[0].trim()})
-              </span>
+              {renderComponentMeta(leftComp.character, leftComp)}
             </div>
             <div className="flex flex-col items-center">
               <span className="font-display-hanzi text-3xl sm:text-4xl text-on-surface leading-none">{rightComp.character}</span>
-              <span className="font-label-pinyin text-[10px] sm:text-xs text-primary font-bold tracking-wider mt-0.5 uppercase">
-                {rightComp.pinyin} ({rightComp.meaning.split('/')[0].trim()})
-              </span>
+              {renderComponentMeta(rightComp.character, rightComp)}
             </div>
           </div>
         </div>
@@ -111,15 +143,11 @@ export default function DecompositionView({
           <div className="flex flex-col items-center justify-around h-full w-full py-2">
             <div className="flex flex-col items-center">
               <span className="font-display-hanzi text-3xl sm:text-4xl text-on-surface leading-none">{c1.character}</span>
-              <span className="font-label-pinyin text-[10px] sm:text-xs text-primary font-bold tracking-wider mt-0.5 uppercase">
-                {c1.pinyin} ({c1.meaning.split('/')[0].trim()})
-              </span>
+              {renderComponentMeta(c1.character, c1)}
             </div>
             <div className="flex flex-col items-center mt-2">
               <span className="font-display-hanzi text-3xl sm:text-4xl text-on-surface leading-none">{c2.character}</span>
-              <span className="font-label-pinyin text-[10px] sm:text-xs text-primary font-bold tracking-wider mt-0.5 uppercase">
-                {c2.pinyin} ({c2.meaning.split('/')[0].trim()})
-              </span>
+              {renderComponentMeta(c2.character, c2)}
             </div>
           </div>
         );
@@ -130,15 +158,11 @@ export default function DecompositionView({
         <div className="flex items-center justify-around h-full w-full px-2 py-2">
           <div className="flex flex-col items-center">
             <span className="font-display-hanzi text-3xl sm:text-4xl text-on-surface leading-none">{c1.character}</span>
-            <span className="font-label-pinyin text-[10px] sm:text-xs text-primary font-bold tracking-wider mt-1 uppercase text-center max-w-[100px] break-words">
-              {c1.pinyin} ({c1.meaning.split('/')[0].trim()})
-            </span>
+            {renderComponentMeta(c1.character, c1)}
           </div>
           <div className="flex flex-col items-center">
             <span className="font-display-hanzi text-3xl sm:text-4xl text-on-surface leading-none">{c2.character}</span>
-            <span className="font-label-pinyin text-[10px] sm:text-xs text-primary font-bold tracking-wider mt-1 uppercase text-center max-w-[100px] break-words">
-              {c2.pinyin} ({c2.meaning.split('/')[0].trim()})
-            </span>
+            {renderComponentMeta(c2.character, c2)}
           </div>
         </div>
       );
@@ -150,9 +174,7 @@ export default function DecompositionView({
         {componentsInfo.map((comp, idx) => (
           <div key={idx} className="flex flex-col items-center">
             <span className="font-display-hanzi text-2xl sm:text-3xl text-on-surface leading-none">{comp.character}</span>
-            <span className="font-label-pinyin text-[10px] text-primary font-bold tracking-wider mt-0.5 uppercase">
-              {comp.pinyin} ({comp.meaning.split('/')[0].trim()})
-            </span>
+            {renderComponentMeta(comp.character, comp)}
           </div>
         ))}
       </div>

@@ -1,9 +1,17 @@
+export interface EtymologyInfo {
+  type?: string;
+  phonetic?: string;
+  semantic?: string;
+  hint?: string;
+}
+
 export interface CharDetails {
   character: string;
   pinyin: string;
   meaning: string;
   radical?: string;
-  decomposition?: string[];
+  decomposition?: string[] | string;
+  etymology?: EtymologyInfo | null;
 }
 
 let freqListCache: CharDetails[] | null = null;
@@ -29,7 +37,8 @@ export async function fetchCharDetails(char: string): Promise<CharDetails> {
       pinyin: found.pinyin || '',
       meaning: found.meaning || '',
       radical: found.radical || '',
-      decomposition: found.decomposition || []
+      decomposition: found.decomposition || [],
+      etymology: found.etymology || null
     };
   }
 
@@ -39,6 +48,7 @@ export async function fetchCharDetails(char: string): Promise<CharDetails> {
     pinyin: '',
     meaning: '',
     radical: '',
-    decomposition: []
+    decomposition: [],
+    etymology: null
   };
 }
