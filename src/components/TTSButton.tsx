@@ -38,8 +38,10 @@ export default function TTSButton({ text, className = '', size = 20 }: TTSButton
   return (
     <button
       onClick={speak}
-      className={`p-2 rounded-full hover:bg-surface-container active:scale-95 transition-all text-primary flex items-center justify-center ${className}`}
-      aria-label="Speak Mandarin"
+      type="button"
+      className={`min-w-[44px] min-h-[44px] p-2.5 rounded-full hover:bg-surface-container active:scale-95 transition-all text-primary flex items-center justify-center ${className}`}
+      aria-label="Speak pronunciation aloud"
+      title="Speak pronunciation"
     >
       {speaking ? <VolumeX size={size} /> : <Volume2 size={size} />}
     </button>

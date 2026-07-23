@@ -75,13 +75,14 @@ export default function VocabCard({
           </div>
         </div>
 
-        {/* Right: Secondary Action Icons */}
+        {/* Right: Secondary Action Icons (min 44px touch targets) */}
         <div className="flex items-center gap-1 shrink-0 text-outline">
           <button
             type="button"
             onClick={() => onDecompose && onDecompose(hanzi[0])}
             title="Decompose character radicals"
-            className="p-1.5 rounded-full hover:bg-surface-container hover:text-primary transition-all"
+            aria-label="Decompose character radicals"
+            className="min-w-[44px] min-h-[44px] p-2.5 rounded-full hover:bg-surface-container hover:text-primary transition-all flex items-center justify-center"
           >
             <Icons.GitMerge size={18} />
           </button>
@@ -90,7 +91,8 @@ export default function VocabCard({
               type="button"
               onClick={onToggleStar}
               title={isStarred ? 'Remove from starred' : 'Add to starred flashcards'}
-              className={`p-1.5 rounded-full hover:bg-surface-container transition-all ${
+              aria-label={isStarred ? 'Remove from starred' : 'Add to starred flashcards'}
+              className={`min-w-[44px] min-h-[44px] p-2.5 rounded-full hover:bg-surface-container transition-all flex items-center justify-center ${
                 isStarred ? 'text-primary' : 'hover:text-primary'
               }`}
             >

@@ -17,6 +17,14 @@ interface SRSState {
   nextReview: number;
 }
 
+const STAGE_LABELS: Record<number, { label: string; badgeClass: string }> = {
+  1: { label: 'New / Practice', badgeClass: 'bg-primary-fixed text-primary border-primary/20' },
+  2: { label: 'Learning', badgeClass: 'bg-amber-500/10 text-amber-800 border-amber-500/20' },
+  3: { label: 'Reviewing', badgeClass: 'bg-indigo-500/10 text-indigo-800 border-indigo-500/20' },
+  4: { label: 'Comfortable', badgeClass: 'bg-teal-500/10 text-teal-800 border-teal-500/20' },
+  5: { label: 'Mastered', badgeClass: 'bg-emerald-500/10 text-emerald-800 border-emerald-500/20' },
+};
+
 export default function FlashcardsTab() {
   const [deckType, setDeckType] = useState<'1000' | 'starred'>('1000');
   const [loading, setLoading] = useState(true);
@@ -131,6 +139,13 @@ export default function FlashcardsTab() {
     }
   };
 
+  const getCardStage = (char: string) => {
+    const srsData = JSON.parse(localStorage.getItem('srs_vocab_data') || '{}');
+    const item = srsData[char];
+    const box = item ? item.box : 1;
+    return STAGE_LABELS[box] || STAGE_LABELS[1];
+  };
+
   if (loading) {
     return (
       <div className="flex justify-center items-center py-20">
@@ -140,6 +155,7 @@ export default function FlashcardsTab() {
   }
 
   const activeCard = dueCards[currentCardIdx];
+  const stageInfo = activeCard ? getCardStage(activeCard.character) : STAGE_LABELS[1];
 
   return (
     <div className="w-full px-4 py-4 flex flex-col">
@@ -154,17 +170,17 @@ export default function FlashcardsTab() {
           <p className="text-xs text-outline font-semibold uppercase mt-0.5">Spaced Repetition (SRS)</p>
         </div>
         
-        {/* Toggle deck type */}
+        {/* Toggle deck type with 44px touch target */}
         <div className="flex border border-outline-variant rounded-lg p-0.5 bg-surface-container">
           <button 
             onClick={() => setDeckType('1000')}
-            className={`px-3 py-1 text-xs font-semibold rounded-md transition-all ${deckType === '1000' ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant'}`}
+            className={`px-3 py-2 text-xs font-semibold rounded-md transition-all min-h-[44px] flex items-center ${deckType === '1000' ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant'}`}
           >
             1000 List
           </button>
           <button 
             onClick={() => setDeckType('starred')}
-            className={`px-3 py-1 text-xs font-semibold rounded-md transition-all ${deckType === 'starred' ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant'}`}
+            className={`px-3 py-2 text-xs font-semibold rounded-md transition-all min-h-[44px] flex items-center ${deckType === 'starred' ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant'}`}
           >
             Starred
           </button>
@@ -180,7 +196,7 @@ export default function FlashcardsTab() {
           </p>
           <button 
             onClick={loadDeck}
-            className="mt-6 px-5 py-2.5 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-sm"
+            className="mt-6 px-5 py-3 min-h-[44px] bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-sm flex items-center justify-center"
           >
             Review Deck Anyway
           </button>
@@ -188,7 +204,7 @@ export default function FlashcardsTab() {
       ) : (
         <div className="flex-1 flex flex-col justify-between">
           {/* Progress bar */}
-          <div className="w-full h-1 bg-surface-container rounded-full overflow-hidden mb-6">
+          <div className="w-full h-1.5 bg-surface-container rounded-full overflow-hidden mb-6">
             <div 
               className="h-full bg-primary transition-all duration-300"
               style={{ width: `${((currentCardIdx) / dueCards.length) * 100}%` }}
@@ -196,10 +212,15 @@ export default function FlashcardsTab() {
           </div>
 
           <div className="flex justify-between items-center text-xs text-outline mb-2">
-            <span>Card {currentCardIdx + 1} of {dueCards.length}</span>
+            <div className="flex items-center gap-2">
+              <span>Card {currentCardIdx + 1} of {dueCards.length}</span>
+              <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border ${stageInfo.badgeClass}`}>
+                {stageInfo.label}
+              </span>
+            </div>
             <button 
               onClick={() => setIsFlipped(!isFlipped)}
-              className="text-primary font-semibold text-[11px] uppercase tracking-wider hover:underline"
+              className="text-primary font-semibold text-[11px] uppercase tracking-wider hover:underline min-h-[44px] flex items-center px-1"
             >
               {isFlipped ? 'Show Front' : 'Flip Card'}
             </button>
@@ -211,13 +232,14 @@ export default function FlashcardsTab() {
               onClick={() => setIsFlipped(!isFlipped)}
               className="relative aspect-square w-full max-w-[280px] sm:max-w-[320px] mx-auto bg-surface border border-outline-variant shadow-sm rounded-2xl flex flex-col items-center justify-center p-6 cursor-pointer select-none tian-zi-ge transition-all duration-200 active:scale-[0.98]"
             >
-              {/* Decompose Action Button (Top Left) */}
+              {/* Decompose Action Button (Top Left - Min 44px Touch Target) */}
               <button 
                 onClick={(e) => {
                   e.stopPropagation();
                   setDecomposeChar(activeCard.character);
                 }}
-                className="absolute top-3 left-3 z-20 p-2 bg-surface-container hover:bg-surface-container-high text-primary rounded-full transition-all flex items-center gap-1 text-[10px] font-bold uppercase border border-outline-variant shadow-xs"
+                aria-label="Decompose Character Radicals"
+                className="absolute top-3 left-3 z-20 min-h-[44px] min-w-[44px] px-3 bg-surface-container hover:bg-surface-container-high text-primary rounded-full transition-all flex items-center justify-center gap-1.5 text-[11px] font-bold uppercase border border-outline-variant shadow-xs"
                 title="Decompose Character Radicals"
               >
                 <Icons.GitMerge size={16} />
@@ -259,17 +281,17 @@ export default function FlashcardsTab() {
             </div>
           )}
 
-          {/* Action buttons */}
+          {/* SRS Action Buttons (Min 48px Touch Height) */}
           <div className="mt-6 flex gap-4 w-full">
             <button 
               onClick={() => handleSRSResponse(false)}
-              className="flex-1 py-3.5 border border-primary text-primary text-xs font-bold uppercase tracking-widest bg-transparent hover:bg-surface-container active:scale-95 transition-all rounded-lg"
+              className="flex-1 py-3.5 min-h-[48px] border border-primary text-primary text-xs font-bold uppercase tracking-widest bg-transparent hover:bg-surface-container active:scale-95 transition-all rounded-lg flex items-center justify-center"
             >
               Needs Practice
             </button>
             <button 
               onClick={() => handleSRSResponse(true)}
-              className="flex-1 py-3.5 bg-primary text-white text-xs font-bold uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-md"
+              className="flex-1 py-3.5 min-h-[48px] bg-primary text-white text-xs font-bold uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all rounded-lg shadow-md flex items-center justify-center"
             >
               I know it
             </button>
